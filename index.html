@@ -7971,8 +7971,9 @@
             const taskId = btn.getAttribute('data-task-id');
             const canonicalId = resolveTaskId(taskId) || taskId;
             // Shared links must point to the public portfolio, not to a preview iframe (claude.ai artifact, file://)
-            const PUBLIC_BASE = 'https://memodlike-portfolio.vercel.app/';
-            const onPublic = /vercel\.app$/.test(window.location.hostname);
+            // Each published copy shares its own links: GitHub Pages -> github.io, Vercel -> vercel.app.
+            const PUBLIC_BASE = 'https://memodlike.github.io/portfolio-site/';
+            const onPublic = /(\.github\.io|\.vercel\.app)$/.test(window.location.hostname);
             const canonicalUrl = (onPublic ? window.location.origin + window.location.pathname : PUBLIC_BASE) + '#' + canonicalId;
             const tooltip = btn.querySelector('.copy-tooltip');
 
