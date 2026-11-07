@@ -3074,6 +3074,49 @@
             font-size: 12px;
           }
         }
+
+        #w4-l3 .w4-task-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; margin: 34px 0 6px; padding-top: 18px; border-top: 1px solid var(--line); }
+        #w4-l3 .w4-task-num { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--paper); background: var(--forest); padding: 3px 9px; border-radius: 999px; }
+        #w4-l3 .w4-task-title { font-family: var(--font-display); font-size: 18px; line-height: 24px; font-weight: 600; color: var(--ink); }
+        #w4-l3 .w4-formula { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--forest); border-radius: 8px; padding: 14px 16px; margin: 12px 0; overflow-x: auto; color: var(--ink); }
+        #w4-l3 .w4-formula math { font-size: 17px; }
+        #w4-l3 .w4-formula-note { margin-top: 8px; font-size: 12.5px; line-height: 18px; color: var(--muted); }
+        #w4-l3 .w4-formula-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+        #w4-l3 .w4-formula-grid .w4-formula { margin: 0; }
+        #w4-l3 .w4-text { font-size: 14px; line-height: 22px; color: var(--ink); margin: 10px 0; max-width: 78ch; }
+        #w4-l3 .w4-text-muted { color: var(--muted); font-size: 13px; line-height: 20px; }
+        #w4-l3 .w4-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 12px 0; }
+        #w4-l3 .w4-kpi { background: var(--mist); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; min-width: 0; }
+        #w4-l3 .w4-kpi b { display: block; font-family: var(--font-mono); font-size: 20px; line-height: 26px; color: var(--ink); }
+        #w4-l3 .w4-kpi span { font-size: 12px; line-height: 16px; color: var(--muted); }
+        #w4-l3 .w4-row-hl td { background: rgba(0, 106, 78, 0.06); font-weight: 600; }
+        #w4-l3 tfoot td { font-weight: 700; border-top: 2px solid var(--line); }
+        #w4-l3 .w4-two-col { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+        #w4-l3 .w4-legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12px; color: var(--muted); margin-top: 6px; }
+        #w4-l3 .w4-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+        #w4-l3 .w4-flow { display: grid; gap: 10px; margin: 12px 0; }
+        #w4-l3 .w4-flow-node { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; font-size: 13px; line-height: 18px; color: var(--ink); text-align: center; }
+        #w4-l3 .w4-flow-node.is-key { border-color: var(--forest); background: var(--dew); font-weight: 600; }
+        #w4-l3 .w4-flow-arrow { text-align: center; color: var(--muted); font-size: 14px; line-height: 14px; }
+        #w4-l3 .w4-flow-branches { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+        #w4-l3 .w4-flow-branch { display: grid; gap: 6px; }
+        #w4-l3 .w4-flow-tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted); text-align: center; }
+        #w4-l3 .w4-flow-end { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        #w4-l3 .w4-defense { background: var(--dew); border: 1px solid rgba(0, 106, 78, 0.3); border-radius: 10px; padding: 18px 20px; font-size: 14.5px; line-height: 23px; color: var(--ink); }
+        #w4-l3 .w4-defense h3 { margin: 0 0 8px; font-family: var(--font-display); font-size: 17px; }
+        #w4-l3 .w4-steps { counter-reset: w4s; list-style: none; padding: 0; margin: 12px 0; display: grid; gap: 8px; }
+        #w4-l3 .w4-steps li { counter-increment: w4s; position: relative; padding: 10px 12px 10px 44px; background: var(--mist); border: 1px solid var(--line); border-radius: 8px; font-size: 13px; line-height: 19px; color: var(--ink); }
+        #w4-l3 .w4-steps li::before { content: counter(w4s); position: absolute; left: 12px; top: 10px; width: 22px; height: 22px; border-radius: 50%; background: var(--forest); color: var(--paper); font: 700 12px/22px var(--font-mono); text-align: center; }
+        #w4-l3 .w4-steps li b { display: block; }
+        #w4-l3 .w4-steps li span { color: var(--muted); }
+        html[data-theme="dark"] #w4-l3 .w4-task-num { color: #0b1210; background: #5fd3a8; }
+        html[data-theme="dark"] #w4-l3 .w4-row-hl td { background: rgba(95, 211, 168, 0.08); }
+        html[data-theme="dark"] #w4-l3 .w4-defense { background: rgba(95, 211, 168, 0.08); border-color: rgba(95, 211, 168, 0.3); }
+        @media (max-width: 767px) {
+          #w4-l3 .w4-two-col, #w4-l3 .w4-flow-branches, #w4-l3 .w4-flow-end { grid-template-columns: minmax(0, 1fr); }
+          #w4-l3 .w4-formula math { font-size: 15px; }
+          #w4-l3 .w4-task-title { font-size: 16px; line-height: 22px; }
+        }
       </style>
       <div class="scene" data-topic="financeapp" aria-hidden="true"></div>
       <div class="container">
@@ -3178,9 +3221,30 @@
             <strong>Границы и допущения анализа:</strong> Все расчеты получены из условия кейса. Когорты регистрации — 5 кварталов (Q1 2022 — Q1 2023). Шестимесячный Churn в учебном расчете равен <code>1 − R6</code> (среднее пяти когорт = 58,4%). <strong>Период ARPU в условии не указан</strong> (LTV рассчитан формально по формуле <code>ARPU / Churn</code>). <strong>Причинный эффект подключения функций не доказан</strong> (наблюдаемая связь на активной базе 1,2 млн пользователей).
           </div>
 
+
+          <div class="w4-block w4-full" data-reveal>
+            <h3 class="w4-block-title">Условие кейса и исходные данные</h3>
+            <p class="w4-text">FinanceApp — финтех-приложение с функциями учета личных финансов, инвестирования и кредитования: 1,2 млн активных пользователей в пяти странах. Новые пользователи растут, но удержание ухудшается. Нужно: (1) посчитать 6-месячный Retention Rate каждой когорты; (2) LTV по странам по формуле LTV = ARPU × 1 / Churn Rate, где Churn — среднее по когортам; (3) найти выгодные сегменты по странам и функциям; (4) оценить влияние нескольких функций на удержание; (5) предложить стратегию долгосрочного удержания — только главные фокусы.</p>
+            <div class="w4-two-col">
+              <div>
+                <p class="w4-text-muted">Страны (буквы условия, без привязки к реальным государствам)</p>
+                <div class="w4-table-wrap" tabindex="0" role="region" aria-label="Исходные данные по странам"><table class="editorial-table "><thead><tr><th scope="col">Страна</th><th scope="col">CAC, $</th><th scope="col">ARPU, $</th><th scope="col">Доля базы</th></tr></thead><tbody><tr><td data-label="Страна">A</td><td class="tabular-nums" data-label="CAC, $">8</td><td class="tabular-nums" data-label="ARPU, $">4,5</td><td class="tabular-nums" data-label="Доля базы">40%</td></tr><tr><td data-label="Страна">B</td><td class="tabular-nums" data-label="CAC, $">12</td><td class="tabular-nums" data-label="ARPU, $">6,0</td><td class="tabular-nums" data-label="Доля базы">25%</td></tr><tr><td data-label="Страна">C</td><td class="tabular-nums" data-label="CAC, $">15</td><td class="tabular-nums" data-label="ARPU, $">7,5</td><td class="tabular-nums" data-label="Доля базы">15%</td></tr><tr><td data-label="Страна">D</td><td class="tabular-nums" data-label="CAC, $">18</td><td class="tabular-nums" data-label="ARPU, $">9,0</td><td class="tabular-nums" data-label="Доля базы">12%</td></tr><tr><td data-label="Страна">E</td><td class="tabular-nums" data-label="CAC, $">25</td><td class="tabular-nums" data-label="ARPU, $">13,5</td><td class="tabular-nums" data-label="Доля базы">8%</td></tr></tbody></table></div>
+              </div>
+              <div>
+                <p class="w4-text-muted">Функциональные сегменты (взаимоисключающие, сумма 100%)</p>
+                <div class="w4-table-wrap" tabindex="0" role="region" aria-label="Исходные данные по функциям"><table class="editorial-table "><thead><tr><th scope="col">Сегмент</th><th scope="col">Доля базы</th><th scope="col">R6</th></tr></thead><tbody><tr><td data-label="Сегмент">Только учет</td><td class="tabular-nums" data-label="Доля базы">60%</td><td class="tabular-nums" data-label="R6">25%</td></tr><tr><td data-label="Сегмент">Учет + инвестиции</td><td class="tabular-nums" data-label="Доля базы">15%</td><td class="tabular-nums" data-label="R6">58%</td></tr><tr><td data-label="Сегмент">Учет + кредиты</td><td class="tabular-nums" data-label="Доля базы">10%</td><td class="tabular-nums" data-label="R6">32%</td></tr><tr><td data-label="Сегмент">Все три функции</td><td class="tabular-nums" data-label="Доля базы">15%</td><td class="tabular-nums" data-label="R6">72%</td></tr></tbody></table></div>
+                <p class="w4-text-muted">Подписки: учет $1 500 · инвестиции $1 200 · кредиты $1 000 · Ultra (все три) $3 000. Период оплаты в условии не указан.</p>
+              </div>
+            </div>
+            <details class="w4-more">
+              <summary>Подробнее: какие допущения приняты и что остается неизвестным</summary>
+              <div class="w4-table-wrap" tabindex="0" role="region" aria-label="Допущения анализа"><table class="editorial-table "><thead><tr><th scope="col">Вопрос</th><th scope="col">Принятое правило</th><th scope="col">Последствие</th></tr></thead><tbody><tr><td data-label="Вопрос">Зрелость когорт</td><td data-label="Принятое правило">Все шестимесячные результаты считаются полностью наблюденными</td><td data-label="Последствие">Активных делим на полный размер когорты</td></tr><tr><td data-label="Вопрос">Шестимесячный Churn</td><td data-label="Принятое правило">В учебном расчете равен 1 − R6</td><td data-label="Последствие">Доля неактивных в контрольном окне, а не доказательство окончательного ухода</td></tr><tr><td data-label="Вопрос">Усреднение для LTV</td><td data-label="Принятое правило">Простое среднее Churn пяти когорт</td><td data-label="Последствие">Взвешенное среднее — отдельная проверка</td></tr><tr><td data-label="Вопрос">Отток по странам</td><td data-label="Принятое правило">Один средний Churn для всех стран, как требует задание</td><td data-label="Последствие">Равенство реального оттока стран не установлено</td></tr><tr><td data-label="Вопрос">Период ARPU</td><td data-label="Принятое правило">Не придумываем отсутствующий период</td><td data-label="Последствие">LTV — формальный результат; альтернативы разобраны в чувствительности</td></tr><tr><td data-label="Вопрос">База 1,2 млн</td><td data-label="Принятое правило">Текущие активные пользователи</td><td data-label="Последствие">Не называем MAU: месяц измерения не указан</td></tr><tr><td data-label="Вопрос">Экономика</td><td data-label="Принятое правило">Нет маржи, стоимости обслуживания и кредитных потерь</td><td data-label="Последствие">Revenue LTV нельзя выдавать за прибыль</td></tr><tr><td data-label="Вопрос">Страна × функции</td><td data-label="Принятое правило">Совместной таблицы нет</td><td data-label="Последствие">Рейтинг комбинаций вроде «E × Ultra» недоступен</td></tr></tbody></table></div>
+            </details>
+          </div>
+
           <!-- 2. COHORT RETENTION -->
           <div class="w4-block" data-reveal>
-            <h3 class="w4-block-title">Шестимесячный Retention Rate по пяти квартальным когортам</h3>
+            <h3 class="w4-block-title">Задача 1 · Шестимесячный Retention Rate по пяти квартальным когортам</h3>
             <p class="w4-lead-thesis">
               Размер новых квартальных когорт вырос на 66,67% (со 180 000 до 300 000), однако качество удержания последовательно снижается: шестимесячный Retention упал с 48% до 35% (−13 п.п. / −27,08%). Растущий валовый объем регистраций сопровождается снижением качества долгосрочного удержания.
             </p>
@@ -3317,9 +3381,29 @@
             </div>
           </div>
 
+
+          <div class="w4-block w4-full" data-reveal>
+            <h3 class="w4-block-title">Задача 1 · Как считается Retention и что значит спад</h3>
+            <div class="w4-formula-grid">
+              <div class="w4-formula"><math display="block"><msub><mrow><mi>R</mi></mrow><mrow><mn>6</mn><mo>,</mo><mi>i</mi></mrow></msub><mo>=</mo><mfrac><mrow><msub><mrow><mi>A</mi></mrow><mrow><mn>6</mn><mo>,</mo><mi>i</mi></mrow></msub></mrow><mrow><msub><mrow><mi>N</mi></mrow><mrow><mi>i</mi></mrow></msub></mrow></mfrac><mo>×</mo><mn>100%</mn></math><div class="w4-formula-note">N<sub>i</sub> — регистрации когорты i; A<sub>6,i</sub> — активные из этой же когорты через 6 месяцев.</div></div>
+              <div class="w4-formula"><math display="block"><msub><mrow><mi>R</mi></mrow><mrow><mn>6</mn><mo>,</mo><mtext>Q1 2022</mtext></mrow></msub><mo>=</mo><mfrac><mrow><mn>86 400</mn></mrow><mrow><mn>180 000</mn></mrow></mfrac><mo>×</mo><mn>100%</mn><mo>=</mo><mn>48%</mn></math><div class="w4-formula-note">Из каждых 100 зарегистрировавшихся 48 активны в шестимесячном окне, 52 — нет.</div></div>
+            </div>
+            <div class="w4-kpis">
+              <div class="w4-kpi"><b>−13 п.п.</b><span>35% − 48% между первой и последней когортой</span></div>
+              <div class="w4-kpi"><b>−27,08%</b><span>относительное снижение (35 − 48) / 48</span></div>
+              <div class="w4-kpi"><b>+66,67%</b><span>рост новой когорты: 180 000 → 300 000</span></div>
+              <div class="w4-kpi"><b>+21,53%</b><span>рост удержанных: 86 400 → 105 000</span></div>
+            </div>
+            <p class="w4-text">Растущее абсолютное число активных не означает улучшения продукта: приток растет втрое быстрее удержанных. Если бы Q1 2023 удерживалась как Q1 2022: 300 000 × 48% = 144 000 против фактических 105 000 — <strong>разрыв 39 000 пользователей</strong>. Это ориентир масштаба, а не обещание, что конкретное улучшение вернет 39 000 человек.</p>
+            <div class="w4-two-col">
+              <div class="w4-formula"><math display="block"><msub><mrow><mover><mi>C</mi><mo>‾</mo></mover></mrow><mrow><mn>6</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>52</mn><mo>+</mo><mn>55</mn><mo>+</mo><mn>58</mn><mo>+</mo><mn>62</mn><mo>+</mo><mn>65</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>=</mo><mn>58,4%</mn></math><div class="w4-formula-note">Простое среднее: каждая когорта весит одинаково. <strong>Это значение используется в задаче 2.</strong> Средний R6 = 41,6%.</div></div>
+              <div class="w4-formula"><math display="block"><msub><mrow><mi>R</mi></mrow><mrow><mn>6</mn><mo>,</mo><mtext>weighted</mtext></mrow></msub><mo>=</mo><mfrac><mrow><mn>489 300</mn></mrow><mrow><mn>1 200 000</mn></mrow></mfrac><mo>=</mo><mn>40,775%</mn></math><div class="w4-formula-note">Взвешенное: доля удержанных среди всех регистраций. Churn = 59,225%. Ниже простого, потому что поздние когорты крупнее и удерживаются хуже.</div></div>
+            </div>
+          </div>
+
           <!-- 3. LTV & LTV/CAC TABLE -->
           <div class="w4-block" data-reveal>
-            <h3 class="w4-block-title">Экономика по странам: LTV и эффективность привлечения (LTV/CAC)</h3>
+            <h3 class="w4-block-title">Задача 2 · LTV по странам и эффективность привлечения (LTV/CAC)</h3>
             <p class="w4-lead-thesis">
               Расчет по формуле задания <code>LTV = ARPU / Churn = ARPU / 0,584</code>. Рейтинги стран по ценности клиента и по отдаче на доллар маркетинга различаются: страна E лидирует по выручке на пользователя ($23,12), а страна A — по эффективности привлечения (LTV/CAC 0,963).
             </p>
@@ -3381,9 +3465,41 @@
             </div>
           </div>
 
+
+          <div class="w4-block w4-full" data-reveal>
+            <h3 class="w4-block-title">Задача 2 · Формула LTV, график и чувствительность к допущениям</h3>
+            <div class="w4-formula-grid">
+              <div class="w4-formula"><math display="block"><msub><mrow><mi>LTV</mi></mrow><mrow><mi>j</mi></mrow></msub><mo>=</mo><msub><mrow><mi>ARPU</mi></mrow><mrow><mi>j</mi></mrow></msub><mo>×</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mover><mi>C</mi><mo>‾</mo></mover></mrow></mfrac><mo>=</mo><mfrac><mrow><msub><mrow><mi>ARPU</mi></mrow><mrow><mi>j</mi></mrow></msub></mrow><mrow><mn>0,584</mn></mrow></mfrac></math><div class="w4-formula-note">Revenue LTV по формуле задания. В знаменатель подставляется 0,584, а не 58,4. Множитель 1 / 0,584 = 1,7123.</div></div>
+              <div class="w4-formula"><math display="block"><msub><mrow><mi>LTV</mi></mrow><mrow><mi>A</mi></mrow></msub><mo>=</mo><mfrac><mrow><mn>4,5</mn></mrow><mrow><mn>0,584</mn></mrow></mfrac><mo>=</mo><mn>7,7055</mn><mo>≈</mo><mn>$7,71</mn></math><div class="w4-formula-note">Пример для страны A. Остальные страны считаются так же; рейтинги — из неокругленных значений.</div></div>
+            </div>
+            <div class="chart-card">
+              <div class="chart-head">
+                <div class="chart-title">LTV против CAC по странам, $</div>
+                <div class="chart-subtitle">Зеленая полоса — LTV, оранжевая — CAC; справа от CAC — LTV/CAC. Во всех странах LTV &lt; CAC в формальной модели.</div>
+              </div>
+              <svg class="chart-svg" viewBox="0 0 540 230" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LTV и CAC по странам: A 7,71 и 8; B 10,27 и 12; C 12,84 и 15; D 15,41 и 18; E 23,12 и 25. Во всех странах LTV ниже CAC."><line x1="56" y1="14" x2="56" y2="222" stroke="var(--line)"/><text x="30" y="38" fill="var(--ink)" font-size="13" font-weight="700" text-anchor="middle">A</text><rect x="56" y="22" width="100.2" height="13" rx="3" fill="var(--forest)"/><text x="162.2" y="33" fill="var(--ink)" font-size="11" font-weight="600">LTV $7,71</text><rect x="56" y="38" width="104.0" height="9" rx="3" fill="var(--accent-warm)" opacity="0.85"/><text x="166.0" y="47" fill="var(--muted)" font-size="10">CAC $8 · 0,963</text><text x="30" y="78" fill="var(--ink)" font-size="13" font-weight="700" text-anchor="middle">B</text><rect x="56" y="62" width="133.5" height="13" rx="3" fill="var(--forest)"/><text x="195.5" y="73" fill="var(--ink)" font-size="11" font-weight="600">LTV $10,27</text><rect x="56" y="78" width="156.0" height="9" rx="3" fill="var(--accent-warm)" opacity="0.85"/><text x="218.0" y="87" fill="var(--muted)" font-size="10">CAC $12 · 0,856</text><text x="30" y="118" fill="var(--ink)" font-size="13" font-weight="700" text-anchor="middle">C</text><rect x="56" y="102" width="166.9" height="13" rx="3" fill="var(--forest)"/><text x="228.9" y="113" fill="var(--ink)" font-size="11" font-weight="600">LTV $12,84</text><rect x="56" y="118" width="195.0" height="9" rx="3" fill="var(--accent-warm)" opacity="0.85"/><text x="257.0" y="127" fill="var(--muted)" font-size="10">CAC $15 · 0,856</text><text x="30" y="158" fill="var(--ink)" font-size="13" font-weight="700" text-anchor="middle">D</text><rect x="56" y="142" width="200.3" height="13" rx="3" fill="var(--forest)"/><text x="262.3" y="153" fill="var(--ink)" font-size="11" font-weight="600">LTV $15,41</text><rect x="56" y="158" width="234.0" height="9" rx="3" fill="var(--accent-warm)" opacity="0.85"/><text x="296.0" y="167" fill="var(--muted)" font-size="10">CAC $18 · 0,856</text><text x="30" y="198" fill="var(--ink)" font-size="13" font-weight="700" text-anchor="middle">E</text><rect x="56" y="182" width="300.6" height="13" rx="3" fill="var(--forest)"/><text x="362.6" y="193" fill="var(--ink)" font-size="11" font-weight="600">LTV $23,12</text><rect x="56" y="198" width="325.0" height="9" rx="3" fill="var(--accent-warm)" opacity="0.85"/><text x="387.0" y="207" fill="var(--muted)" font-size="10">CAC $25 · 0,925</text></svg>
+              <div class="w4-legend"><span><i style="background: var(--forest)"></i>LTV = ARPU / 0,584</span><span><i style="background: var(--accent-warm)"></i>CAC</span></div>
+            </div>
+            <p class="w4-text">Все LTV/CAC меньше 1: <strong>если</strong> ARPU относится к тому же шестимесячному периоду, ожидаемая выручка не покрывает даже CAC. Это условный вывод модели, а не установленная убыточность: период ARPU в условии не назван, а формула требует одинаковых периодов ARPU и Churn.</p>
+            <div class="w4-formula"><math display="block"><msub><mrow><mi>C</mi></mrow><mrow><mtext>month</mtext></mrow></msub><mo>=</mo><mn>1</mn><mo>−</mo><msup><mrow><mn>0,416</mn></mrow><mrow><mn>1</mn><mo>/</mo><mn>6</mn></mrow></msup><mo>≈</mo><mn>13,60%</mn></math><div class="w4-formula-note">Сценарий: если ARPU месячный и месячный отток постоянен без реактиваций, то (1 − C<sub>month</sub>)<sup>6</sup> = 0,416. Делить 58,4% на 6 нельзя.</div></div>
+            <div class="w4-table-wrap" tabindex="0" role="region" aria-label="Чувствительность LTV к допущениям"><table class="editorial-table "><thead><tr><th scope="col">Страна</th><th scope="col">Формальный LTV (Churn 58,4%)</th><th scope="col">Взвешенный Churn 59,225%</th><th scope="col">Только Q1 2023 (65%)</th><th scope="col">Сценарий: ARPU месячный</th></tr></thead><tbody><tr class="w4-row-hl"><td data-label="Страна">A</td><td class="tabular-nums" data-label="Формальный LTV (Churn 58,4%)"><strong>$7,71</strong></td><td class="tabular-nums" data-label="Взвешенный Churn 59,225%">$7,60</td><td class="tabular-nums" data-label="Только Q1 2023 (65%)">$6,92</td><td class="tabular-nums" data-label="Сценарий: ARPU месячный">$33,09</td></tr><tr><td data-label="Страна">B</td><td class="tabular-nums" data-label="Формальный LTV (Churn 58,4%)"><strong>$10,27</strong></td><td class="tabular-nums" data-label="Взвешенный Churn 59,225%">$10,13</td><td class="tabular-nums" data-label="Только Q1 2023 (65%)">$9,23</td><td class="tabular-nums" data-label="Сценарий: ARPU месячный">$44,12</td></tr><tr><td data-label="Страна">C</td><td class="tabular-nums" data-label="Формальный LTV (Churn 58,4%)"><strong>$12,84</strong></td><td class="tabular-nums" data-label="Взвешенный Churn 59,225%">$12,66</td><td class="tabular-nums" data-label="Только Q1 2023 (65%)">$11,54</td><td class="tabular-nums" data-label="Сценарий: ARPU месячный">$55,15</td></tr><tr><td data-label="Страна">D</td><td class="tabular-nums" data-label="Формальный LTV (Churn 58,4%)"><strong>$15,41</strong></td><td class="tabular-nums" data-label="Взвешенный Churn 59,225%">$15,20</td><td class="tabular-nums" data-label="Только Q1 2023 (65%)">$13,85</td><td class="tabular-nums" data-label="Сценарий: ARPU месячный">$66,18</td></tr><tr class="w4-row-hl"><td data-label="Страна">E</td><td class="tabular-nums" data-label="Формальный LTV (Churn 58,4%)"><strong>$23,12</strong></td><td class="tabular-nums" data-label="Взвешенный Churn 59,225%">$22,79</td><td class="tabular-nums" data-label="Только Q1 2023 (65%)">$20,77</td><td class="tabular-nums" data-label="Сценарий: ARPU месячный">$99,27</td></tr></tbody></table></div>
+            <p class="w4-text-muted">Взвешенный Churn снижает каждый LTV на ~1,39%, только последняя когорта — на ~10,15%. Порядок стран не меняется. Вывод: среднее по старым и новым когортам скрывает ухудшение экономики новых регистраций — для решений смотреть свежие зрелые когорты отдельно. Правый столбец — проверка чувствительности, а не «исправленный» LTV.</p>
+          </div>
+
+          <div class="w4-block w4-full" data-reveal>
+            <h3 class="w4-block-title">Задача 3 · Наиболее выгодные сегменты: страны и функции</h3>
+            <p class="w4-text">Единого победителя нет: разные критерии отвечают на разные бизнес-вопросы.</p>
+            <div class="w4-table-wrap" tabindex="0" role="region" aria-label="Рейтинг стран по критериям"><table class="editorial-table "><thead><tr><th scope="col">Критерий</th><th scope="col">Рейтинг</th><th scope="col">Обоснование</th></tr></thead><tbody><tr class="w4-row-hl"><td data-label="Критерий">Выручка за жизнь пользователя (LTV)</td><td data-label="Рейтинг">E > D > C > B > A</td><td data-label="Обоснование">LTV пропорционален ARPU при общем Churn</td></tr><tr class="w4-row-hl"><td data-label="Критерий">Выручка на $1 привлечения (LTV/CAC)</td><td data-label="Рейтинг">A > E > B = C = D</td><td data-label="Обоснование">A 0,963; E 0,925; B, C, D по 0,856 — у них ARPU/CAC = 0,5</td></tr><tr><td data-label="Критерий">Масштаб активной базы</td><td data-label="Рейтинг">A > B > C > D > E</td><td class="tabular-nums" data-label="Обоснование">40% / 25% / 15% / 12% / 8%</td></tr><tr><td data-label="Критерий">Фактическая прибыльность</td><td data-label="Рейтинг">не определяется</td><td data-label="Обоснование">Нет расходов, потерь, странового удержания и периода ARPU</td></tr></tbody></table></div>
+            <div class="w4-table-wrap" tabindex="0" role="region" aria-label="Активные пользователи и роль стран"><table class="editorial-table "><thead><tr><th scope="col">Страна</th><th scope="col">Активные (1,2 млн × доля)</th><th scope="col">LTV / LTV−CAC</th><th scope="col">Роль в стратегии (гипотеза)</th></tr></thead><tbody><tr><td data-label="Страна">A</td><td class="tabular-nums" data-label="Активные (1,2 млн × доля)">480 000</td><td class="tabular-nums" data-label="LTV / LTV−CAC">$7,71 / −$0,29</td><td data-label="Роль в стратегии (гипотеза)">Главная площадка для улучшения базового сценария</td></tr><tr><td data-label="Страна">B</td><td class="tabular-nums" data-label="Активные (1,2 млн × доля)">300 000</td><td class="tabular-nums" data-label="LTV / LTV−CAC">$10,27 / −$1,73</td><td data-label="Роль в стратегии (гипотеза)">Проверить страновое удержание и каналы до изменения бюджета</td></tr><tr><td data-label="Страна">C</td><td class="tabular-nums" data-label="Активные (1,2 млн × доля)">180 000</td><td class="tabular-nums" data-label="LTV / LTV−CAC">$12,84 / −$2,16</td><td data-label="Роль в стратегии (гипотеза)">Высокий ARPU сам по себе не улучшает LTV/CAC</td></tr><tr><td data-label="Страна">D</td><td class="tabular-nums" data-label="Активные (1,2 млн × доля)">144 000</td><td class="tabular-nums" data-label="LTV / LTV−CAC">$15,41 / −$2,59</td><td data-label="Роль в стратегии (гипотеза)">Проверить стоимость обслуживания и маржу</td></tr><tr><td data-label="Страна">E</td><td class="tabular-nums" data-label="Активные (1,2 млн × доля)">96 000</td><td class="tabular-nums" data-label="LTV / LTV−CAC">$23,12 / −$1,88</td><td data-label="Роль в стратегии (гипотеза)">Адресные инвестиционные и пакетные предложения</td></tr></tbody><tfoot><tr><td>Итого</td><td>1 200 000</td><td></td><td>Роли — гипотезы для проверки</td></tr></tfoot></table></div>
+            <p class="w4-text">Рейтинг LTV/CAC хрупок: он получен при одинаковом Churn. Чтобы E обогнала A при удержании A = 41,6%, достаточно:</p>
+            <div class="w4-formula"><math display="block"><mfrac><mrow><mn>13,5</mn></mrow><mrow><mn>25</mn><mo>(</mo><mn>1</mn><mo>−</mo><msub><mrow><mi>R</mi></mrow><mrow><mi>E</mi></mrow></msub><mo>)</mo></mrow></mfrac><mo>&gt;</mo><mfrac><mrow><mn>4,5</mn></mrow><mrow><mn>8</mn><mo>×</mo><mn>0,584</mn></mrow></mfrac><mo>⇒</mo><msub><mrow><mi>R</mi></mrow><mrow><mi>E</mi></mrow></msub><mo>&gt;</mo><mn>43,94%</mn></math><div class="w4-formula-note">Всего +2,34 п.п. к удержанию A — поэтому по общей таблице нельзя окончательно перераспределять бюджет между странами.</div></div>
+            <div class="w4-table-wrap" tabindex="0" role="region" aria-label="Рейтинг функциональных сегментов"><table class="editorial-table "><thead><tr><th scope="col">Место</th><th scope="col">Сегмент</th><th scope="col">R6</th><th scope="col">Churn</th><th scope="col">Δ к «только учет»</th><th scope="col">R6 ×</th><th scope="col">Условный LTV ×</th></tr></thead><tbody><tr class="w4-row-hl"><td data-label="Место">1</td><td data-label="Сегмент">Все три функции</td><td class="tabular-nums" data-label="R6"><strong>72%</strong></td><td class="tabular-nums" data-label="Churn">28%</td><td class="tabular-nums" data-label="Δ к «только учет»">+47 п.п.</td><td class="tabular-nums" data-label="R6 ×">2,88</td><td class="tabular-nums" data-label="Условный LTV ×">2,68</td></tr><tr class="w4-row-hl"><td data-label="Место">2</td><td data-label="Сегмент">Учет + инвестиции</td><td class="tabular-nums" data-label="R6"><strong>58%</strong></td><td class="tabular-nums" data-label="Churn">42%</td><td class="tabular-nums" data-label="Δ к «только учет»">+33 п.п.</td><td class="tabular-nums" data-label="R6 ×">2,32</td><td class="tabular-nums" data-label="Условный LTV ×">1,79</td></tr><tr><td data-label="Место">3</td><td data-label="Сегмент">Учет + кредиты</td><td class="tabular-nums" data-label="R6">32%</td><td class="tabular-nums" data-label="Churn">68%</td><td class="tabular-nums" data-label="Δ к «только учет»">+7 п.п.</td><td class="tabular-nums" data-label="R6 ×">1,28</td><td class="tabular-nums" data-label="Условный LTV ×">1,10</td></tr><tr><td data-label="Место">4</td><td data-label="Сегмент">Только учет</td><td class="tabular-nums" data-label="R6">25%</td><td class="tabular-nums" data-label="Churn">75%</td><td data-label="Δ к «только учет»">база</td><td class="tabular-nums" data-label="R6 ×">1,00</td><td class="tabular-nums" data-label="Условный LTV ×">1,00</td></tr></tbody></table></div>
+            <p class="w4-text-muted">Условный LTV × = 0,75 / Churn сегмента при одинаковом ARPU — фактические ARPU и затраты сегментов неизвестны. Самая крупная возможность — базовый учет (60% базы при R6 25%); для монетизации — пользователи с инвестиционным сценарием и всеми функциями. Гипотеза «E × Ultra — самый прибыльный сегмент» не доказана: нужен совместный срез страна × когорта × функция с выручкой, затратами и CAC.</p>
+          </div>
+
           <!-- 4. FUNCTIONAL SEGMENTS -->
           <div class="w4-block" data-reveal>
-            <h3 class="w4-block-title">Использование функций и удержание: наблюдаемая связь по сегментам базы</h3>
+            <h3 class="w4-block-title">Задача 4 · Использование функций и удержание: наблюдаемая связь</h3>
             <p class="w4-lead-thesis">
               Наблюдаемое удержание драматически различается между сегментами: 25% у базового учета против 72% у всех трех функций. При этом сегменты с двумя функциями удерживаются принципиально по-разному: «учет + инвестиции» показывает 58% (+33 п.п. к учету), а «учет + кредиты» — лишь 32% (+7 п.п.).
             </p>
@@ -3443,9 +3559,28 @@
             </div>
           </div>
 
+
+          <div class="w4-block w4-full" data-reveal>
+            <h3 class="w4-block-title">Задача 4 · Влияние нескольких функций на удержание</h3>
+            <p class="w4-text">Важно не количество функций, а их состав: две группы с двумя функциями различаются на <strong>26 п.п.</strong> (58% против 32%).</p>
+            <div class="w4-table-wrap" tabindex="0" role="region" aria-label="Сравнения функциональных групп"><table class="editorial-table "><thead><tr><th scope="col">Сравнение</th><th scope="col">Разница R6</th><th scope="col">Вывод</th></tr></thead><tbody><tr><td data-label="Сравнение">Учет + инвестиции vs только учет</td><td class="tabular-nums" data-label="Разница R6">+33 п.п.</td><td data-label="Вывод">Инвестиционный сценарий связан с существенно более высоким удержанием</td></tr><tr><td data-label="Сравнение">Учет + кредиты vs только учет</td><td class="tabular-nums" data-label="Разница R6">+7 п.п.</td><td data-label="Вывод">Связь заметно слабее</td></tr><tr><td data-label="Сравнение">Все функции vs учет + инвестиции</td><td class="tabular-nums" data-label="Разница R6">+14 п.п.</td><td data-label="Вывод">Три функции удерживают лучше и в этом сравнении</td></tr><tr><td data-label="Сравнение">Все функции vs учет + кредиты</td><td class="tabular-nums" data-label="Разница R6">+40 п.п.</td><td data-label="Вывод">Наличие инвестиций снова отделяет удерживаемую группу</td></tr></tbody></table></div>
+            <div class="w4-formula-grid">
+              <div class="w4-formula"><math display="block"><msub><mrow><mi>R</mi></mrow><mrow><mtext>multi</mtext></mrow></msub><mo>=</mo><mfrac><mrow><mn>0,15</mn><mo>×</mo><mn>0,58</mn><mo>+</mo><mn>0,10</mn><mo>×</mo><mn>0,32</mn><mo>+</mo><mn>0,15</mn><mo>×</mo><mn>0,72</mn></mrow><mrow><mn>0,40</mn></mrow></mfrac><mo>=</mo><mn>56,75%</mn></math><div class="w4-formula-note">Среднее удержание пользователей нескольких функций (40% базы): +31,75 п.п. к базовому учету, в 2,27 раза выше.</div></div>
+              <div class="w4-formula"><math display="block"><msub><mrow><mi>R</mi></mrow><mrow><mtext>mix</mtext></mrow></msub><mo>=</mo><mn>0,60</mn><mo>×</mo><mn>0,25</mn><mo>+</mo><mn>0,15</mn><mo>×</mo><mn>0,58</mn><mo>+</mo><mn>0,10</mn><mo>×</mo><mn>0,32</mn><mo>+</mo><mn>0,15</mn><mo>×</mo><mn>0,72</mn><mo>=</mo><mn>37,7%</mn></math><div class="w4-formula-note">Не равно когортным 41,6% / 40,775%: веса известны для активной базы, а для агрегации нужны веса на старте. Используется только как база условной модели.</div></div>
+            </div>
+            <div class="w4-table-wrap" tabindex="0" role="region" aria-label="Альтернативные объяснения связи"><table class="editorial-table "><thead><tr><th scope="col">Объяснение</th><th scope="col">Почему меняет вывод</th><th scope="col">Как проверить</th></tr></thead><tbody><tr><td data-label="Объяснение">Самоотбор: мотивированные сами берут больше функций</td><td data-label="Почему меняет вывод">Высокий Retention может предшествовать кросс-продаже</td><td data-label="Как проверить">Рандомизированное предложение второй функции</td></tr><tr><td data-label="Объяснение">Долго живущие успевают подключить больше</td><td data-label="Почему меняет вывод">Классификация по будущему поведению — временное смещение</td><td data-label="Как проверить">Фиксировать сегмент до начала отсчета, учитывать дату подключения</td></tr><tr><td data-label="Объяснение">Группы различаются страной, доходом, каналом</td><td data-label="Почему меняет вывод">Разница может объясняться составом аудитории</td><td data-label="Как проверить">Сравнение внутри одинаковых стран, когорт и каналов</td></tr><tr><td data-label="Объяснение">Кредит требует обслуживания</td><td data-label="Почему меняет вывод">Платежи — обязательство, а не желание пользоваться</td><td data-label="Как проверить">Раздельно метрики обязательной и добровольной активности</td></tr></tbody></table></div>
+            <p class="w4-text-muted">Рабочая гипотеза: полезный инвестиционный сценарий способен улучшить удержание части аудитории. Проверять нужно эффект предложения, а не заранее обещать рост на 33 п.п.</p>
+          </div>
+
+          <div class="w4-block w4-full" data-reveal>
+            <h3 class="w4-block-title">Подписки и Ultra: когда пакет уместен</h3>
+            <div class="w4-table-wrap" tabindex="0" role="region" aria-label="Сравнение пакета Ultra с отдельными подписками"><table class="editorial-table "><thead><tr><th scope="col">Набор</th><th scope="col">Сумма отдельных цен</th><th scope="col">Ultra</th><th scope="col">Разница</th></tr></thead><tbody><tr><td data-label="Набор">Учет + инвестиции + кредиты</td><td class="tabular-nums" data-label="Сумма отдельных цен">$3 700</td><td class="tabular-nums" data-label="Ultra">$3 000</td><td data-label="Разница">Ultra дешевле на $700 (−18,92%)</td></tr><tr><td data-label="Набор">Учет + инвестиции</td><td class="tabular-nums" data-label="Сумма отдельных цен">$2 700</td><td class="tabular-nums" data-label="Ultra">$3 000</td><td data-label="Разница">Доплата $300 (+11,11%)</td></tr><tr><td data-label="Набор">Учет + кредиты</td><td class="tabular-nums" data-label="Сумма отдельных цен">$2 500</td><td class="tabular-nums" data-label="Ultra">$3 000</td><td data-label="Разница">Доплата $500 (+20%)</td></tr><tr><td data-label="Набор">Только учет</td><td class="tabular-nums" data-label="Сумма отдельных цен">$1 500</td><td class="tabular-nums" data-label="Ultra">$3 000</td><td data-label="Разница">Доплата $1 500 (+100%)</td></tr></tbody></table></div>
+            <p class="w4-text-muted">При условии, что цены относятся к одному периоду и складываются. Пакет уместен для тех, кому уже нужны несколько направлений; пользователю только учета он удваивает расходы. Цены в тысячах долларов несопоставимы с ARPU в единицах — повод уточнить период, валюту и долю платящих, а не основание «исправлять» $1 500 на $15.</p>
+          </div>
+
           <!-- 5. STRATEGY FOCUSES -->
           <div class="w4-block" data-reveal>
-            <h3 class="w4-block-title">Три стратегических фокуса продукта</h3>
+            <h3 class="w4-block-title">Задача 5 · Три стратегических фокуса продукта</h3>
             <p class="w4-caption">Цель — максимизировать число пользователей с подтвержденной пользой и дополнительную маржу, а не механически навязывать дополнительные платные модули.</p>
 
             <div class="w4-strategy-grid">
@@ -3511,6 +3646,55 @@
             </div>
           </div>
 
+
+          <div class="w4-block w4-full" data-reveal>
+            <h3 class="w4-block-title">Задача 5 · Логика кросс-продажи и размер возможностей</h3>
+            <p class="w4-text">Следующая функция предлагается по подтвержденной потребности, а не всем подряд. Ultra — только после подтверждения нескольких направлений; заем или частота сделок не используются как искусственный способ удержать.</p>
+            
+            <div class="w4-flow" aria-label="Логика предложения следующей функции">
+              <div class="w4-flow-node is-key">Повторная польза от учета финансов</div>
+              <div class="w4-flow-arrow" aria-hidden="true">↓</div>
+              <div class="w4-flow-node">Какая финансовая задача пользователя подтверждена?</div>
+              <div class="w4-flow-branches">
+                <div class="w4-flow-branch"><div class="w4-flow-tag">Накопление + подходящий профиль</div><div class="w4-flow-node is-key">Предложить инвестиционный сценарий</div></div>
+                <div class="w4-flow-branch"><div class="w4-flow-tag">Нужно финансирование</div><div class="w4-flow-node">Проверить уместность кредитного продукта</div></div>
+                <div class="w4-flow-branch"><div class="w4-flow-tag">Только учет</div><div class="w4-flow-node">Развивать базовый сценарий</div></div>
+              </div>
+              <div class="w4-flow-arrow" aria-hidden="true">↓</div>
+              <div class="w4-flow-node">Измерить удержание и дополнительную маржу (A/B, ITT)</div>
+              <div class="w4-flow-end">
+                <div class="w4-flow-node is-key">Польза подтверждена → постепенное расширение</div>
+                <div class="w4-flow-node">Нет → пересмотр предложения</div>
+              </div>
+            </div>
+            <div class="chart-card">
+              <div class="chart-head">
+                <div class="chart-title">Дополнительные удержанные на условные 100 000 пользователей</div>
+                <div class="chart-subtitle">База условной модели: 100 000 × 37,7% = 37 700 удержанных. Сценарии, а не обещание эффекта.</div>
+              </div>
+              <svg class="chart-svg" viewBox="0 0 700 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Дополнительные удержанные на условные 100 000: улучшение учета +3000, перевод 10 п.п. базы +3300, перевод 10% сегмента +1980"><text x="0" y="26" fill="var(--ink)" font-size="12" font-weight="600">Повысить R6 учета 25% → 30%</text><rect x="0" y="34" width="300.0" height="16" rx="4" fill="var(--forest)" opacity="0.95"/><text x="308.0" y="47" fill="var(--ink)" font-size="12" font-weight="700">+3 000 · 60% × 5 п.п.</text><text x="0" y="78" fill="var(--ink)" font-size="12" font-weight="600">Перевести 10 п.п. базы в учет + инвестиции</text><rect x="0" y="86" width="330.0" height="16" rx="4" fill="var(--forest)" opacity="0.75"/><text x="338.0" y="99" fill="var(--ink)" font-size="12" font-weight="700">+3 300 · 10% × 33 п.п.</text><text x="0" y="130" fill="var(--ink)" font-size="12" font-weight="600">Перевести 10% сегмента учета в инвестиции</text><rect x="0" y="138" width="198.0" height="16" rx="4" fill="var(--forest)" opacity="0.55"/><text x="206.0" y="151" fill="var(--ink)" font-size="12" font-weight="700">+1 980 · 60% × 10% × 33 п.п.</text></svg>
+            </div>
+            <p class="w4-text-muted">«10 п.п. всей базы» (10 000 человек, состав 60/15/10/15 → 50/25/10/15, показатель 37,7% → 41,0%) и «10% базового сегмента» (6 000 человек) дают разные результаты. Расчеты не доказывают, что переведенные получат удержание нынешних инвестиционных пользователей — нужен причинный эффект эксперимента.</p>
+            <div class="w4-formula-grid">
+              <div class="w4-formula"><math display="block"><mi>Δ</mi><msub><mrow><mi>CM</mi></mrow><mrow><mn>6</mn><mo>,</mo><mtext>user</mtext></mrow></msub><mo>=</mo><msub><mrow><mover><mi>CM</mi><mo>‾</mo></mover></mrow><mrow><mn>6</mn><mo>,</mo><mtext>treatment</mtext></mrow></msub><mo>−</mo><msub><mrow><mover><mi>CM</mi><mo>‾</mo></mover></mrow><mrow><mn>6</mn><mo>,</mo><mtext>control</mtext></mrow></msub></math><div class="w4-formula-note">CM — накопленная маржа за одинаковые 6 месяцев: выручка минус переменные затраты и ожидаемые кредитные потери.</div></div>
+              <div class="w4-formula"><math display="block"><mi>Δ</mi><msub><mrow><mi>Π</mi></mrow><mrow><mn>6</mn></mrow></msub><mo>=</mo><msub><mrow><mi>N</mi></mrow><mrow><mtext>eligible</mtext></mrow></msub><mo>×</mo><mi>Δ</mi><msub><mrow><mi>CM</mi></mrow><mrow><mn>6</mn><mo>,</mo><mtext>user</mtext></mrow></msub><mo>−</mo><msub><mrow><mi>Cost</mi></mrow><mrow><mtext>rollout</mtext></mrow></msub></math><div class="w4-formula-note">Денежный эффект расширения. Значений в условии нет — произвольные числа не подставляются.</div></div>
+            </div>
+          </div>
+
+          <div class="w4-block w4-full" data-reveal>
+            <h3 class="w4-block-title">Как доказать, что стратегия работает: карточка эксперимента</h3>
+            <div class="w4-table-wrap" tabindex="0" role="region" aria-label="Определение полезного удержания"><table class="editorial-table "><thead><tr><th scope="col">Направление</th><th scope="col">Полезное событие</th><th scope="col">Не подходит как единственное подтверждение</th></tr></thead><tbody><tr><td data-label="Направление">Учет</td><td data-label="Полезное событие">Посмотрел свой итог расходов и проверил или скорректировал бюджет</td><td data-label="Не подходит как единственное подтверждение">Фоновое открытие приложения или доставка push</td></tr><tr><td data-label="Направление">Инвестиции</td><td data-label="Полезное событие">Проверил портфель относительно цели или выполнил запланированное действие</td><td data-label="Не подходит как единственное подтверждение">Автообновление котировок; требование торговать</td></tr><tr><td data-label="Направление">Кредиты</td><td data-label="Полезное событие">Решил задачу управления графиком или платежом</td><td data-label="Не подходит как единственное подтверждение">Наличие непогашенного долга как признак лояльности</td></tr></tbody></table></div>
+            <div class="w4-table-wrap" tabindex="0" role="region" aria-label="Карточка первого эксперимента"><table class="editorial-table "><thead><tr><th scope="col">Поле</th><th scope="col">Решение</th></tr></thead><tbody><tr><td data-label="Поле">Гипотеза</td><td data-label="Решение">Адресное предложение инвестиционного сценария улучшит удержание подходящих пользователей учета и даст положительную дополнительную маржу</td></tr><tr><td data-label="Поле">Аудитория</td><td data-label="Решение">Пользователи только учета, отобранные до теста; предложение соответствует потребности и требованиям продукта</td></tr><tr><td data-label="Поле">Контроль / тест</td><td data-label="Решение">Действующий опыт / одно адресное предложение, связанное с финансовой задачей</td></tr><tr><td data-label="Поле">Рандомизация</td><td data-label="Решение">Пользователь с постоянным ID, 50/50 внутри страны и сопоставимого стажа</td></tr><tr><td data-label="Поле">Основная метрика</td><td data-label="Решение">R<sub>6,exp</sub> — доля назначенных с полезной активностью на 6-м месяце после старта t<sub>0</sub></td></tr><tr><td data-label="Поле">Ранние сигналы</td><td data-label="Решение">Первая полезная активация второй функции, R1 и R3 — не заменяют M6</td></tr><tr><td data-label="Поле">Ограничители</td><td data-label="Решение">Жалобы, отписки от сообщений, ухудшение базового сценария, риск-показатели</td></tr><tr><td data-label="Поле">Анализ</td><td data-label="Решение">Intention-to-treat: сравниваются все назначенные, независимо от принятия предложения</td></tr><tr><td data-label="Поле">Решение</td><td data-label="Решение">Расширять только при достаточном эффекте, приемлемых ограничителях и подтвержденной экономике</td></tr></tbody></table></div>
+            <div class="w4-formula"><math display="block"><mi>n</mi><mo>≈</mo><mfrac><mrow><msup><mrow><mo>[</mo><mn>1,96</mn><msqrt><mn>2</mn><mover><mi>p</mi><mo>‾</mo></mover><mo>(</mo><mn>1</mn><mo>−</mo><mover><mi>p</mi><mo>‾</mo></mover><mo>)</mo></msqrt><mo>+</mo><mn>0,8416</mn><msqrt><msub><mi>p</mi><mn>0</mn></msub><mo>(</mo><mn>1</mn><mo>−</mo><msub><mi>p</mi><mn>0</mn></msub><mo>)</mo><mo>+</mo><msub><mi>p</mi><mn>1</mn></msub><mo>(</mo><mn>1</mn><mo>−</mo><msub><mi>p</mi><mn>1</mn></msub><mo>)</mo></msqrt><mo>]</mo></mrow><mn>2</mn></msup></mrow><mrow><msup><mrow><mo>(</mo><msub><mi>p</mi><mn>1</mn></msub><mo>−</mo><msub><mi>p</mi><mn>0</mn></msub><mo>)</mo></mrow><mn>2</mn></msup></mrow></mfrac><mo>≈</mo><mn>1 251</mn></math><div class="w4-formula-note">p<sub>0</sub> = 25% (контроль), p<sub>1</sub> = 30% (минимальный интересный эффект), α = 5% двусторонний, мощность 80%. План: <strong>1 300 на группу, 2 600 всего</strong>; с резервом 10% на технически ненадежные записи — 1 400. Мощность общая, не по каждой из пяти стран.</div></div>
+            <ol class="w4-steps">
+              <li><b>Подготовка измерения</b><span>Согласовать период ARPU, окно активности, тарификацию и страновые срезы; проверить события.</span></li>
+              <li><b>Два ограниченных теста</b><span>Повторная ценность учета и адресное инвестиционное предложение на разделенных аудиториях.</span></li>
+              <li><b>Ранние чтения M1 / M3</b><span>Достижение пользы и ограничители; остановка только из-за вреда или дефекта измерения.</span></li>
+              <li><b>Основной итог M6</b><span>Полное окно, удержание вместе с дополнительной маржой, заранее выбранные критерии.</span></li>
+              <li><b>Долгий горизонт M12</b><span>Устойчивость эффекта и отложенные потери перед масштабированием.</span></li>
+            </ol>
+          </div>
+
           <!-- 6. LIMITATIONS -->
           <div class="w4-block" data-reveal>
             <div class="w4-warning-plaque">
@@ -3527,6 +3711,13 @@
             </div>
           </div>
 
+
+          <div class="w4-block w4-full" data-reveal>
+            <div class="w4-defense">
+              <h3>Итог решения</h3>
+              FinanceApp растет по привлечению, но теряет качество удержания: R6 пяти когорт — 48%, 45%, 42%, 38% и 35%. Средний Churn — 58,4%; LTV стран A–E — $7,71, $10,27, $12,84, $15,41 и $23,12. E лидирует по LTV на пользователя, A — по LTV/CAC, а B, C и D при общем Churn одинаковы по эффективности привлечения. Лучше удерживаются пользователи всех функций (72%) и учета с инвестициями (58%), но это не доказывает эффект кросс-продажи. Три фокуса: повысить повторную ценность базового учета для 60% базы, проверить адресный инвестиционный переход и распределять бюджет по страновой дополнительной марже. Окупаемость требует согласовать период ARPU и затраты; результат стратегии подтверждается экспериментом с полным шестимесячным окном.
+            </div>
+          </div>
         </div>
       </div>
     </section>
