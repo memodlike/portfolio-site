@@ -2766,16 +2766,12 @@
         .w5 .w5-h { flex-basis: 100%; font-family: var(--font-display); font-size: 20px; line-height: 27px; font-weight: 600; color: var(--ink); margin: 0; }
         .w5 .w5-p { font-size: 15px; line-height: 24px; color: var(--ink); max-width: 72ch; margin: 0; }
         .w5 .w5-muted { font-size: 13px; line-height: 20px; color: var(--muted); max-width: 78ch; margin: 0; }
-        .w5 .w5-thesis { font-family: var(--font-display); font-size: clamp(19px, 2.9vw, 28px); line-height: 1.28; font-weight: 600; color: var(--ink); background: var(--dew); border-radius: 16px; padding: 24px 26px; margin: 0; }
-        .w5 .w5-thesis em { font-style: normal; color: var(--forest); }
-        .w5 .w5-thesis small { display: block; margin-top: 12px; font-family: var(--font-family); font-size: 15px; line-height: 23px; font-weight: 400; color: var(--ink); max-width: 64ch; }
         .w5 .w5-route { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; counter-reset: w5r; }
         .w5 .w5-route li { counter-increment: w5r; font-size: 12.5px; line-height: 18px; color: var(--ink); background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px 4px 6px; display: flex; align-items: center; gap: 7px; }
         .w5 .w5-route li::before { content: counter(w5r); font-family: var(--font-mono); font-size: 11px; font-weight: 700; width: 20px; height: 20px; border-radius: 50%; background: var(--forest); color: var(--paper); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
         .w5 .w5-route li.is-extra::before { background: var(--accent-warm); color: #2B1A00; }
         .w5 .w5-route-note { font-size: 12px; line-height: 18px; color: var(--muted); margin: 0; }
         .w5 .w5-route-note i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin: 0 5px 0 0; vertical-align: 0; }
-
         .w5 .w5-jobs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
         .w5 .w5-job { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px 14px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
         .w5 .w5-job.is-top { border-color: var(--forest); box-shadow: 0 2px 10px rgba(0, 106, 78, 0.08); }
@@ -2794,14 +2790,9 @@
         .w5 .w5-dl dt.is-sub { margin-top: 2px; }
         .w5 .w5-dl dd.is-sub { font-size: 13px; line-height: 20px; color: var(--muted); margin-top: 2px; }
         .w5 .w5-src { color: var(--forest); text-decoration: underline; text-underline-offset: 2px; }
-        .w5 .w5-f.is-size { grid-column: 1 / -1; }
-        .w5 .w5-f.is-size p { font-size: 13px; line-height: 20px; color: var(--muted); }
-        .w5 .w5-opp-sub { display: block; font-family: var(--font-mono); font-size: 11px; line-height: 16px; font-weight: 400; color: var(--muted); margin-top: 2px; }
         .w5 .w5-neg { color: var(--accent-warm-text); }
         .w5 .w5-meter { height: 4px; border-radius: 2px; background: var(--mist); overflow: hidden; margin-top: auto; }
         .w5 .w5-meter i { display: block; height: 100%; background: var(--forest); border-radius: 2px; }
-        .w5 .w5-freq { font-size: 11.5px; line-height: 16px; color: var(--muted); }
-
         .w5 .w5-graph { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
         .w5 .w5-big { background: var(--forest); color: var(--paper); border-radius: 14px; padding: 16px 20px; text-align: center; }
         .w5 .w5-big span { display: block; font-family: var(--font-mono); font-size: 10.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.8; margin-bottom: 4px; }
@@ -2813,12 +2804,6 @@
         .w5 .w5-chain li small { display: block; font-size: 11px; line-height: 15px; font-weight: 400; color: var(--muted); margin-top: 3px; }
         .w5 .w5-chain li.is-hot { border-color: var(--accent-warm); background: rgba(224, 164, 88, 0.12); }
         .w5 .w5-chain li.is-hot span, .w5 .w5-chain li.is-hot small { color: var(--accent-warm-text); }
-        .w5 .w5-micro { margin: 14px 0 0; border: 1px dashed var(--accent-warm); border-radius: 12px; padding: 14px 16px; }
-        .w5 .w5-micro-title { font-size: 12px; line-height: 17px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent-warm-text); margin: 0 0 10px; }
-        .w5 .w5-micro ol { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px 14px; counter-reset: w5m; }
-        .w5 .w5-micro li { counter-increment: w5m; font-size: 13px; line-height: 19px; color: var(--ink); display: flex; gap: 8px; }
-        .w5 .w5-micro li::before { content: counter(w5m); font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--accent-warm-text); line-height: 19px; }
-
         .w5 .w5-opp { display: flex; flex-direction: column; gap: 2px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 8px 18px; }
         .w5 .w5-opp-row { display: grid; grid-template-columns: minmax(0, 250px) minmax(0, 1fr) 44px; align-items: center; gap: 14px; padding: 9px 0; border-bottom: 1px solid var(--line); }
         .w5 .w5-opp-row:last-child { border-bottom: 0; }
@@ -2832,122 +2817,94 @@
         .w5 .w5-opp-row.is-hot .w5-score { color: var(--accent-warm-text); }
         .w5 .w5-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12.5px; line-height: 18px; color: var(--muted); margin: 0; }
         .w5 .w5-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
-
-        .w5 .w5-cards3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
         .w5 .w5-card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
-        .w5 .w5-card-n { font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: var(--forest); }
         .w5 .w5-card-t { font-family: var(--font-display); font-size: 15px; line-height: 21px; font-weight: 600; color: var(--ink); margin: 0; }
         .w5 .w5-card-p { font-size: 13.5px; line-height: 20px; color: var(--ink); margin: 0; }
-        .w5 .w5-card-m { margin-top: auto; padding-top: 10px; border-top: 1px solid var(--line); font-size: 12.5px; line-height: 18px; color: var(--muted); }
-        .w5 .w5-card-m b { display: block; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--forest); }
-
         .w5 .w5-details { background: var(--mist); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; }
         .w5 .w5-details summary { cursor: pointer; font-size: 14px; line-height: 21px; font-weight: 600; color: var(--forest); }
         .w5 .w5-details[open] summary { margin-bottom: 12px; }
         .w5 .w5-qa { display: grid; grid-template-columns: minmax(0, 190px) minmax(0, 1fr); gap: 6px 16px; margin: 0; }
         .w5 .w5-qa dt { font-size: 12.5px; line-height: 20px; font-weight: 600; color: var(--muted); }
         .w5 .w5-qa dd { font-size: 13.5px; line-height: 20px; color: var(--ink); margin: 0; }
-        .w5 .w5-list { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 22px; color: var(--ink); max-width: 76ch; }
         .w5 .w5-next { border-left: 3px solid var(--forest); background: var(--mist); border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 14px; line-height: 22px; color: var(--ink); margin: 0; }
-
         .w5 .w5-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
         .w5 .w5-btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 15px; border-radius: 8px; background: var(--forest); color: #FFFFFF; font-size: 13px; font-weight: 600; text-decoration: none; }
         html[data-theme="dark"] .w5 .w5-btn { color: #000000; }
-        @media (prefers-color-scheme: dark) { html:not([data-theme="light"]) .w5 .w5-btn { color: #000000; } }
-
-        .w5 .w5-base { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; background: var(--mist); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
-        .w5 .w5-base div { padding: 14px 18px; border-right: 1px solid var(--line); min-width: 0; }
-        .w5 .w5-base div:last-child { border-right: 0; }
-        .w5 .w5-base span { display: block; font-family: var(--font-mono); font-size: 10.5px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
-        .w5 .w5-base b { font-size: 14px; line-height: 21px; font-weight: 600; color: var(--ink); }
-
-        .w5 .w5-segs { display: flex; flex-direction: column; gap: 16px; }
+        @media (prefers-color-scheme: dark) {
+        html:not([data-theme="light"]) .w5 .w5-btn { color: #000000; } }
         .w5 .w5-seg { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
-        .w5 .w5-seg-top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
-        .w5 .w5-type { font-size: 11.5px; line-height: 16px; font-weight: 700; color: var(--forest); background: var(--dew); border-radius: 999px; padding: 3px 10px; }
-        .w5 .w5-seg-title { flex-basis: 100%; font-family: var(--font-display); font-size: 18px; line-height: 25px; font-weight: 600; color: var(--ink); margin: 2px 0 0; }
-        .w5 .w5-seg-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px 22px; }
-        .w5 .w5-f span { display: block; font-family: var(--font-mono); font-size: 10.5px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
-        .w5 .w5-f p { font-size: 14px; line-height: 21px; color: var(--ink); margin: 0; }
-        .w5 .w5-f.is-job { grid-column: 1 / -1; background: var(--mist); border-radius: 10px; padding: 12px 14px; }
-        .w5 .w5-f.is-job b { font-weight: 700; color: var(--forest); }
-        .w5 .w5-vs { display: grid; grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1.6fr); align-items: stretch; gap: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
-        .w5 .w5-vs > div { padding: 11px 14px; min-width: 0; }
-        .w5 .w5-vs .is-now { background: var(--mist); }
-        .w5 .w5-vs .is-new { background: var(--dew); }
-        .w5 .w5-vs .w5-arrow { padding: 0; display: flex; align-items: center; justify-content: center; font-size: 15px; color: var(--muted); background: var(--mist); }
-        .w5 .w5-vs span { display: block; font-family: var(--font-mono); font-size: 10.5px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
-        .w5 .w5-vs p { font-size: 13.5px; line-height: 20px; color: var(--ink); margin: 0; }
-        .w5 .w5-vs .is-new p { font-weight: 600; }
-        .w5 .w5-check { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; }
-        .w5 .w5-check b { font-family: var(--font-mono); font-size: 22px; line-height: 28px; font-weight: 700; color: var(--ink); }
-        .w5 .w5-mult { font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: var(--accent-warm-text); background: rgba(224, 164, 88, 0.16); border-radius: 5px; padding: 2px 7px; }
-        .w5 .w5-check small { font-size: 12.5px; line-height: 18px; color: var(--muted); }
-        .w5 .w5-test { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px 18px; }
-
         .w5 .w5-table-wrap { border: 1px solid var(--line); border-radius: 14px; background: var(--surface); overflow: hidden; }
         .w5 .w5-table { width: 100%; border-collapse: collapse; }
         .w5 .w5-table th, .w5 .w5-table td { padding: 10px 14px; font-size: 13.5px; line-height: 20px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); color: var(--ink); }
         .w5 .w5-table th { font-family: var(--font-mono); font-size: 10.5px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); background: var(--mist); }
         .w5 .w5-table tr:last-child td { border-bottom: 0; }
         .w5 .w5-table td.is-num { font-family: var(--font-mono); font-weight: 700; white-space: nowrap; }
-        .w5 .w5-table tr.is-base td { background: var(--mist); color: var(--muted); }
-
-        .w5 .w5-ladder { display: flex; flex-direction: column; gap: 10px; }
-        .w5 .w5-rung { display: grid; grid-template-columns: minmax(0, 210px) minmax(0, 1fr); gap: 16px; align-items: center; }
-        .w5 .w5-rung-l span { display: block; font-family: var(--font-mono); font-size: 10.5px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
-        .w5 .w5-rung-l b { font-size: 14px; line-height: 20px; font-weight: 600; color: var(--ink); }
-        .w5 .w5-rung-bar { background: var(--forest); color: var(--paper); border-radius: 8px; padding: 9px 12px; min-width: 150px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 10px; font-size: 13px; line-height: 18px; font-weight: 700; font-family: var(--font-mono); }
-        .w5 .w5-rung-bar small { font-family: var(--font-family); font-weight: 600; font-size: 12px; opacity: 0.85; }
-
         .w5 .w5-nnl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
         .w5 .w5-nnl .w5-card:first-child { border-color: var(--forest); box-shadow: 0 2px 10px rgba(0, 106, 78, 0.08); }
         .w5 .w5-when { align-self: flex-start; font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; }
         .w5 .w5-nnl .w5-card:first-child .w5-when { background: var(--forest); border-color: var(--forest); color: var(--paper); }
 
         @media (max-width: 900px) {
-          .w5 .w5-jobs, .w5 .w5-cards3, .w5 .w5-nnl { grid-template-columns: 1fr; }
-          .w5 .w5-chain { grid-template-columns: 1fr; gap: 0; padding-left: 14px; border-left: 2px solid var(--line); }
-          .w5 .w5-chain li { margin: 5px 0; }
-          .w5 .w5-stem { margin: 0 0 0 14px; height: 14px; }
-          .w5 .w5-micro ol { grid-template-columns: 1fr; }
-          .w5 .w5-seg-grid, .w5 .w5-test { grid-template-columns: 1fr; }
+        .w5 .w5-jobs, .w5 .w5-nnl { grid-template-columns: 1fr; }
+        .w5 .w5-chain { grid-template-columns: 1fr; gap: 0; padding-left: 14px; border-left: 2px solid var(--line); }
+        .w5 .w5-chain li { margin: 5px 0; }
+        .w5 .w5-stem { margin: 0 0 0 14px; height: 14px; }
         }
         @media (max-width: 640px) {
-          .w5 .w5-seq { gap: 36px; }
-          .w5 .w5-thesis { padding: 20px 18px; border-radius: 14px; }
-          .w5 .w5-h { font-size: 18px; line-height: 25px; }
-          .w5 .w5-opp { padding: 6px 14px; }
-          .w5 .w5-opp-row { grid-template-columns: minmax(0, 1fr) 40px; gap: 6px 10px; }
-          .w5 .w5-opp-name { grid-column: 1 / -1; }
-          .w5 .w5-qa { grid-template-columns: 1fr; gap: 0; }
-          .w5 .w5-qa dd { margin-bottom: 10px; }
-          .w5 .w5-base { grid-template-columns: 1fr; }
-          .w5 .w5-base div { border-right: 0; border-bottom: 1px solid var(--line); }
-          .w5 .w5-base div:last-child { border-bottom: 0; }
-          .w5 .w5-seg { padding: 16px; }
-          .w5 .w5-vs { grid-template-columns: 1fr; }
-          .w5 .w5-vs .w5-arrow { padding: 2px 0; }
-          .w5 .w5-vs .w5-arrow::before { content: "↓"; }
-          .w5 .w5-vs .w5-arrow b { display: none; }
-          .w5 .w5-rung { grid-template-columns: 1fr; gap: 6px; }
-          .w5 .w5-table thead { display: none; }
-          .w5 .w5-table, .w5 .w5-table tbody, .w5 .w5-table tr, .w5 .w5-table td { display: block; width: 100%; }
-          .w5 .w5-table tr { padding: 12px 14px; border-bottom: 1px solid var(--line); }
-          .w5 .w5-table tr:last-child { border-bottom: 0; }
-          .w5 .w5-table td { padding: 1px 0; border: 0; background: none !important; width: auto; }
-          .w5 .w5-table td:first-child { font-weight: 700; font-size: 14.5px; }
-          .w5 .w5-table td:nth-child(2) { font-size: 12px; line-height: 17px; color: var(--muted); }
-          .w5 .w5-table td.is-num { margin-top: 4px; color: var(--forest); white-space: normal; }
-          .w5 .w5-chain li small { display: none; }
-          .w5 .w5-chain li { padding: 8px 10px; }
+        .w5 .w5-seq { gap: 36px; }
+        .w5 .w5-h { font-size: 18px; line-height: 25px; }
+        .w5 .w5-opp { padding: 6px 14px; }
+        .w5 .w5-opp-row { grid-template-columns: minmax(0, 1fr) 40px; gap: 6px 10px; }
+        .w5 .w5-opp-name { grid-column: 1 / -1; }
+        .w5 .w5-qa { grid-template-columns: 1fr; gap: 0; }
+        .w5 .w5-qa dd { margin-bottom: 10px; }
+        .w5 .w5-seg { padding: 16px; }
+        .w5 .w5-table thead { display: none; }
+        .w5 .w5-table, .w5 .w5-table tbody, .w5 .w5-table tr, .w5 .w5-table td { display: block; width: 100%; }
+        .w5 .w5-table tr { padding: 12px 14px; border-bottom: 1px solid var(--line); }
+        .w5 .w5-table tr:last-child { border-bottom: 0; }
+        .w5 .w5-table td { padding: 1px 0; border: 0; background: none !important; width: auto; }
+        .w5 .w5-table td:first-child { font-weight: 700; font-size: 14.5px; }
+        .w5 .w5-table td:nth-child(2) { font-size: 12px; line-height: 17px; color: var(--muted); }
+        .w5 .w5-table td.is-num { margin-top: 4px; color: var(--forest); white-space: normal; }
+        .w5 .w5-chain li small { display: none; }
+        .w5 .w5-chain li { padding: 8px 10px; }
         }
+        .w5 .w5-tag { display: inline-block; font-family: var(--font-mono); font-size: 10.5px; line-height: 16px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink); border: 1px solid var(--muted); border-radius: 4px; padding: 0 6px; margin-right: 6px; white-space: nowrap; }
+        .w5 .w5-keys { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 20px; color: var(--muted); }
+        .w5 .w5-branch { margin-top: 12px; border: 2px dashed var(--accent-warm); border-radius: 12px; padding: 14px 16px; }
+        .w5 .w5-branch-title { font-size: 12px; line-height: 17px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent-warm-text); margin: 0 0 10px; }
+        .w5 .w5-chain.is-4 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        .w5 .w5-chain.is-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .w5 .w5-chain li em { display: block; font-style: normal; font-size: 11px; line-height: 15px; font-weight: 700; color: var(--accent-warm-text); margin-top: 3px; }
+        .w5 .w5-opp-name small { display: block; font-family: var(--font-mono); font-size: 11px; line-height: 16px; font-weight: 400; color: var(--muted); margin-top: 2px; }
+        .w5 .w5-cmp th, .w5 .w5-cmp td { font-size: 13px; line-height: 19px; padding: 10px 12px; }
+        .w5 .w5-cmp td b { font-weight: 700; }
+        .w5 .w5-cmp td small { display: block; font-size: 12px; line-height: 17px; color: var(--muted); margin-top: 3px; }
+        .w5 .w5-cmp td.is-num { white-space: normal; font-family: var(--font-family); }
+        .w5 .w5-steps { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 22px; color: var(--ink); max-width: 76ch; }
+        @media (max-width: 900px) {
+        .w5 .w5-chain.is-4, .w5 .w5-chain.is-2 { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 640px) {
+        .w5 .w5-cmp td::before { content: attr(data-label); display: block; font-family: var(--font-mono); font-size: 10px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); margin-top: 8px; }
+        .w5 .w5-cmp td:first-child::before { display: none; }
+        .w5 .w5-cmp td:nth-child(2) { font-size: 13px; line-height: 19px; color: var(--ink); }
+        .w5 .w5-cmp td.is-num { color: var(--ink); margin-top: 0; }
+        }
+        .w5 .w5-chain li small { display: block; }
+        .w5 .w5-segment-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+        .w5 .w5-segment-list .w5-seg { min-width: 0; }
+        .w5 .w5-segment-list .w5-dl { margin-top: 14px; }
+        .w5 .w5-segment-list p { margin-top: 12px; }
+        @media (max-width: 900px) {
+        .w5 .w5-segment-list { grid-template-columns: 1fr; } }
       </style>
       <div class="scene" data-topic="jtbd" aria-hidden="true"></div>
 
       <div class="container">
         <div class="work-section-header">
-          <span class="work-section-tag" data-reveal>Неделя 5 · Jobs-to-be-Done in Action Part 1 · 🟢 Уровень 1 (Легкий)</span>
+          <span class="work-section-tag" data-reveal>Неделя 5 · Работы клиентов: часть 1 · 🟢 Уровень 1 (Легкий)</span>
           <button type="button" class="btn-copy-task" data-task-id="w5-l1" aria-label="Скопировать ссылку на задачу w5-l1">
             <svg class="copy-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
             <svg class="check-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -2955,12 +2912,12 @@
             <span class="copy-tooltip" role="status" aria-live="polite">Ссылка скопирована</span>
           </button>
         </div>
-        <h2 class="work-title text-measure" id="title-w5-l1" data-reveal>Неделя 5 · L1 · Какие работы выполняет автострахование</h2>
-        <p class="work-brief-lead" data-reveal>Десять работ клиентов цифрового автострахования: шесть B2C и четыре B2B, каждая в формате «Когда → Хочу → Чтобы → Важность». Главный вывод: полис покупают ради оформления, а остаются или уходят из-за того, что происходит после ДТП.</p>
+        <h2 class="work-title text-measure" id="title-w5-l1" data-reveal>Неделя 5 · 5.1 · Какие работы выполняет автострахование</h2>
+        <p class="work-brief-lead" data-reveal>C3 — самая важная работа по авторской оценке. Первой проверю C4: когда решение о выплате задерживается, человеку приходится решать, можно ли уже согласовать ремонт. Это можно проверить на конкретных обращениях.</p>
         <div class="result-tiles-row has-chip">
           <div class="result-tile" data-reveal>
             <div class="result-num-row">
-              <span class="result-big-num" data-count="10" data-decimals="0">10</span>
+              <span class="result-big-num">10</span>
               <span class="forecast-chip">6 B2C + 4 B2B</span>
             </div>
             <div class="tile-visual-bar" aria-hidden="true"><div class="tile-visual-fill " style="width: 100%;"></div></div>
@@ -2968,324 +2925,334 @@
           </div>
           <div class="result-tile" data-reveal>
             <div class="result-num-row">
-              <span class="result-big-num" data-count="10" data-suffix="/10" data-decimals="0">10/10</span>
-              <span class="forecast-chip">работа C3</span>
+              <span class="result-big-num">15</span>
+              <span class="forecast-chip">C4 · проверяю первой</span>
             </div>
-            <div class="tile-visual-bar" aria-hidden="true"><div class="tile-visual-fill fill-warm" style="width: 100%;"></div></div>
-            <div class="result-tile-label">Самая важная работа: не ошибиться в момент ДТП</div>
+            <div class="tile-visual-bar" aria-hidden="true"><div class="tile-visual-fill fill-warm" style="width: 75%;"></div></div>
+            <div class="result-tile-label">Индекс работы «знать, когда можно ремонтировать», из 20</div>
           </div>
           <div class="result-tile" data-reveal>
             <div class="result-num-row">
-              <span class="result-big-num" data-count="16" data-decimals="0">16</span>
-              <span class="forecast-chip">из 20 возможных</span>
+              <span class="result-big-num">16</span>
+              <span class="forecast-chip">C3 · наибольший</span>
             </div>
             <div class="tile-visual-bar" aria-hidden="true"><div class="tile-visual-fill fill-warm" style="width: 80%;"></div></div>
-            <div class="result-tile-label">Наибольший разрыв между важностью и тем, как работа закрыта</div>
+            <div class="result-tile-label">Индекс работы «не ошибиться в момент ДТП», из 20</div>
           </div>
           <div class="result-tile" data-reveal>
             <div class="result-num-row">
-              <span class="result-big-num" data-count="3" data-decimals="0">3</span>
-              <span class="forecast-chip">момента найма</span>
+              <span class="result-big-num">102 ч</span>
+              <span class="forecast-chip">сценарий</span>
             </div>
             <div class="tile-visual-bar" aria-hidden="true"><div class="tile-visual-fill fill-mint" style="width: 100%;"></div></div>
-            <div class="result-tile-label">Оформление, ДТП и ожидание выплаты</div>
+            <div class="result-tile-label">Около 101,56 часа на месячную когорту: сценарий нагрузки</div>
           </div>
         </div>
         <div class="w5-links" data-reveal>
-          <a href="https://github.com/memodlike/Mid-to-Senior-Product-Manager-AI-Powered/tree/main/Week5_easy_AJTBD_Jobs" target="_blank" rel="noopener noreferrer" class="w5-btn"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg><span>Решение на GitHub: Week5_easy_AJTBD_Jobs</span></a>
+          <a href="https://github.com/memodlike/Mid-to-Senior-Product-Manager-AI-Powered/tree/main/Week5_easy_AJTBD_Jobs" target="_blank" rel="noopener noreferrer" class="w5-btn"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg><span>Решение на GitHub · уровень 1</span></a>
         </div>
         <div class="w5-seq">
           <div class="brief-meta-strip" data-reveal>
             <div><div class="meta-strip-label">Неделя</div><div class="meta-strip-val">Неделя 5 (9–15 ноя 2026)</div></div>
             <div><div class="meta-strip-label">Уровень</div><div class="meta-strip-val">Уровень 1 (Легкий)</div></div>
             <div><div class="meta-strip-label">Продукт</div><div class="meta-strip-val">Цифровое автострахование: ОГПО и КАСКО</div></div>
-            <div><div class="meta-strip-label">Методология</div><div class="meta-strip-skills">AJTBD, Job Story, граф работ, индекс возможности (важность и удовлетворённость), шаблон интервью Core Jobs / Big Jobs</div></div>
+            <div><div class="meta-strip-label">Методология</div><div class="meta-strip-skills">AJTBD, истории работ, граф работ, индекс I + max(I − S, 0), шаблон интервью основных и больших работ</div></div>
           </div>
-          <div class="cohort-premise-box" data-reveal><strong>Как читать числа:</strong> Оценки важности, удовлетворённости и среднего чека — мои рабочие гипотезы для приоритизации, а не данные компании. Полевые интервью — следующий шаг, поэтому каждая оценка записана так, чтобы её можно было опровергнуть.</div>
+          <div class="cohort-premise-box" data-reveal><strong>Как читать пометки.</strong> Полевых интервью ещё не было, поэтому каждое утверждение помечено.
+            <ul class="w5-keys" style="margin-top: 8px"><li><span class="w5-tag">Факт</span>проверено по первоисточнику, ссылка рядом</li><li><span class="w5-tag">Гипотеза</span>предположение или авторская оценка до проверки</li><li><span class="w5-tag">Сценарный расчёт</span>результат при заданных, ещё не подтверждённых входных числах</li><li><span class="w5-tag">Смоделировано</span>репетиция, а не полевые данные</li><li><span class="w5-tag">План</span>проверка, которая ещё не проведена</li></ul>
+          </div>
           <div class="w5-block" data-reveal>
-            <ol class="w5-route" aria-label="Маршрут по решению"><li>Продукт</li><li>Работы B2C</li><li>Работы B2B</li><li class="is-extra">Граф работ</li><li class="is-extra">Где разрыв</li><li class="is-extra">Цена разрыва</li><li class="is-extra">Решения</li><li class="is-extra">Проверка</li></ol>
+            <ol class="w5-route" aria-label="Маршрут по решению"><li>Продукт</li><li>Работы B2C</li><li>Работы B2B</li><li class="is-extra">Граф работ</li><li class="is-extra">Индекс</li><li class="is-extra">Сценарий в деньгах</li><li class="is-extra">Что проверю дальше</li></ol>
             <p class="w5-route-note"><i style="background: var(--forest)"></i>основное задание &nbsp; <i style="background: var(--accent-warm)"></i>сверх задания</p>
           </div>
           <div class="w5-block">
-            <div class="w5-head" data-reveal><span class="w5-step">Шаг 1</span><span class="w5-kind">Основное задание</span><h3 class="w5-h">Продукт и главная мысль</h3></div>
-            <p class="w5-p">Цифровой сервис автострахования в Казахстане: онлайн-полис ОГПО и КАСКО, продление, заявление об убытке и трекинг статуса выплаты (Claim Status Assistant).</p>
-            <p class="w5-thesis">Полис покупают ради одной работы, а <em>продлевают или уходят из-за другой</em>.<small>Оформление занимает пять минут раз в год. Убыток случается редко, но длится неделями, и именно он решает, останется ли клиент. Поэтому работы ниже идут по жизни полиса, а не по разделам приложения.</small></p>
+            <div class="w5-head" data-reveal><span class="w5-step">Шаг 1</span><span class="w5-kind">Основное задание</span><h3 class="w5-h">Продукт и границы работы</h3></div>
+<p class="w5-p">Цифровой сервис автострахования в Казахстане: онлайн-полис ОГПО и КАСКО, продление, заявление об убытке и статус выплаты. Компания условная и обезличена.</p>
           </div>
           <div class="w5-block">
             <div class="w5-head" data-reveal><span class="w5-step">Шаг 2</span><span class="w5-kind">Основное задание</span><h3 class="w5-h">Шесть работ частного клиента (B2C)</h3></div>
-            <p class="w5-muted">Зелёной рамкой выделены работы с важностью 9 и выше. Важность — по шкале задания: 1 почти неважно, 10 критически важно. Серым под каждой работой: что её запускает и чем её закрывают сегодня — это и есть настоящий конкурент.</p>
+            <p class="w5-muted"><span class="w5-tag">Гипотеза</span>Важность — моя оценка по шкале задания: 1 почти неважно, 10 критически важно. «Хочу» записано как результат для человека; то, чем продукт может его дать, вынесено в строку «Решение». В C2–C4 указано, кто получает выплату: по ОГПО это потерпевший, а не покупатель полиса.</p>
             <div class="w5-jobs">
               <article class="w5-job">
                 <div class="w5-job-top">
-                  <div><span class="w5-id">C1</span><span class="w5-who">Частный водитель</span><h4 class="w5-job-name">Оформить полис и выехать</h4></div>
-                  <div class="w5-imp" aria-label="Важность 8 из 10"><b>8</b><span>важность</span></div>
+                  <div><span class="w5-id">C1</span><span class="w5-who">Частный водитель, страхователь по ОГПО</span><h4 class="w5-job-name">Выехать с действующим полисом</h4></div>
+                  <div class="w5-imp" aria-label="Важность 8 из 10, оценка автора"><b>8</b><span>важность 1–10</span></div>
                 </div>
                 <dl class="w5-dl">
                   <dt>Когда</dt><dd>Срок ОГПО истекает завтра или я только что купил машину, а ехать в офис некогда.</dd>
-                  <dt>Хочу</dt><dd class="is-want">Оформить полис с телефона за несколько минут.</dd>
-                  <dt>Чтобы</dt><dd>Законно выехать уже сегодня и не получить штраф.</dd>
+                  <dt>Хочу</dt><dd class="is-want">Иметь действующий полис до выезда, не тратя на это рабочий день.</dd>
+                  <dt>Чтобы</dt><dd>Ехать законно и не получить штраф.</dd>
+                  <dt class="is-sub">Решение</dt><dd class="is-sub">Оформление с телефона за несколько минут.</dd>
                   <dt class="is-sub">Триггер</dt><dd class="is-sub">SMS о скором окончании полиса или покупка машины.</dd>
                   <dt class="is-sub">Сейчас</dt><dd class="is-sub">Агент у ЦОНа или приложение банка.</dd>
                 </dl>
-                <div class="w5-freq">Как часто: раз в год</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 80%"></i></div>
               </article>
               <article class="w5-job">
                 <div class="w5-job-top">
-                  <div><span class="w5-id">C2</span><span class="w5-who">Частный водитель</span><h4 class="w5-job-name">Понять, кто реально заплатит</h4></div>
-                  <div class="w5-imp" aria-label="Важность 7 из 10"><b>7</b><span>важность</span></div>
+                  <div><span class="w5-id">C2</span><span class="w5-who">Страхователь по ОГПО: он выбирает страховую, но выплату по ОГПО получает потерпевший</span><h4 class="w5-job-name">Не остаться должным после ДТП</h4></div>
+                  <div class="w5-imp" aria-label="Важность 7 из 10, оценка автора"><b>7</b><span>важность 1–10</span></div>
                 </div>
                 <dl class="w5-dl">
-                  <dt>Когда</dt><dd>Выбираю страховую, а цена ОГПО у всех почти одинаковая.</dd>
-                  <dt>Хочу</dt><dd class="is-want">Понять, кто платит быстро и без споров.</dd>
-                  <dt>Чтобы</dt><dd>После ДТП не остаться один на один с ремонтом.</dd>
+                  <dt>Когда</dt><dd>Выбираю страховую, а цена ОГПО у всех близкая.</dd>
+                  <dt>Хочу</dt><dd class="is-want">Быть уверенным, что пострадавшему заплатят без моего участия.</dd>
+                  <dt>Чтобы</dt><dd>ДТП по моей вине не превратилось в личный долг и споры.</dd>
+                  <dt class="is-sub">Решение</dt><dd class="is-sub">Открытые сроки выплат и понятные отзывы о них.</dd>
                   <dt class="is-sub">Триггер</dt><dd class="is-sub">Рассказ знакомого о споре с выплатой.</dd>
                   <dt class="is-sub">Сейчас</dt><dd class="is-sub">Советы знакомых и отзывы в интернете.</dd>
                 </dl>
-                <div class="w5-freq">Как часто: раз в год</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 70%"></i></div>
               </article>
               <article class="w5-job is-top">
                 <div class="w5-job-top">
-                  <div><span class="w5-id">C3</span><span class="w5-who">Частный водитель</span><h4 class="w5-job-name">Не ошибиться в момент ДТП</h4></div>
-                  <div class="w5-imp" aria-label="Важность 10 из 10"><b>10</b><span>важность</span></div>
+                  <div><span class="w5-id">C3</span><span class="w5-who">Любой участник ДТП: виновник-страхователь, потерпевший или клиент с КАСКО</span><h4 class="w5-job-name">Не ошибиться в момент ДТП</h4></div>
+                  <div class="w5-imp" aria-label="Важность 10 из 10, оценка автора"><b>10</b><span>важность 1–10</span></div>
                 </div>
                 <dl class="w5-dl">
                   <dt>Когда</dt><dd>Только что случилось ДТП: я на дороге, в стрессе, второй участник торопит.</dd>
-                  <dt>Хочу</dt><dd class="is-want">Получить пошаговую подсказку: что снять, что подписать, куда сообщить.</dd>
+                  <dt>Хочу</dt><dd class="is-want">Понять, что сделать на месте, чтобы выплата состоялась.</dd>
                   <dt>Чтобы</dt><dd>Не потерять право на выплату из-за одной ошибки.</dd>
+                  <dt class="is-sub">Решение</dt><dd class="is-sub">Пошаговая подсказка: что снять, что подписать, куда сообщить.</dd>
                   <dt class="is-sub">Триггер</dt><dd class="is-sub">Удар и первые минуты после остановки.</dd>
                   <dt class="is-sub">Сейчас</dt><dd class="is-sub">Звонок знакомому или агенту, поиск в интернете.</dd>
                 </dl>
-                <div class="w5-freq">Как часто: редко и внезапно</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 100%"></i></div>
               </article>
               <article class="w5-job is-top">
                 <div class="w5-job-top">
-                  <div><span class="w5-id">C4</span><span class="w5-who">Частный водитель</span><h4 class="w5-job-name">Знать, что с моей выплатой</h4></div>
-                  <div class="w5-imp" aria-label="Важность 9 из 10"><b>9</b><span>важность</span></div>
+                  <div><span class="w5-id">C4</span><span class="w5-who">Наш страхователь по КАСКО, подавший заявление об убытке</span><h4 class="w5-job-name">Знать, когда можно ремонтировать</h4></div>
+                  <div class="w5-imp" aria-label="Важность 9 из 10, оценка автора"><b>9</b><span>важность 1–10</span></div>
                 </div>
                 <dl class="w5-dl">
-                  <dt>Когда</dt><dd>Заявление подано, машина стоит, прошла неделя тишины.</dd>
-                  <dt>Хочу</dt><dd class="is-want">Видеть этап, каких документов не хватает и когда ждать деньги.</dd>
-                  <dt>Чтобы</dt><dd>Спланировать ремонт и бюджет, а не обзванивать колл-центр.</dd>
+                  <dt>Когда</dt><dd>Я подал заявление по своему КАСКО, машина стоит, а сервис ждёт согласования ремонта.</dd>
+                  <dt>Хочу</dt><dd class="is-want">Понимать, когда и на какую сумму можно согласовать ремонт.</dd>
+                  <dt>Чтобы</dt><dd>Не платить из своих и не оставаться без машины дольше нужного.</dd>
+                  <dt class="is-sub">Решение</dt><dd class="is-sub">Статус дела, список недостающих документов и прогноз даты выплаты.</dd>
                   <dt class="is-sub">Триггер</dt><dd class="is-sub">Сервис назвал сумму ремонта, а решения по выплате нет.</dd>
                   <dt class="is-sub">Сейчас</dt><dd class="is-sub">Звонки в колл-центр, сообщения агенту.</dd>
                 </dl>
-                <div class="w5-freq">Как часто: после каждого убытка</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 90%"></i></div>
               </article>
               <article class="w5-job">
                 <div class="w5-job-top">
-                  <div><span class="w5-id">C5</span><span class="w5-who">Владелец новой или кредитной машины</span><h4 class="w5-job-name">Защитить дорогую машину</h4></div>
-                  <div class="w5-imp" aria-label="Важность 8 из 10"><b>8</b><span>важность</span></div>
+                  <div><span class="w5-id">C5</span><span class="w5-who">Владелец новой или кредитной машины, клиент с КАСКО</span><h4 class="w5-job-name">Не оплачивать крупный ремонт самому</h4></div>
+                  <div class="w5-imp" aria-label="Важность 8 из 10, оценка автора"><b>8</b><span>важность 1–10</span></div>
                 </div>
                 <dl class="w5-dl">
                   <dt>Когда</dt><dd>Машина новая или в кредите, и ремонт из своего кармана я не потяну.</dd>
-                  <dt>Хочу</dt><dd class="is-want">Застраховать крупный ущерб по КАСКО с понятными исключениями.</dd>
-                  <dt>Чтобы</dt><dd>Одна авария не съела семейный бюджет на год.</dd>
+                  <dt>Хочу</dt><dd class="is-want">Чтобы крупный ущерб или угон не легли на семейный бюджет.</dd>
+                  <dt>Чтобы</dt><dd>Одна авария не съела доход за год.</dd>
+                  <dt class="is-sub">Решение</dt><dd class="is-sub">КАСКО с понятными исключениями.</dd>
                   <dt class="is-sub">Триггер</dt><dd class="is-sub">Покупка новой машины или требование банка по кредиту.</dd>
                   <dt class="is-sub">Сейчас</dt><dd class="is-sub">Полис, который предложил банк или салон.</dd>
                 </dl>
-                <div class="w5-freq">Как часто: раз в год</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 80%"></i></div>
               </article>
               <article class="w5-job">
                 <div class="w5-job-top">
-                  <div><span class="w5-id">C6</span><span class="w5-who">Частный водитель</span><h4 class="w5-job-name">Продлить и забыть</h4></div>
-                  <div class="w5-imp" aria-label="Важность 6 из 10"><b>6</b><span>важность</span></div>
+                  <div><span class="w5-id">C6</span><span class="w5-who">Частный водитель, страхователь по ОГПО</span><h4 class="w5-job-name">Не остаться без защиты</h4></div>
+                  <div class="w5-imp" aria-label="Важность 6 из 10, оценка автора"><b>6</b><span>важность 1–10</span></div>
                 </div>
                 <dl class="w5-dl">
                   <dt>Когда</dt><dd>Полис заканчивается через две недели, я занят и не помню дату.</dd>
-                  <dt>Хочу</dt><dd class="is-want">Продлить в один тап, без повторного ввода данных.</dd>
-                  <dt>Чтобы</dt><dd>Защита не прервалась и об этом не пришлось думать.</dd>
+                  <dt>Хочу</dt><dd class="is-want">Чтобы защита не прерывалась без моего внимания.</dd>
+                  <dt>Чтобы</dt><dd>Не оказаться за рулём без полиса.</dd>
+                  <dt class="is-sub">Решение</dt><dd class="is-sub">Продление в один шаг без повторного ввода данных.</dd>
                   <dt class="is-sub">Триггер</dt><dd class="is-sub">Напоминание за две недели до окончания.</dd>
                   <dt class="is-sub">Сейчас</dt><dd class="is-sub">Тот же агент, что и год назад.</dd>
                 </dl>
-                <div class="w5-freq">Как часто: раз в год</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 60%"></i></div>
               </article>
             </div>
           </div>
           <div class="w5-block">
             <div class="w5-head" data-reveal><span class="w5-step">Шаг 3</span><span class="w5-kind">Основное задание</span><h3 class="w5-h">Четыре работы бизнес-клиента (B2B)</h3></div>
-            <p class="w5-muted">В B2B важность задаёт не человек, а экономика: день простоя машины или сорванная сделка имеют цену.</p>
+            <p class="w5-muted">В бизнесе одну работу выполняют три человека: один решает, другой пользуется, третий платит.</p>
             <div class="w5-jobs">
               <article class="w5-job is-top">
                 <div class="w5-job-top">
-                  <div><span class="w5-id">B1</span><span class="w5-who">Руководитель автопарка, 20–200 машин</span><h4 class="w5-job-name">Ни одной машины без полиса</h4></div>
-                  <div class="w5-imp" aria-label="Важность 9 из 10"><b>9</b><span>важность</span></div>
+                  <div><span class="w5-id">B1</span><span class="w5-who">Руководитель автопарка, 20–200 машин; форма работы водителей не установлена</span><h4 class="w5-job-name">Ни одной машины без полиса</h4></div>
+                  <div class="w5-imp" aria-label="Важность 9 из 10, оценка автора"><b>9</b><span>важность 1–10</span></div>
                 </div>
                 <dl class="w5-dl">
                   <dt>Когда</dt><dd>У машин парка разные даты окончания полисов, а учёт ведётся в Excel.</dd>
-                  <dt>Хочу</dt><dd class="is-want">Единый реестр полисов с автопродлением и одним счётом.</dd>
-                  <dt>Чтобы</dt><dd>Ни одна машина не встала из-за штрафа или просроченного полиса.</dd>
+                  <dt>Хочу</dt><dd class="is-want">Чтобы ни одна машина не вышла на линию с истёкшим полисом.</dd>
+                  <dt>Чтобы</dt><dd>Не получать штрафы и не снимать машины с рейса.</dd>
+                  <dt class="is-sub">Решение</dt><dd class="is-sub">Единый реестр полисов, напоминания и один счёт.</dd>
                   <dt class="is-sub">Триггер</dt><dd class="is-sub">Штраф или машина, снятая с линии из-за просроченного полиса.</dd>
                   <dt class="is-sub">Сейчас</dt><dd class="is-sub">Таблица Excel и знакомый агент.</dd>
                 </dl>
-                <div class="w5-freq">Как часто: каждый месяц</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 90%"></i></div>
               </article>
               <article class="w5-job is-top">
                 <div class="w5-job-top">
-                  <div><span class="w5-id">B2</span><span class="w5-who">Руководитель автопарка после ДТП</span><h4 class="w5-job-name">Вернуть машину в работу</h4></div>
-                  <div class="w5-imp" aria-label="Важность 9 из 10"><b>9</b><span>важность</span></div>
+                  <div><span class="w5-id">B2</span><span class="w5-who">Руководитель автопарка после ДТП</span><h4 class="w5-job-name">Знать, когда машина вернётся на линию</h4></div>
+                  <div class="w5-imp" aria-label="Важность 9 из 10, оценка автора"><b>9</b><span>важность 1–10</span></div>
                 </div>
                 <dl class="w5-dl">
                   <dt>Когда</dt><dd>Машина после ДТП стоит, и каждый день простоя — недополученная выручка.</dd>
-                  <dt>Хочу</dt><dd class="is-want">Быстрое урегулирование и прогноз даты выплаты по каждому делу.</dd>
-                  <dt>Чтобы</dt><dd>Сократить простой и заранее подменить машину на линии.</dd>
+                  <dt>Хочу</dt><dd class="is-want">Знать по каждой машине, когда она вернётся в работу.</dd>
+                  <dt>Чтобы</dt><dd>Заранее подменить её и сократить простой.</dd>
+                  <dt class="is-sub">Решение</dt><dd class="is-sub">Статус убытка и прогноз даты выплаты по каждой машине.</dd>
                   <dt class="is-sub">Триггер</dt><dd class="is-sub">Звонок водителя о ДТП.</dd>
                   <dt class="is-sub">Сейчас</dt><dd class="is-sub">Менеджер страховой в мессенджере, звонки.</dd>
                 </dl>
-                <div class="w5-freq">Как часто: несколько раз в год</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 90%"></i></div>
               </article>
               <article class="w5-job">
                 <div class="w5-job-top">
-                  <div><span class="w5-id">B3</span><span class="w5-who">Бухгалтер компании</span><h4 class="w5-job-name">Закрыть период без переписки</h4></div>
-                  <div class="w5-imp" aria-label="Важность 6 из 10"><b>6</b><span>важность</span></div>
+                  <div><span class="w5-id">B3</span><span class="w5-who">Бухгалтер компании</span><h4 class="w5-job-name">Закрыть период с полным комплектом</h4></div>
+                  <div class="w5-imp" aria-label="Важность 6 из 10, оценка автора"><b>6</b><span>важность 1–10</span></div>
                 </div>
                 <dl class="w5-dl">
                   <dt>Когда</dt><dd>Закрываю месяц или квартал, и нужны счета, акты и полисы по каждой машине.</dd>
-                  <dt>Хочу</dt><dd class="is-want">Получить закрывающие документы в кабинете или через ЭДО.</dd>
-                  <dt>Чтобы</dt><dd>Закрыть период без ручной сверки и запросов менеджеру.</dd>
+                  <dt>Хочу</dt><dd class="is-want">Иметь полный комплект документов к закрытию периода.</dd>
+                  <dt>Чтобы</dt><dd>Не сверять вручную и не ждать ответа менеджера.</dd>
+                  <dt class="is-sub">Решение</dt><dd class="is-sub">Документы в кабинете или через ЭДО.</dd>
                   <dt class="is-sub">Триггер</dt><dd class="is-sub">Закрытие месяца или запрос аудитора.</dd>
                   <dt class="is-sub">Сейчас</dt><dd class="is-sub">Письма менеджеру и сканы.</dd>
                 </dl>
-                <div class="w5-freq">Как часто: каждый месяц</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 60%"></i></div>
               </article>
               <article class="w5-job">
                 <div class="w5-job-top">
-                  <div><span class="w5-id">B4</span><span class="w5-who">Партнёр: автосалон, банк, лизинг</span><h4 class="w5-job-name">Не сорвать сделку из-за полиса</h4></div>
-                  <div class="w5-imp" aria-label="Важность 8 из 10"><b>8</b><span>важность</span></div>
+                  <div><span class="w5-id">B4</span><span class="w5-who">Партнёр: автосалон, банк, лизинг</span><h4 class="w5-job-name">Отдать клиенту машину застрахованной</h4></div>
+                  <div class="w5-imp" aria-label="Важность 8 из 10, оценка автора"><b>8</b><span>важность 1–10</span></div>
                 </div>
                 <dl class="w5-dl">
                   <dt>Когда</dt><dd>Клиент подписывает договор купли-продажи или кредита и ждёт ключи.</dd>
-                  <dt>Хочу</dt><dd class="is-want">Выпустить полис за пару минут в своём интерфейсе или по API.</dd>
-                  <dt>Чтобы</dt><dd>Закрыть сделку в один визит и заработать комиссию.</dd>
+                  <dt>Хочу</dt><dd class="is-want">Чтобы клиент уехал застрахованным, а сделка не затянулась.</dd>
+                  <dt>Чтобы</dt><dd>Закрыть сделку в один визит и получить комиссию.</dd>
+                  <dt class="is-sub">Решение</dt><dd class="is-sub">Выпуск полиса в интерфейсе партнёра или по API.</dd>
                   <dt class="is-sub">Триггер</dt><dd class="is-sub">Клиент готов подписать договор.</dd>
                   <dt class="is-sub">Сейчас</dt><dd class="is-sub">Агент по телефону или отдельный портал страховой.</dd>
                 </dl>
-                <div class="w5-freq">Как часто: каждый день</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 80%"></i></div>
               </article>
             </div>
-            <p class="w5-p">В бизнесе одну работу выполняют три разных человека. Продавать нужно тому, кто решает, а удобно должно быть тому, кто пользуется.</p>
             <div class="w5-table-wrap">
-              <table class="w5-table w5-roles">
+              <table class="w5-table w5-cmp mx-in">
                 <thead><tr><th scope="col">Работа</th><th scope="col">Кто решает</th><th scope="col">Кто пользуется</th><th scope="col">Кто платит</th></tr></thead>
                 <tbody>
-                  <tr><td data-label="Работа">B1 · Ни одной машины без полиса</td><td data-label="Кто решает">Решает: Владелец или директор</td><td data-label="Кто пользуется">Пользуется: Руководитель парка</td><td class="is-num" data-label="Кто платит">Платит: Бухгалтерия компании</td></tr>
-                  <tr><td data-label="Работа">B2 · Вернуть машину в работу</td><td data-label="Кто решает">Решает: Руководитель парка</td><td data-label="Кто пользуется">Пользуется: Водитель и механик</td><td class="is-num" data-label="Кто платит">Платит: Компания: каждый день простоя</td></tr>
-                  <tr><td data-label="Работа">B3 · Закрыть период без переписки</td><td data-label="Кто решает">Решает: Главный бухгалтер</td><td data-label="Кто пользуется">Пользуется: Бухгалтер</td><td class="is-num" data-label="Кто платит">Платит: Компания</td></tr>
-                  <tr><td data-label="Работа">B4 · Не сорвать сделку из-за полиса</td><td data-label="Кто решает">Решает: Руководитель салона или банка</td><td data-label="Кто пользуется">Пользуется: Менеджер по продажам</td><td class="is-num" data-label="Кто платит">Платит: Конечный клиент; партнёр получает комиссию</td></tr>
+                  <tr><td data-label="Работа">B1 · Ни одной машины без полиса</td><td data-label="Кто решает">Владелец или директор</td><td data-label="Кто пользуется">Руководитель парка</td><td data-label="Кто платит">Бухгалтерия компании</td></tr>
+                  <tr><td data-label="Работа">B2 · Знать, когда машина вернётся на линию</td><td data-label="Кто решает">Руководитель парка</td><td data-label="Кто пользуется">Водитель и механик</td><td data-label="Кто платит">Компания: каждый день простоя</td></tr>
+                  <tr><td data-label="Работа">B3 · Закрыть период с полным комплектом</td><td data-label="Кто решает">Главный бухгалтер</td><td data-label="Кто пользуется">Бухгалтер</td><td data-label="Кто платит">Компания</td></tr>
+                  <tr><td data-label="Работа">B4 · Отдать клиенту машину застрахованной</td><td data-label="Кто решает">Руководитель салона или банка</td><td data-label="Кто пользуется">Менеджер по продажам</td><td data-label="Кто платит">Конечный клиент; партнёр получает комиссию</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
           <div class="w5-block w5-extra">
             <div class="w5-head" data-reveal><span class="w5-step">Шаг 4</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Граф работ: от большой работы к шагам</h3></div>
-            <p class="w5-p">Все шесть работ частного клиента служат одной большой. Читать сверху вниз: зачем человеку страховка, из каких работ это складывается и на какие шаги распадается самая важная.</p>
             <div class="w5-graph">
-              <div class="w5-big"><span>Big Job</span><b>Машина остаётся свободой и активом, а не источником внезапных расходов и проблем с законом</b></div>
+              <div class="w5-big"><span>Большая работа</span><b>Машина остаётся свободой и активом, а не источником внезапных расходов и проблем с законом</b></div>
               <div class="w5-stem" aria-hidden="true"></div>
-              <ol class="w5-chain" aria-label="Core Jobs по жизни полиса"><li><span>C2 · важность 7</span>Выбрать страховую<small>раз в год</small></li><li><span>C1 · важность 8</span>Оформить<small>раз в год</small></li><li><span>C5 · важность 8</span>Усилить защиту<small>раз в год</small></li><li class="is-hot"><span>C3 · важность 10</span>ДТП<small>редко и внезапно</small></li><li class="is-hot"><span>C4 · важность 9</span>Ждать выплату<small>после каждого убытка</small></li><li><span>C6 · важность 6</span>Продлить<small>раз в год</small></li></ol>
-              <div class="w5-micro">
-                <p class="w5-micro-title">Micro Jobs внутри работы C3 «ДТП»</p>
-                <ol><li>Убедиться, что все целы, обозначить место ДТП</li><li>Снять повреждения, номера и документы второго участника</li><li>Сообщить страховой о случае</li><li>Собрать пакет документов</li><li>Подать заявление</li><li>Показать машину на осмотр</li></ol>
+              <ol class="w5-chain is-4" aria-label="Основной путь без ДТП и без КАСКО: C2, C1, C6"><li><span>C2 · важность 7</span>Выбрать страховую</li><li><span>C1 · важность 8</span>Оформить</li><li><span>C6 · важность 6</span>Продлить<small>без ДТП и КАСКО — сюда напрямую</small></li></ol>
+              <div class="w5-branch"><p class="w5-branch-title">Необязательная ветка: КАСКО</p><p class="w5-p">C5 · Усилить защиту, если нужен КАСКО; затем — к C6. ОГПО можно продлить без этой ветки.</p></div>
+              <div class="w5-branch">
+                <p class="w5-branch-title">Условная ветка: только если случилось ДТП. После неё — снова к C6</p>
+                <ol class="w5-chain is-2" aria-label="Ветка при ДТП"><li class="is-hot"><span>C3 · важность 10</span>ДТП: действия на месте</li><li class="is-hot"><span>C4 · важность 9</span>Ждать решения о выплате<em>проверяю первой</em></li></ol>
+                <details class="w5-details mx-in" style="margin-top: 12px">
+                  <summary>Шаги внутри C3: от действий на месте до подачи заявления</summary>
+                  <ol class="w5-steps"><li>Убедиться, что все целы, обозначить место ДТП</li><li>Снять повреждения, номера и документы второго участника</li><li>Сообщить страховой о случае</li><li>Собрать пакет документов</li><li>Подать заявление</li><li>Показать машину на осмотр</li></ol>
+                </details>
               </div>
             </div>
-            <p class="w5-muted">Оранжевым выделены работы с важностью 9–10. Обе стоят после покупки: продукт зарабатывает доверие там, где клиент уже заплатил. У бизнеса большая работа другая: «автопарк зарабатывает каждый день, без простоев и штрафов», и работы B1–B2 ведут к ней напрямую.</p>
+            <p class="w5-muted">Основной путь — C2 → C1 → C6. КАСКО (C5) — необязательное усиление защиты: клиент может продлить ОГПО без КАСКО и без ДТП. При ДТП возникает ветка C3 → C4, затем можно вернуться к C6. У бизнеса большая работа другая — «автопарк зарабатывает каждый день, без простоев и штрафов», к ней ведут B1 и B2.</p>
           </div>
           <div class="w5-block w5-extra">
-            <div class="w5-head" data-reveal><span class="w5-step">Шаг 5</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Где продукт недорабатывает</h3></div>
-            <p class="w5-p">Важность сама по себе не говорит, куда вкладываться: важная работа может быть уже хорошо закрыта. Поэтому к каждой работе я добавил оценку удовлетворённости и посчитал индекс возможности: <b>важность + (важность − удовлетворённость)</b>.</p>
+            <div class="w5-head" data-reveal><span class="w5-step">Шаг 5</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Индекс возможности: где разрыв</h3></div>
+<details class="w5-details mx-in"><summary>Показать расчёт и ограничения</summary><div style="margin-top: 14px">            <p class="w5-p"><span class="w5-tag">Гипотеза</span>Индекс = <b>I + max(I − S, 0)</b>, где I — важность, S — удовлетворённость. Обе величины — мои оценки до интервью.</p>
             <div class="w5-opp">
               <div class="w5-opp-row is-hot">
-                <div class="w5-opp-name"><span class="w5-id">C3</span>Не ошибиться в момент ДТП</div>
-                <div class="w5-track" role="img" aria-label="Важность 10, удовлетворённость 4"><i class="is-sat" style="width: 40%"></i><i class="is-gap" style="left: 40%; width: 60%"></i></div>
+                <div class="w5-opp-name"><span class="w5-id">C3</span>Не ошибиться в момент ДТП<small>I = 10, S = 4</small></div>
+                <div class="w5-track" role="img" aria-label="C3: важность 10, удовлетворённость 4, индекс I + max(I − S, 0) = 10 + max(10 − 4, 0) = 16"><i class="is-sat" style="width: 50%"></i><i class="is-gap" style="left: 50%; width: 30%"></i></div>
                 <div class="w5-score">16</div>
               </div>
               <div class="w5-opp-row is-hot">
-                <div class="w5-opp-name"><span class="w5-id">C4</span>Знать, что с моей выплатой</div>
-                <div class="w5-track" role="img" aria-label="Важность 9, удовлетворённость 3"><i class="is-sat" style="width: 30%"></i><i class="is-gap" style="left: 30%; width: 60%"></i></div>
+                <div class="w5-opp-name"><span class="w5-id">C4</span>Знать, когда можно ремонтировать<small>I = 9, S = 3</small></div>
+                <div class="w5-track" role="img" aria-label="C4: важность 9, удовлетворённость 3, индекс I + max(I − S, 0) = 9 + max(9 − 3, 0) = 15"><i class="is-sat" style="width: 45%"></i><i class="is-gap" style="left: 45%; width: 30%"></i></div>
                 <div class="w5-score">15</div>
               </div>
               <div class="w5-opp-row is-hot">
-                <div class="w5-opp-name"><span class="w5-id">B2</span>Вернуть машину в работу</div>
-                <div class="w5-track" role="img" aria-label="Важность 9, удовлетворённость 4"><i class="is-sat" style="width: 40%"></i><i class="is-gap" style="left: 40%; width: 50%"></i></div>
+                <div class="w5-opp-name"><span class="w5-id">B2</span>Знать, когда машина вернётся на линию<small>I = 9, S = 4</small></div>
+                <div class="w5-track" role="img" aria-label="B2: важность 9, удовлетворённость 4, индекс I + max(I − S, 0) = 9 + max(9 − 4, 0) = 14"><i class="is-sat" style="width: 45%"></i><i class="is-gap" style="left: 45%; width: 25%"></i></div>
                 <div class="w5-score">14</div>
               </div>
               <div class="w5-opp-row is-hot">
-                <div class="w5-opp-name"><span class="w5-id">B1</span>Ни одной машины без полиса</div>
-                <div class="w5-track" role="img" aria-label="Важность 9, удовлетворённость 5"><i class="is-sat" style="width: 50%"></i><i class="is-gap" style="left: 50%; width: 40%"></i></div>
+                <div class="w5-opp-name"><span class="w5-id">B1</span>Ни одной машины без полиса<small>I = 9, S = 5</small></div>
+                <div class="w5-track" role="img" aria-label="B1: важность 9, удовлетворённость 5, индекс I + max(I − S, 0) = 9 + max(9 − 5, 0) = 13"><i class="is-sat" style="width: 45%"></i><i class="is-gap" style="left: 45%; width: 20%"></i></div>
                 <div class="w5-score">13</div>
               </div>
               <div class="w5-opp-row">
-                <div class="w5-opp-name"><span class="w5-id">B4</span>Не сорвать сделку из-за полиса</div>
-                <div class="w5-track" role="img" aria-label="Важность 8, удовлетворённость 5"><i class="is-sat" style="width: 50%"></i><i class="is-gap" style="left: 50%; width: 30%"></i></div>
+                <div class="w5-opp-name"><span class="w5-id">B4</span>Отдать клиенту машину застрахованной<small>I = 8, S = 5</small></div>
+                <div class="w5-track" role="img" aria-label="B4: важность 8, удовлетворённость 5, индекс I + max(I − S, 0) = 8 + max(8 − 5, 0) = 11"><i class="is-sat" style="width: 40%"></i><i class="is-gap" style="left: 40%; width: 15%"></i></div>
                 <div class="w5-score">11</div>
               </div>
               <div class="w5-opp-row">
-                <div class="w5-opp-name"><span class="w5-id">C2</span>Понять, кто реально заплатит</div>
-                <div class="w5-track" role="img" aria-label="Важность 7, удовлетворённость 4"><i class="is-sat" style="width: 40%"></i><i class="is-gap" style="left: 40%; width: 30%"></i></div>
+                <div class="w5-opp-name"><span class="w5-id">C2</span>Не остаться должным после ДТП<small>I = 7, S = 4</small></div>
+                <div class="w5-track" role="img" aria-label="C2: важность 7, удовлетворённость 4, индекс I + max(I − S, 0) = 7 + max(7 − 4, 0) = 10"><i class="is-sat" style="width: 35%"></i><i class="is-gap" style="left: 35%; width: 15%"></i></div>
                 <div class="w5-score">10</div>
               </div>
               <div class="w5-opp-row">
-                <div class="w5-opp-name"><span class="w5-id">C5</span>Защитить дорогую машину</div>
-                <div class="w5-track" role="img" aria-label="Важность 8, удовлетворённость 6"><i class="is-sat" style="width: 60%"></i><i class="is-gap" style="left: 60%; width: 20%"></i></div>
+                <div class="w5-opp-name"><span class="w5-id">C5</span>Не оплачивать крупный ремонт самому<small>I = 8, S = 6</small></div>
+                <div class="w5-track" role="img" aria-label="C5: важность 8, удовлетворённость 6, индекс I + max(I − S, 0) = 8 + max(8 − 6, 0) = 10"><i class="is-sat" style="width: 40%"></i><i class="is-gap" style="left: 40%; width: 10%"></i></div>
                 <div class="w5-score">10</div>
               </div>
               <div class="w5-opp-row">
-                <div class="w5-opp-name"><span class="w5-id">C1</span>Оформить полис и выехать</div>
-                <div class="w5-track" role="img" aria-label="Важность 8, удовлетворённость 8"><i class="is-sat" style="width: 80%"></i><i class="is-gap" style="left: 80%; width: 0%"></i></div>
+                <div class="w5-opp-name"><span class="w5-id">C1</span>Выехать с действующим полисом<small>I = 8, S = 8</small></div>
+                <div class="w5-track" role="img" aria-label="C1: важность 8, удовлетворённость 8, индекс I + max(I − S, 0) = 8 + max(8 − 8, 0) = 8"><i class="is-sat" style="width: 40%"></i><i class="is-gap" style="left: 40%; width: 0%"></i></div>
                 <div class="w5-score">8</div>
               </div>
               <div class="w5-opp-row">
-                <div class="w5-opp-name"><span class="w5-id">B3</span>Закрыть период без переписки</div>
-                <div class="w5-track" role="img" aria-label="Важность 6, удовлетворённость 5"><i class="is-sat" style="width: 50%"></i><i class="is-gap" style="left: 50%; width: 10%"></i></div>
+                <div class="w5-opp-name"><span class="w5-id">B3</span>Закрыть период с полным комплектом<small>I = 6, S = 5</small></div>
+                <div class="w5-track" role="img" aria-label="B3: важность 6, удовлетворённость 5, индекс I + max(I − S, 0) = 6 + max(6 − 5, 0) = 7"><i class="is-sat" style="width: 30%"></i><i class="is-gap" style="left: 30%; width: 5%"></i></div>
                 <div class="w5-score">7</div>
               </div>
               <div class="w5-opp-row">
-                <div class="w5-opp-name"><span class="w5-id">C6</span>Продлить и забыть</div>
-                <div class="w5-track" role="img" aria-label="Важность 6, удовлетворённость 7"><i class="is-sat" style="width: 70%"></i><i class="is-gap" style="left: 70%; width: 0%"></i></div>
+                <div class="w5-opp-name"><span class="w5-id">C6</span>Не остаться без защиты<small>I = 6, S = 7</small></div>
+                <div class="w5-track" role="img" aria-label="C6: важность 6, удовлетворённость 7, индекс I + max(I − S, 0) = 6 + max(6 − 7, 0) = 6"><i class="is-sat" style="width: 30%"></i><i class="is-gap" style="left: 30%; width: 0%"></i></div>
                 <div class="w5-score">6</div>
               </div>
             </div>
-            <p class="w5-legend"><span><i style="background: var(--forest)"></i>уже закрыто (удовлетворённость)</span><span><i style="background: var(--accent-warm)"></i>разрыв до важности</span><span>число справа — индекс, максимум 20</span></p>
-            <p class="w5-p">Четыре верхние строки — работы после ДТП и работы автопарка. Оформление и продление внизу: там клиенту уже удобно, и новые функции почти ничего не добавят.</p>
+            <p class="w5-legend"><span>полоса: I / 20 и max(I − S, 0) / 20; число — I + max(I − S, 0)</span><span>число справа — индекс, максимум 20</span></p>
+            <p class="w5-p">C3 = 16, C4 = 15, C6 = 6 при I = 6 и S = 7. Разница C3 и C4 — оценка автора, а не измеренные предпочтения клиентов. Повторные обращения помогут проверить приоритет C4.</p></div></details>
           </div>
           <div class="w5-block w5-extra">
-            <div class="w5-head" data-reveal><span class="w5-step">Шаг 6</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Сколько стоит главный разрыв</h3></div>
-            <p class="w5-p">Индекс показывает, где разрыв, но не сколько он стоит. Я посчитал цену самой недообслуженной пары работ — C3 и C4 — на простой модели.</p>
-            <div class="w5-base">
-              <div><span>Время операторов</span><b>≈ 102 часа в месяц</b></div>
-              <div><span>Премия под вопросом</span><b>≈ 2,2 млн ₸ в месяц</b></div>
-              <div><span>Диапазон</span><b>1,1–3,3 млн ₸ в месяц</b></div>
+            <div class="w5-head" data-reveal><span class="w5-step">Шаг 6</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Сценарий в деньгах</h3></div>
+<details class="w5-details mx-in"><summary>Показать расчёт и ограничения</summary><div style="margin-top: 14px">            <p class="w5-p"><span class="w5-tag">Сценарный расчёт</span>Все входные числа — допущения модели для одной месячной когорты, а не данные компании.</p>
+            <div class="w5-table-wrap">
+              <table class="w5-table w5-cmp mx-in">
+                <thead><tr><th scope="col">Что считаю</th><th scope="col">Расчёт</th><th scope="col">Результат</th><th scope="col">Что это и чем не является</th></tr></thead>
+                <tbody>
+                  <tr><td data-label="Что считаю">Нагрузка операторов</td><td data-label="Расчёт">625 × 0,65 × 3 × 5 / 60</td><td class="is-num" data-label="Результат">101,56 операторского часа за месячную когорту</td><td data-label="Что это">Нагрузка. Устранимые затраты = действительно высвобожденные часы × устранимая стоимость часа; обе величины ещё неизвестны</td></tr>
+                  <tr><td data-label="Что считаю">Сценарное изменение валовой премии продлений</td><td data-label="Расчёт">только если подходят все 625: 625 × 0,10 × ₸35 000</td><td class="is-num" data-label="Результат">≈ ₸2,19 млн</td><td data-label="Что это">Валовая премия, а не маржа. Верно, только если все 625 дел — разные клиенты этой страховой, которым есть что продлевать</td></tr>
+                  <tr><td data-label="Что считаю">Диапазон</td><td data-label="Расчёт">то же при 5 и 15 п.п.</td><td class="is-num" data-label="Результат">₸1,09–3,28 млн</td><td data-label="Что это">Чувствительность к главному допущению</td></tr>
+                </tbody>
+              </table>
             </div>
-            <p class="w5-muted"><b>Как считал.</b> Время: 625 дел в месяц × 65% клиентов с повторным вопросом × 3 обращения × 5 минут. Премия: 625 дел × снижение доли продлений на 10 п.п. после плохого опыта × чек 35 тыс ₸. Диапазон — то же при 5 и 15 п.п. Все входные числа — допущения модели, а не данные компании.</p>
-            <p class="w5-p"><b>Что это меняет.</b> Главные деньги не в звонках, а в продлениях: даже при осторожных 5 п.п. потерянная премия кратно дороже часов операторов. Поэтому успех решения 2 я меряю продлением после убытка, а число обращений оставляю вспомогательной метрикой.</p>
+            <p class="w5-p"><b>Как подставить свои данные.</b> Вместо 625 взять уникальных наших страхователей с наступающим сроком продления: изменение валовой премии = число подходящих уникальных страхователей × предполагаемое изменение вероятности продления × ₸35 000. Потерпевший по чужому ОГПО в расчёт не входит: ему нечего продлевать.</p>
+            <p class="w5-p"><b>Метрики.</b> Первая — повторные обращения за статусом / подходящие дела, где заявителю нужно решить вопрос о ремонте. Позже — продление только среди уникальных наших клиентов, которым наступил срок продлевать, с учётом изменения цены. По ОГПО потерпевший — отдельная сторона: заявитель по полису виновника не становится нашим страхователем. Валовая премия не равна марже; сравнить ценность продлений с экономией на звонках пока нельзя.</p></div></details>
           </div>
           <div class="w5-block w5-extra">
-            <div class="w5-head" data-reveal><span class="w5-step">Шаг 7</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Что это меняет в продукте</h3></div>
-            <div class="w5-cards3">
-              <div class="w5-card"><span class="w5-card-n">Решение 1</span><h4 class="w5-card-t">Сценарий «Случилось ДТП» — на первый экран</h4><p class="w5-card-p">Работа C3 важна на 10, а продукт сегодня встречает клиента витриной полисов. Один тап открывает чек-лист, камеру и заявление.</p><div class="w5-card-m"><b>Метрика</b>Доля заявлений с полным пакетом документов с первого раза</div></div>
-              <div class="w5-card"><span class="w5-card-n">Решение 2</span><h4 class="w5-card-t">Статус выплаты — отдельный продукт, а не строка в кабинете</h4><p class="w5-card-p">Работы C4 и B2 — второй и третий разрыв. Этап, недостающие документы и прогноз даты закрывают их одной механикой.</p><div class="w5-card-m"><b>Метрика</b>Повторные обращения на одно дело; продление после убытка</div></div>
-              <div class="w5-card"><span class="w5-card-n">Решение 3</span><h4 class="w5-card-t">Оформление не улучшать, а не ломать</h4><p class="w5-card-p">C1 и C6 уже закрыты хорошо. Здесь выигрыш не в новых функциях, а в автопродлении и отсутствии шагов.</p><div class="w5-card-m"><b>Метрика</b>Доля продлений без участия оператора</div></div>
+            <div class="w5-head" data-reveal><span class="w5-step">Шаг 7</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Что проверю дальше</h3></div>
+            <p class="w5-p"><span class="w5-tag">План</span>Каждую работу проверяю на тех, кто её недавно выполнял. Первая метрика — повторные обращения за статусом / подходящие дела, где нужно решить вопрос о ремонте. Позже — продление среди уникальных наших клиентов с наступающим сроком продления, с учётом изменения цены.</p>
+            <div class="w5-table-wrap">
+              <table class="w5-table w5-cmp mx-in">
+                <thead><tr><th scope="col">Работа</th><th scope="col">С кем говорю</th><th scope="col">О чём спрашиваю</th></tr></thead>
+                <tbody>
+                  <tr><td data-label="Работа">C4</td><td data-label="С кем говорю">Люди, которые недавно подавали заявление и ждали выплату</td><td data-label="О чём спрашиваю">Про последний реальный случай: какой информации не хватало, что они делали, какое решение пришлось отложить</td></tr>
+                  <tr><td data-label="Работа">C1, C6</td><td data-label="С кем говорю">Водители без убытков</td><td data-label="О чём спрашиваю">Как прошли последняя покупка и последнее продление, что мешало</td></tr>
+                  <tr><td data-label="Работа">B2</td><td data-label="С кем говорю">Руководители автопарков</td><td data-label="О чём спрашиваю">Последняя машина после ДТП: сколько стояла и от чего зависел срок</td></tr>
+                </tbody>
+              </table>
             </div>
-          </div>
-          <div class="w5-block w5-extra">
-            <div class="w5-head" data-reveal><span class="w5-step">Шаг 8</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Как я это проверю</h3></div>
-            <p class="w5-p">Всё выше — гипотезы. Чтобы они не остались мнением, я прогнал шаблон интервью курса на самой спорной работе и записал, где могу ошибаться.</p>
-            <details class="w5-details">
-              <summary>Пробный прогон шаблона интервью: работа C4 «Знать, что с моей выплатой»</summary>
-              <p class="w5-muted" style="margin-bottom: 12px">Ответы смоделированы по типовым обращениям клиентов. Это проверка гайда перед полевыми интервью, а не запись реального разговора.</p>
-              <dl class="w5-qa"><dt>1. Все контексты</dt><dd>После ДТП; когда приходит напоминание о продлении; когда покупаю машину.</dd><dt>2. Core Jobs</dt><dd>Оформить полис, понять статус выплаты, продлить без визита.</dd><dt>3. Какую Core Job изучаем</dt><dd>Знать, что с моей выплатой.</dd><dt>4. Контекст результата</dt><dd>Заявление подано 6 дней назад, машина на стоянке, в сервисе просят предоплату.</dd><dt>5. Триггер</dt><dd>Сервис назвал сумму ремонта, а я не знаю, одобрена ли выплата.</dd><dt>6. Big Job</dt><dd>Вернуться к обычной жизни: возить детей и ездить на работу на своей машине.</dd><dt>7. Эмоции в точке Б</dt><dd>Спокойствие и контроль: я знаю дату и сумму.</dd><dt>8. Эмоции в точке А</dt><dd>Тревога и злость: кажется, что про меня забыли.</dd><dt>9. Частотность</dt><dd>3–4 обращения за статусом на одно дело.</dd><dt>10. Важность</dt><dd>9 из 10.</dd><dt>11. Польза и ценность</dt><dd>Вижу этап сам, без звонка. У конкурентов статус узнаётся только по телефону.</dd><dt>12. Micro Jobs</dt><dd>Позвонил в колл-центр → ждал на линии → назвал номер дела → услышал «в работе» → через три дня позвонил снова.</dd></dl>
+            <p class="w5-next"><b>Что заставит отказаться от приоритета C4.</b> Снижу приоритет C4, если статус уже был понятен, а решение задерживалось по другой причине — например, не было свободного места в ремонте. Рассказы о последнем реальном случае должны показать, какое решение отложили, какой информации не хватало и что сделали дальше.</p>
+            <details class="w5-details mx-in">
+              <summary>Репетиция интервью: ответы смоделированы</summary>
+              <p class="w5-muted" style="margin-bottom: 12px"><span class="w5-tag">Смоделировано</span>Ответы придуманы для проверки гайда. Это не запись разговора и не доказательство.</p>
+              <dl class="w5-qa"><dt>1. Все контексты</dt><dd>После ДТП; когда приходит напоминание о продлении; когда покупаю машину.</dd><dt>2. Основные работы</dt><dd>Иметь действующий полис, знать, когда можно ремонтировать, не остаться без защиты.</dd><dt>3. Какую основную работу изучаем</dt><dd>Знать, когда можно ремонтировать.</dd><dt>4. Контекст результата</dt><dd>Я страхователь по КАСКО этой компании. Заявление подано 6 дней назад, машина на стоянке, в сервисе просят согласовать ремонт.</dd><dt>5. Триггер</dt><dd>Сервис назвал сумму ремонта, а решения по выплате нет.</dd><dt>6. Большая работа</dt><dd>Вернуться к обычной жизни: возить детей и ездить на работу на своей машине.</dd><dt>7. Эмоции в точке Б</dt><dd>Спокойствие и контроль: я знаю дату и сумму.</dd><dt>8. Эмоции в точке А</dt><dd>Тревога и злость: кажется, что про меня забыли.</dd><dt>9. Частотность</dt><dd>3–4 обращения за статусом на одно дело.</dd><dt>10. Важность</dt><dd>9 из 10.</dd><dt>11. Польза и ценность</dt><dd>Понимаю, можно ли уже согласовать ремонт и какие расходы придётся покрыть самому.</dd><dt>12. Шаги работы</dt><dd>Позвонил в колл-центр → ждал на линии → назвал номер дела → услышал «в работе» → через три дня позвонил снова.</dd></dl>
             </details>
-            <ul class="w5-list"><li>Важность оценена мной по логике ситуации, а не клиентами. Интервью могут переставить работы местами.</li><li>Удовлетворённость не измерена. Это оценка по типовым обращениям, её заменит опрос после интервью.</li><li>В B2B одну работу выполняют три роли: кто решает, кто пользуется, кто платит. На уровне 3 я разделю их.</li></ul>
-            <p class="w5-next"><b>Следующий шаг.</b> Восемь интервью по шаблону: четыре клиента с убытком за последние полгода, два без убытка, два руководителя автопарков. Если хотя бы пять из восьми не назовут статус выплаты проблемой, решение 2 снимается.</p>
           </div>
         </div>
       </div>
@@ -3299,7 +3266,7 @@
 
       <div class="container">
         <div class="work-section-header">
-          <span class="work-section-tag" data-reveal>Неделя 5 · Jobs-to-be-Done in Action Part 1 · 🟡 Уровень 2 (Средний)</span>
+          <span class="work-section-tag" data-reveal>Неделя 5 · Работы клиентов: часть 1 · 🟡 Уровень 2 (Средний)</span>
           <button type="button" class="btn-copy-task" data-task-id="w5-l2" aria-label="Скопировать ссылку на задачу w5-l2">
             <svg class="copy-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
             <svg class="check-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -3307,272 +3274,246 @@
             <span class="copy-tooltip" role="status" aria-live="polite">Ссылка скопирована</span>
           </button>
         </div>
-        <h2 class="work-title text-measure" id="title-w5-l2" data-reveal>Неделя 5 · L2 · Пять новых сегментов для автострахования</h2>
-        <p class="work-brief-lead" data-reveal>Пять гипотез о сегментах, которые нанимают автострахование иначе, чем частный водитель: те же работы в другом контексте, похожие работы, работы уровнем выше и ниже и иные требования к результату. Для каждого — кто это, контекст, критерий успеха и средний чек.</p>
+        <h2 class="work-title text-measure" id="title-w5-l2" data-reveal>Неделя 5 · 5.2 · Пять новых сегментов для автострахования</h2>
+        <p class="work-brief-lead" data-reveal>Первым проверю H2 — парки, сдающие машины водителям. В ближайший месяц можно увидеть, доверит ли парк сервису реальное продление. H1 — следующий исследовательский шаг.</p>
         <div class="result-tiles-row has-chip">
           <div class="result-tile" data-reveal>
             <div class="result-num-row">
-              <span class="result-big-num" data-count="5" data-decimals="0">5</span>
+              <span class="result-big-num">5</span>
               <span class="forecast-chip">гипотез</span>
             </div>
             <div class="tile-visual-bar" aria-hidden="true"><div class="tile-visual-fill " style="width: 100%;"></div></div>
-            <div class="result-tile-label">Сегментов описано: кто, контекст, критерий, чек</div>
+            <div class="result-tile-label">Сегментов с контекстом, работой и тестом</div>
           </div>
           <div class="result-tile" data-reveal>
             <div class="result-num-row">
-              <span class="result-big-num" data-count="35" data-suffix=" тыс ₸" data-decimals="0">35 тыс ₸</span>
-              <span class="forecast-chip">точка сравнения</span>
+              <span class="result-big-num">35 тыс ₸</span>
+              <span class="forecast-chip">база, сценарий</span>
             </div>
             <div class="tile-visual-bar" aria-hidden="true"><div class="tile-visual-fill fill-mint" style="width: 12%;"></div></div>
-            <div class="result-tile-label">Средний чек текущего клиента в год</div>
+            <div class="result-tile-label">Годовая премия частного водителя по ОГПО</div>
           </div>
           <div class="result-tile" data-reveal>
             <div class="result-num-row">
-              <span class="result-big-num" data-count="40" data-prefix="×" data-decimals="0">×40</span>
-              <span class="forecast-chip">автопарк 20 машин</span>
+              <span class="result-big-num">2 парка</span>
+              <span class="forecast-chip">H2 · первый пилот</span>
             </div>
-            <div class="tile-visual-bar" aria-hidden="true"><div class="tile-visual-fill fill-warm" style="width: 100%;"></div></div>
-            <div class="result-tile-label">Чек парка против частного водителя: 1,4 млн ₸ в год</div>
+            <div class="tile-visual-bar" aria-hidden="true"><div class="tile-visual-fill fill-warm" style="width: 40%;"></div></div>
+            <div class="result-tile-label">Месяц ручного реестра и счёт переведённых продлений</div>
           </div>
           <div class="result-tile" data-reveal>
             <div class="result-num-row">
-              <span class="result-big-num" data-count="2" data-decimals="0">2</span>
-              <span class="forecast-chip">в работу сейчас</span>
+              <span class="result-big-num">80%</span>
+              <span class="forecast-chip">точка безубыточности</span>
             </div>
-            <div class="tile-visual-bar" aria-hidden="true"><div class="tile-visual-fill " style="width: 40%;"></div></div>
-            <div class="result-tile-label">Такси-водители и парки: один вход, два сегмента</div>
+            <div class="tile-visual-bar" aria-hidden="true"><div class="tile-visual-fill " style="width: 80%;"></div></div>
+            <div class="result-tile-label">Убыточность, при которой модель парка выходит в ноль</div>
           </div>
         </div>
         <div class="w5-links" data-reveal>
-          <a href="https://github.com/memodlike/Mid-to-Senior-Product-Manager-AI-Powered/tree/main/Week5_medium_AJTBD_Segments" target="_blank" rel="noopener noreferrer" class="w5-btn"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg><span>Решение на GitHub: Week5_medium_AJTBD_Segments</span></a>
+          <a href="https://github.com/memodlike/Mid-to-Senior-Product-Manager-AI-Powered/tree/main/Week5_medium_AJTBD_Segments" target="_blank" rel="noopener noreferrer" class="w5-btn"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg><span>Решение на GitHub · уровень 2</span></a>
         </div>
         <div class="w5-seq">
           <div class="brief-meta-strip" data-reveal>
             <div><div class="meta-strip-label">Неделя</div><div class="meta-strip-val">Неделя 5 (9–15 ноя 2026)</div></div>
             <div><div class="meta-strip-label">Уровень</div><div class="meta-strip-val">Уровень 2 (Средний)</div></div>
             <div><div class="meta-strip-label">Продукт</div><div class="meta-strip-val">Цифровое автострахование: ОГПО и КАСКО</div></div>
-            <div><div class="meta-strip-label">Методология</div><div class="meta-strip-skills">AJTBD, сегментация по работам, уровни работ (Micro / Core / Big), рискованные допущения, Now / Next / Later</div></div>
+            <div><div class="meta-strip-label">Методология</div><div class="meta-strip-skills">AJTBD, сегментация по работам, рискованные допущения, поведенческие тесты, чувствительность</div></div>
           </div>
-          <div class="cohort-premise-box" data-reveal><strong>Как читать числа:</strong> Оценки важности, удовлетворённости и среднего чека — мои рабочие гипотезы для приоритизации, а не данные компании. Полевые интервью — следующий шаг, поэтому каждая оценка записана так, чтобы её можно было опровергнуть.</div>
+          <div class="cohort-premise-box" data-reveal><strong>Как читать пометки.</strong> Полевых интервью ещё не было, поэтому каждое утверждение помечено.
+            <ul class="w5-keys" style="margin-top: 8px"><li><span class="w5-tag">Факт</span>проверено по первоисточнику, ссылка рядом</li><li><span class="w5-tag">Гипотеза</span>предположение или авторская оценка до проверки</li><li><span class="w5-tag">Сценарный расчёт</span>результат при заданных, ещё не подтверждённых входных числах</li><li><span class="w5-tag">Смоделировано</span>репетиция, а не полевые данные</li><li><span class="w5-tag">План</span>проверка, которая ещё не проведена</li></ul>
+          </div>
           <div class="w5-block" data-reveal>
-            <ol class="w5-route" aria-label="Маршрут по решению"><li>Точка сравнения</li><li>5 гипотез</li><li>Сводка</li><li class="is-extra">Лестница работ</li><li class="is-extra">Чек ≠ ценность</li><li class="is-extra">Очерёдность</li><li class="is-extra">Границы</li></ol>
+            <ol class="w5-route" aria-label="Маршрут по решению"><li>База</li><li>Пять гипотез</li><li class="is-extra">Премия и доход</li><li class="is-extra">Устойчивость парка</li><li class="is-extra">Очерёдность</li><li class="is-extra">Что проверю дальше</li></ol>
             <p class="w5-route-note"><i style="background: var(--forest)"></i>основное задание &nbsp; <i style="background: var(--accent-warm)"></i>сверх задания</p>
           </div>
           <div class="w5-block">
-            <div class="w5-head" data-reveal><span class="w5-step">Шаг 1</span><span class="w5-kind">Основное задание</span><h3 class="w5-h">С кем сравниваю</h3></div>
-            <p class="w5-thesis">Сегмент — это не возраст и не город. Это <em>работа в своём контексте</em>.<small>Один и тот же человек утром страхует семейную машину, а вечером выходит на ней в такси, и это два разных клиента с разными критериями успеха. Поэтому новые сегменты я ищу по отличию в работе от текущего клиента.</small></p>
-            <div class="w5-base">
-              <div><span>Текущий клиент</span><b>Частный водитель, одна машина, покупает ОГПО онлайн раз в год</b></div>
-              <div><span>Его критерий успеха</span><b>Оформить быстро, без офиса и переплаты</b></div>
-              <div><span>Средний чек</span><b>≈ 35 тыс ₸ в год</b></div>
-            </div>
-            <p class="w5-muted">Размер базы: ≈ 5,1 млн легковых автомобилей на учёте (на 1 сентября 2026). Источник: <a class="w5-src" href="https://stat.gov.kz/ru/news/166-6-tys-edinits-avtotransportnykh-sredstv-postavleno-na-uchet-v-avguste/" target="_blank" rel="noopener noreferrer">Бюро национальной статистики</a>.</p>
+            <div class="w5-head" data-reveal><span class="w5-step">Шаг 1</span><span class="w5-kind">Основное задание</span><h3 class="w5-h">База сравнения</h3></div>
+<p class="w5-p">Один частный водитель, одна машина, годовое ОГПО. ₸35 000 за машину в год — сценарий, а не подтверждённый тариф.</p>
           </div>
           <div class="w5-block">
             <div class="w5-head" data-reveal><span class="w5-step">Шаг 2</span><span class="w5-kind">Основное задание</span><h3 class="w5-h">Пять гипотез о сегментах</h3></div>
-            <p class="w5-muted">У каждой карточки одна структура: кто, контекст, работа, чем критерий успеха отличается от текущего клиента, средний чек. Проверка гипотезы раскрывается по клику.</p>
-            <div class="w5-segs">
-              <article class="w5-seg">
-                <div class="w5-seg-top"><span class="w5-id">H1</span><span class="w5-type">Те же работы, другой контекст</span><h4 class="w5-seg-title">Водители такси и курьеры на личном авто</h4></div>
-                <div class="w5-seg-grid">
-                  <div class="w5-f"><span>Кто</span><p>Самозанятые водители агрегаторов такси и доставки. Одна машина, и она — единственный источник дохода.</p></div>
-                  <div class="w5-f"><span>Контекст</span><p>10–12 часов за рулём, пробег в 3–4 раза выше частного. Доход приходит каждый день, крупной суммы на руках нет.</p></div>
-                  <div class="w5-f is-job"><span>Работа</span><p><b>Когда</b> полис заканчивается, а без него нельзя выходить на линию, <b>хочу</b> оформить его сразу и платить частями, <b>чтобы</b> не потерять ни одного рабочего дня.</p></div>
-                  <div class="w5-f is-size"><span>Размер сегмента</span><p>Порядок — сотни тысяч: более 320 тыс. водителей работают через крупнейший агрегатор. Источник: <a class="w5-src" href="https://digitalbusiness.kz/2026-08-06/bolee-8-5-mln-polzovateley-i-podacha-za-3-minuti-rukovoditel-yandeks-taksi-o-matematike-tarifov-i-budushchem-rinka/" target="_blank" rel="noopener noreferrer">digitalbusiness.kz, август 2026</a>.</p></div>
-                </div>
-                <div class="w5-vs">
-                  <div class="is-now"><span>Текущий клиент</span><p>Оформить быстро раз в год</p></div>
-                  <div class="w5-arrow" aria-hidden="true"><b>→</b></div>
-                  <div class="is-new"><span>Критерий успеха сегмента</span><p>Платить помесячно. После ДТП вернуться на линию за дни: скорость выплаты считается в потерянных сменах</p></div>
-                </div>
-                <div class="w5-check"><b>≈ 70 тыс ₸ в год</b><span class="w5-mult">×2 к текущему</span><small>ОГПО по тарифу такси, в рассрочку ≈ 6 тыс ₸ в месяц</small></div>
-                <details class="w5-details">
-                  <summary>Как проверю гипотезу</summary>
-                  <div class="w5-test">
-                    <div class="w5-f"><span>Самое рискованное допущение</span><p>Водитель готов платить за рассрочку и быструю выплату больше, чем за обычный полис.</p></div>
-                    <div class="w5-f"><span>Дешёвый тест</span><p>Страница «ОГПО для такси помесячно» и 5 интервью в чатах водителей.</p></div>
-                    <div class="w5-f"><span>Когда остановлюсь</span><p>Меньше 3 из 5 называют простой после ДТП главной болью.</p></div>
-                  </div>
-                </details>
-              </article>
-              <article class="w5-seg">
-                <div class="w5-seg-top"><span class="w5-id">H2</span><span class="w5-type">Похожие работы</span><h4 class="w5-seg-title">Таксопарки и малые автопарки доставки, 5–50 машин</h4></div>
-                <div class="w5-seg-grid">
-                  <div class="w5-f"><span>Кто</span><p>Владелец или управляющий парком. Решает и платит он, а пользуется полисом водитель.</p></div>
-                  <div class="w5-f"><span>Контекст</span><p>Машины сданы водителям в аренду. Полисы куплены в разное время у разных агентов, учёт — в Excel и WhatsApp.</p></div>
-                  <div class="w5-f is-job"><span>Работа</span><p><b>Когда</b> у двадцати машин разные даты полисов, <b>хочу</b> видеть весь парк в одном реестре и продлевать одним счётом, <b>чтобы</b> ни одна машина не простаивала.</p></div>
-                  <div class="w5-f is-size"><span>Размер сегмента</span><p>Открытых данных о числе парков нет; оценю в интервью через долю водителей на арендованных машинах.</p></div>
-                </div>
-                <div class="w5-vs">
-                  <div class="is-now"><span>Текущий клиент</span><p>«Моя машина застрахована»</p></div>
-                  <div class="w5-arrow" aria-hidden="true"><b>→</b></div>
-                  <div class="is-new"><span>Критерий успеха сегмента</span><p>Управляемость парка: реестр, единый счёт, отсрочка, статус по каждому убытку, отчёт для бухгалтерии</p></div>
-                </div>
-                <div class="w5-check"><b>≈ 1,4 млн ₸ в год</b><span class="w5-mult">×40 к текущему</span><small>20 машин × 70 тыс ₸</small></div>
-                <details class="w5-details">
-                  <summary>Как проверю гипотезу</summary>
-                  <div class="w5-test">
-                    <div class="w5-f"><span>Самое рискованное допущение</span><p>Владелец готов уйти от «своего агента» ради реестра и единого счёта.</p></div>
-                    <div class="w5-f"><span>Дешёвый тест</span><p>Пилот с двумя парками: месяц веду их реестр вручную в таблице.</p></div>
-                    <div class="w5-f"><span>Когда остановлюсь</span><p>Ни один парк не переводит к нам очередное продление.</p></div>
-                  </div>
-                </details>
-              </article>
-              <article class="w5-seg">
-                <div class="w5-seg-top"><span class="w5-id">H3</span><span class="w5-type">Работа уровнем выше</span><h4 class="w5-seg-title">Лизинговые компании и банки-залогодержатели</h4></div>
-                <div class="w5-seg-grid">
-                  <div class="w5-f"><span>Кто</span><p>Риск-менеджер или руководитель автолизинга. Полис покупает заёмщик, а нужен он кредитору.</p></div>
-                  <div class="w5-f"><span>Контекст</span><p>Сотни машин в залоге на 3–5 лет. Заёмщик страхует машину в первый год и забывает продлить.</p></div>
-                  <div class="w5-f is-job"><span>Работа</span><p><b>Когда</b> машина в залоге на несколько лет, <b>хочу</b> быть уверенным, что покрытие не прерывается ни на день, <b>чтобы</b> залог сохранял стоимость весь срок договора.</p></div>
-                  <div class="w5-f is-size"><span>Размер сегмента</span><p>Числа машин в лизинге в открытых источниках нет; косвенно — 2,4 трлн ₸ автокредитов выдано за 2025 год. Источник: <a class="w5-src" href="https://bizmedia.kz/2026-03-19-avtokredity-v-kazahstane-vyrosli-pochti-na-30-za-god-dognav-ipoteku-po-obemam-vydachi/" target="_blank" rel="noopener noreferrer">bizmedia.kz по данным АФК</a>.</p></div>
-                </div>
-                <div class="w5-vs">
-                  <div class="is-now"><span>Текущий клиент</span><p>Скорость и цена</p></div>
-                  <div class="w5-arrow" aria-hidden="true"><b>→</b></div>
-                  <div class="is-new"><span>Критерий успеха сегмента</span><p>Непрерывность: уведомление кредитору за 30 дней до окончания и при расторжении, кредитор — выгодоприобретатель, выгрузка по портфелю</p></div>
-                </div>
-                <div class="w5-check"><b>≈ 525 тыс ₸ за машину в год</b><span class="w5-mult">×15 к текущему</span><small>КАСКО 3,5% × 15 млн ₸; портфель 100 машин ≈ 52 млн ₸</small></div>
-                <details class="w5-details">
-                  <summary>Как проверю гипотезу</summary>
-                  <div class="w5-test">
-                    <div class="w5-f"><span>Самое рискованное допущение</span><p>Кредиторы ещё не закрыли контроль залогов собственным агентом.</p></div>
-                    <div class="w5-f"><span>Дешёвый тест</span><p>3 интервью с риск-менеджерами и один вопрос: какая доля залогов сейчас без действующего КАСКО?</p></div>
-                    <div class="w5-f"><span>Когда остановлюсь</span><p>Доля меньше 5% или контроль уже автоматизирован.</p></div>
-                  </div>
-                </details>
-              </article>
-              <article class="w5-seg">
-                <div class="w5-seg-top"><span class="w5-id">H4</span><span class="w5-type">Работа уровнем ниже</span><h4 class="w5-seg-title">Покупатели машины в день сделки</h4></div>
-                <div class="w5-seg-grid">
-                  <div class="w5-f"><span>Кто</span><p>Человек, который прямо сейчас покупает машину. Канал — менеджер автосалона или площадка объявлений.</p></div>
-                  <div class="w5-f"><span>Контекст</span><p>Машина переоформлена, хочется уехать на ней домой. О страховке вспоминают последней, у кассы.</p></div>
-                  <div class="w5-f is-job"><span>Работа</span><p><b>Когда</b> я только что переоформил машину, <b>хочу</b> получить полис тут же, вместе с документами, <b>чтобы</b> уехать домой законно.</p></div>
-                  <div class="w5-f is-size"><span>Размер сегмента</span><p>Порядок — до 2 млн в год: около 170 тыс. постановок на учёт в месяц. Источник: <a class="w5-src" href="https://stat.gov.kz/ru/news/169-1-tys-edinits-avtotransportnykh-sredstv-postavleno-na-uchet-v-iyule/" target="_blank" rel="noopener noreferrer">Бюро национальной статистики, июль 2026</a>.</p></div>
-                </div>
-                <div class="w5-vs">
-                  <div class="is-now"><span>Текущий клиент</span><p>Выбрать страховую и оформить</p></div>
-                  <div class="w5-arrow" aria-hidden="true"><b>→</b></div>
-                  <div class="is-new"><span>Критерий успеха сегмента</span><p>Ноль отдельных шагов: полис выпускается из данных сделки. Партнёру — минута работы и комиссия</p></div>
-                </div>
-                <div class="w5-check"><b>≈ 35 тыс ₸ за полис</b><span class="w5-mult">×1 к текущему</span><small>чек прежний, выигрыш — в привлечении без рекламы и допродаже КАСКО</small></div>
-                <details class="w5-details">
-                  <summary>Как проверю гипотезу</summary>
-                  <div class="w5-test">
-                    <div class="w5-f"><span>Самое рискованное допущение</span><p>Салон согласится добавить ещё один шаг в сделку.</p></div>
-                    <div class="w5-f"><span>Дешёвый тест</span><p>Один салон, QR-код на столе менеджера на две недели.</p></div>
-                    <div class="w5-f"><span>Когда остановлюсь</span><p>Полис оформляют меньше чем в 10% сделок.</p></div>
-                  </div>
-                </details>
-              </article>
-              <article class="w5-seg">
-                <div class="w5-seg-top"><span class="w5-id">H5</span><span class="w5-type">Иные требования к результату</span><h4 class="w5-seg-title">Транзитные перевозчики-нерезиденты</h4></div>
-                <div class="w5-seg-grid">
-                  <div class="w5-f"><span>Кто</span><p>Водители и диспетчеры фур с иностранными номерами, которые въезжают в Казахстан.</p></div>
-                  <div class="w5-f"><span>Контекст</span><p>Граница, очередь, нет местной карты и номера. Нужен полис на дни, а не на год, и на своём языке.</p></div>
-                  <div class="w5-f is-job"><span>Работа</span><p><b>Когда</b> фура подъезжает к границе, <b>хочу</b> заранее купить краткосрочный полис с телефона на своём языке, <b>чтобы</b> пройти контроль без остановки и наличных.</p></div>
-                  <div class="w5-f is-size"><span>Размер сегмента</span><p>Порядок — сотни тысяч пересечений в год: более 2 тыс. грузовиков в сутки только через один пункт пропуска. Источник: <a class="w5-src" href="https://24.kz/ru/news/economyc/800121-propusknoj-potentsial-nur-zholy-namereny-uvelichit-do-30" target="_blank" rel="noopener noreferrer">24.kz</a>.</p></div>
-                </div>
-                <div class="w5-vs">
-                  <div class="is-now"><span>Текущий клиент</span><p>Годовой полис, оплата местной картой, русский или казахский язык</p></div>
-                  <div class="w5-arrow" aria-hidden="true"><b>→</b></div>
-                  <div class="is-new"><span>Критерий успеха сегмента</span><p>Срок в днях, оплата иностранной картой или кошельком, полис на языке водителя, PDF открывается без сети</p></div>
-                </div>
-                <div class="w5-check"><b>≈ 10 тыс ₸ за въезд</b><span class="w5-mult">×4 к текущему</span><small>при 15 въездах в год ≈ 150 тыс ₸ на тягач</small></div>
-                <details class="w5-details">
-                  <summary>Как проверю гипотезу</summary>
-                  <div class="w5-test">
-                    <div class="w5-f"><span>Самое рискованное допущение</span><p>Перевозчик откажется от привычного посредника на границе ради онлайн-покупки.</p></div>
-                    <div class="w5-f"><span>Дешёвый тест</span><p>5 интервью с диспетчерами и юридическая проверка онлайн-продажи нерезидентам.</p></div>
-                    <div class="w5-f"><span>Когда остановлюсь</span><p>Юридический запрет или прочная привычка к посреднику.</p></div>
-                  </div>
-                </details>
-              </article>
-            </div>
+            <p class="w5-muted"><span class="w5-tag">Сценарный расчёт</span>Все премии — сценарии для сравнения, а не тарифы. База: частный водитель, одна машина, годовое ОГПО, ₸35 000.</p>
+<div class="w5-segment-list"><article class="w5-seg" id="w5-h1">
+              <span class="w5-id">H1</span><h4 class="w5-card-t">Независимые водители такси и курьеры на своей машине</h4>
+              <p class="w5-muted">Те же работы, другой контекст</p>
+              <dl class="w5-dl">
+                <dt>Кто</dt><dd>Пользуется и платит водитель.</dd>
+                <dt>Контекст</dt><dd>Независимый водитель на своей машине продлевает ОГПО; после ДТП отдельно возникает потеря рабочих смен.</dd>
+                <dt>Работа</dt><dd>При продлении — оплатить обязательную премию с приемлемой нагрузкой на оборотные деньги. После убытка — вернуться к работе с минимальной потерей смен. Это две отдельные работы.</dd>
+                <dt>Успех</dt><dd>Не «оформить быстро», а не потерять оборотные деньги и рабочие дни.</dd>
+                <dt>Премия</dt><dd><b>₸70 000 за машину в год</b>. сценарий; это не подтверждённый тариф для такси или курьеров.</dd>
+              </dl>
+              <p class="w5-p"><b>Гипотеза.</b> Мешает именно разовый платёж, а не цена полиса.</p>
+              <p class="w5-p"><b>План проверки.</b> Две независимые проверки: 1) выбор единовременной оплаты или отдельного финансирования только после проверки его условий, доля выборов среди водителей, которым показали оба варианта; 2) разбор последнего ДТП с недавними заявителями: потерянные смены и причина простоя.</p>
+              <p class="w5-p"><b>Наблюдаемое решение.</b> Выбор финансирования при проверенных условиях оправдывает следующий тест оплаты; отсутствие выбора требует пересмотреть предложение. Если смены терялись из-за недоступного ремонта, а статус был ясен, статусный сервис не решает причину простоя.</p>
+            </article>
+<article class="w5-seg" id="w5-h2">
+              <span class="w5-id">H2 · первый пилот</span><h4 class="w5-card-t">Малые парки, сдающие машины в аренду, 5–50 машин</h4>
+              <p class="w5-muted">Похожие работы</p>
+              <dl class="w5-dl">
+                <dt>Кто</dt><dd>Пользуется водитель-арендатор. Решает и платит владелец или управляющий.</dd>
+                <dt>Контекст</dt><dd>Владелец управляет покрытием машин, которые находятся у сменяющихся арендаторов.</dd>
+                <dt>Работа</dt><dd>Когда водители меняются, а у машин разные даты полисов, держать каждую машину с действующим полисом без ручной сверки.</dd>
+                <dt>Успех</dt><dd>Против базы «один водитель — одна машина»: владелец контролирует действующее покрытие каждой машины независимо от смены арендаторов.</dd>
+                <dt>Премия</dt><dd><b>₸70 000 за машину в год; ₸1,4 млн за парк из 20 машин</b>. сценарий, ОГПО.</dd>
+              </dl>
+              <p class="w5-p"><b>Гипотеза.</b> Управляющий передаст продление от своего агента.</p>
+              <p class="w5-p"><b>План проверки.</b> Два парка аренды, у каждого есть реальное продление в ближайший месяц. Веду реестр вручную. Метрика: продления, переданные нам / все продления, срок которых наступил в этом месяце и которые парк мог передать.</p>
+              <p class="w5-p"><b>Наблюдаемое решение.</b> Одно или больше переданных продлений — расширяю тест. Ноль при реальных возможностях — пересматриваю предложение. Ноль подходящих продлений — результат не определён.</p>
+            </article>
+<article class="w5-seg" id="w5-h3">
+              <span class="w5-id">H3</span><h4 class="w5-card-t">Кредиторы и лизинговые компании</h4>
+              <p class="w5-muted">Работа уровнем выше</p>
+              <dl class="w5-dl">
+                <dt>Кто</dt><dd>Пользуется риск-менеджер кредитора. Премию по КАСКО платит заёмщик.</dd>
+                <dt>Контекст</dt><dd>Кредит или лизинг действует, а покрытие залога может прерваться.</dd>
+                <dt>Работа</dt><dd>Непрерывное покрытие залога весь срок договора: ни одного дня без действующего КАСКО.</dd>
+                <dt>Успех</dt><dd>Не скорость и цена, а отсутствие разрывов и уведомление кредитора о прекращении полиса.</dd>
+                <dt>Премия</dt><dd><b>₸525 000 за машину в год; ₸52,5 млн за 100 машин</b>. сценарий: КАСКО 3,5% × ₸15 млн. Плата кредитора за мониторинг неизвестна.</dd>
+              </dl>
+              <p class="w5-p"><b>Гипотеза.</b> У кредитора есть залоги без покрытия, и он не видит этого сам.</p>
+              <p class="w5-p"><b>План проверки.</b> У кредитора с документально подтверждённым разрывом покрытия предложить сверку реестра и запросить разрешение на пилот мониторинга.</p>
+              <p class="w5-p"><b>Наблюдаемое решение.</b> Кредитор разрешает пилот и доступ к согласованному реестру — продолжаю; не разрешает при подтверждённом разрыве — пересматриваю предложение.</p>
+            </article>
+<article class="w5-seg" id="w5-h4">
+              <span class="w5-id">H4</span><h4 class="w5-card-t">Покупатели машины в точке продажи</h4>
+              <p class="w5-muted">Повод покупки и дилерский канал рядом с C1/B4</p>
+              <dl class="w5-dl">
+                <dt>Кто</dt><dd>Платит покупатель. Оформляет менеджер салона.</dd>
+                <dt>Контекст</dt><dd>Покупатель подписал сделку в салоне и ждёт ключи.</dd>
+                <dt>Работа</dt><dd>Повод покупки и канал рядом с C1 и B4: забрать машину уже застрахованной, а не оформлять полис отдельно после сделки.</dd>
+                <dt>Успех</dt><dd>Против самостоятельной покупки после сделки: меньше времени до выдачи ключей и ноль повторного ввода данных.</dd>
+                <dt>Премия</dt><dd><b>₸35 000 за машину в год</b>. сценарий, как у базы.</dd>
+              </dl>
+              <p class="w5-p"><b>Гипотеза.</b> В салоне оформить действительно быстрее, чем самому с телефона.</p>
+              <p class="w5-p"><b>План проверки.</b> QR проверяет интерес к каналу. Конверсия = оформленные полисы / подходящие сделки, в которых полис предложили. Удобство проверяю сравнением времени до выдачи ключей и числа повторно введённых полей с самостоятельным оформлением.</p>
+              <p class="w5-p"><b>Наблюдаемое решение.</b> Если время до ключей и повторный ввод сокращаются — расширяю тест удобства. Переходы по QR сами по себе подтверждают только интерес; без улучшения этих показателей пересматриваю сценарий.</p>
+            </article>
+<article class="w5-seg" id="w5-h5">
+              <span class="w5-id">H5</span><h4 class="w5-card-t">Перевозчики-нерезиденты</h4>
+              <p class="w5-muted">Иные требования к результату</p>
+              <dl class="w5-dl">
+                <dt>Кто</dt><dd>Пользуется водитель или диспетчер. Платит перевозчик.</dd>
+                <dt>Контекст</dt><dd>Диспетчер готовит машину нерезидента к временному въезду в Казахстан.</dd>
+                <dt>Работа</dt><dd>Иметь действующий полис к моменту пересечения границы, чтобы не стоять на пункте пропуска.</dd>
+                <dt>Успех</dt><dd>Вместо годового полиса для местного водителя — покрытие на срок пребывания и возможность пройти идентификацию и оплату до приезда; условия оплаты ещё не проверены.</dd>
+                <dt>Премия</dt><dd><b>₸10 000 за покупку</b>. сценарий: 0,29 от годовой базы; ₸150 000 за машину в год = 4,29 базы, только если действительно нужны 15 отдельных покупок.</dd>
+              </dl>
+              <p class="w5-p"><b>Гипотеза.</b> Существующие онлайн-полисы для временного въезда не закрывают работу.</p>
+              <p class="w5-p"><b>План проверки.</b> До приезда пройти с диспетчером идентификацию и попытку оплаты существующего полиса на реальном предстоящем въезде, с разрешением плательщика. Записать завершение либо точный барьер. Тест запланирован, покупка не совершалась.</p>
+              <p class="w5-p"><b>Наблюдаемое решение.</b> Если диспетчер может завершить оформление до приезда — отдельное предложение не обосновано. Подтверждённый барьер в идентификации или оплате задаёт следующий тест; принятие иностранной карты заранее не обещаю.</p>
+            </article></div>
+            <details class="w5-details mx-in">
+              <summary>H1 · Факт: единовременная премия и границы тарифного утверждения</summary>
+              <p class="w5-p">Физическое лицо уплачивает премию ОГПО единовременно: статья 10, пункт 9. Помесячная оплата потребовала бы отдельного финансирования с проверенными условиями. Пункт 9 правил бонус-малус относится к указанным в нём категориям страхователей и видам деятельности; универсальный коэффициент ×2 для любого водителя такси или курьера не подтверждён. ₸70 000 в год — только сценарий. Источник: <a class="w5-src" href="https://adilet.zan.kz/rus/docs/Z030000446_" target="_blank" rel="noopener noreferrer">Закон об ОГПО ВТС, статья 10(9)</a>. Правила: <a class="w5-src" href="https://old.adilet.zan.kz/rus/docs/V1600013928" target="_blank" rel="noopener noreferrer">Правила бонус-малус, пункт 9</a>.</p>
+            </details>
+            <details class="w5-details mx-in">
+              <summary>H2 · Гипотеза: управление покрытием при смене арендаторов</summary>
+              <p class="w5-p">B1 в 5.1 не устанавливает, что все сравниваемые парки нанимают штатных водителей. Отличие H2 — владелец управляет покрытием, пока машины у сменяющихся арендаторов. Два парка проверят спрос, а убыточность оценивается отдельно.</p>
+            </details>
+            <details class="w5-details mx-in">
+              <summary>H3 · Сценарный расчёт: премия и доход — отдельно</summary>
+              <p class="w5-p">₸15 млн × 3,5% = ₸525 000 на машину в год; на 100 машин — ₸52,5 млн премий заёмщиков. Объём премий не складываю с доходом продукта. Плата за мониторинг, комиссия и относимый доход продукта неизвестны.</p>
+            </details>
+            <details class="w5-details mx-in">
+              <summary>H5 · Факт: временный въезд уже страхуют</summary>
+              <p class="w5-p">Halyk предлагает покрытие на весь срок пребывания, минимум пять календарных дней. Возможность завершить идентификацию и оплату до приезда предстоит проверить. Принятие иностранных карт и необходимость 15 отдельных покупок за год не установлены. Источник: <a class="w5-src" href="https://skhalyk.kz/categories/auto/temporary-entry" target="_blank" rel="noopener noreferrer">страница продукта Halyk</a>.</p>
+            </details>
           </div>
-          <div class="w5-block">
-            <div class="w5-head" data-reveal><span class="w5-step">Шаг 3</span><span class="w5-kind">Основное задание</span><h3 class="w5-h">Сводка в одной таблице</h3></div>
+          <div class="w5-block w5-extra">
+            <div class="w5-head" data-reveal><span class="w5-step">Шаг 3</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Премия за машину, за клиентский счёт и доход продукта</h3></div>
+<details class="w5-details mx-in"><summary>Показать расчёт и ограничения</summary><div style="margin-top: 14px">            <p class="w5-p">Три разные величины легко спутать, поэтому они в отдельных столбцах.</p>
             <div class="w5-table-wrap">
-              <table class="w5-table">
-                <thead><tr><th scope="col">Сегмент</th><th scope="col">Тип отличия</th><th scope="col">Критерий успеха</th><th scope="col">Средний чек</th></tr></thead>
+              <table class="w5-table w5-cmp mx-in">
+                <thead><tr><th scope="col">Сегмент</th><th scope="col">Премия за машину в год</th><th scope="col">Премия на клиентский счёт за год</th><th scope="col">Потенциальный доход продукта</th></tr></thead>
                 <tbody>
-                  <tr class="is-base"><td data-label="Сегмент">Текущий клиент</td><td data-label="Тип отличия">Точка сравнения</td><td data-label="Критерий успеха">Оформить быстро, без офиса и переплаты</td><td class="is-num" data-label="Средний чек">≈ 35 тыс ₸ в год</td></tr>
-                  <tr><td data-label="Сегмент">H1 · Водители такси и курьеры на личном авто</td><td data-label="Тип отличия">Те же работы, другой контекст</td><td data-label="Критерий успеха">Помесячная оплата и быстрый возврат на линию</td><td class="is-num" data-label="Средний чек">≈ 70 тыс ₸ в год</td></tr>
-                  <tr><td data-label="Сегмент">H2 · Таксопарки и малые автопарки доставки, 5–50 машин</td><td data-label="Тип отличия">Похожие работы</td><td data-label="Критерий успеха">Управляемость всего парка</td><td class="is-num" data-label="Средний чек">≈ 1,4 млн ₸ в год</td></tr>
-                  <tr><td data-label="Сегмент">H3 · Лизинговые компании и банки-залогодержатели</td><td data-label="Тип отличия">Работа уровнем выше</td><td data-label="Критерий успеха">Непрерывность покрытия</td><td class="is-num" data-label="Средний чек">≈ 525 тыс ₸ за машину в год</td></tr>
-                  <tr><td data-label="Сегмент">H4 · Покупатели машины в день сделки</td><td data-label="Тип отличия">Работа уровнем ниже</td><td data-label="Критерий успеха">Ноль отдельных шагов</td><td class="is-num" data-label="Средний чек">≈ 35 тыс ₸ за полис</td></tr>
-                  <tr><td data-label="Сегмент">H5 · Транзитные перевозчики-нерезиденты</td><td data-label="Тип отличия">Иные требования к результату</td><td data-label="Критерий успеха">Полис на дни, иностранная оплата, свой язык</td><td class="is-num" data-label="Средний чек">≈ 10 тыс ₸ за въезд</td></tr>
+                  <tr><td data-label="Сегмент">База</td><td class="is-num" data-label="Премия за машину в год">₸35 000</td><td class="is-num" data-label="Премия на клиентский счёт за год">₸35 000 (1 машина)</td><td data-label="Потенциальный доход продукта">Неизвестен; объём премий не равен доходу продукта</td></tr>
+                  <tr><td data-label="Сегмент">H1</td><td class="is-num" data-label="Премия за машину в год">₸70 000</td><td class="is-num" data-label="Премия на клиентский счёт за год">₸70 000 (1 машина)</td><td data-label="Потенциальный доход продукта">Неизвестен; условия отдельного финансирования не проверены</td></tr>
+                  <tr><td data-label="Сегмент">H2</td><td class="is-num" data-label="Премия за машину в год">₸70 000</td><td class="is-num" data-label="Премия на клиентский счёт за год">₸1,4 млн (20 машин)</td><td data-label="Потенциальный доход продукта">Неизвестен; модель остатка после убытков и расходов — ниже</td></tr>
+                  <tr><td data-label="Сегмент">H3</td><td class="is-num" data-label="Премия за машину в год">₸525 000</td><td class="is-num" data-label="Премия на клиентский счёт за год">₸52,5 млн (100 машин)</td><td data-label="Потенциальный доход продукта">Плата за мониторинг, комиссия и относимый доход неизвестны</td></tr>
+                  <tr><td data-label="Сегмент">H4</td><td class="is-num" data-label="Премия за машину в год">₸35 000</td><td class="is-num" data-label="Премия на клиентский счёт за год">₸35 000 (1 машина)</td><td data-label="Потенциальный доход продукта">Неизвестен; комиссия салона не установлена</td></tr>
+                  <tr><td data-label="Сегмент">H5</td><td class="is-num" data-label="Премия за машину в год">₸10 000 за покупку; ₸150 000 в год только при 15 необходимых покупках</td><td class="is-num" data-label="Премия на клиентский счёт за год">Зависит от числа машин и необходимых покупок</td><td data-label="Потенциальный доход продукта">Неизвестен; валовая премия не равна доходу продукта</td></tr>
                 </tbody>
               </table>
             </div>
+            <p class="w5-p">Премия за счёт растёт от числа машин: 20 в парке, 100 у кредитора. Премия за машину зависит от вида страхования: КАСКО считается от стоимости автомобиля, ОГПО — нет. Готовность платить из этих чисел не следует: ₸525 000 платит заёмщик, а не кредитор.</p></div></details>
           </div>
           <div class="w5-block w5-extra">
-            <div class="w5-head" data-reveal><span class="w5-step">Шаг 4</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Лестница работ: чек растёт с уровнем работы</h3></div>
-            <p class="w5-p">Если расставить гипотезы по уровню работы, видна закономерность: полис везде один и тот же, а платят тем больше, чем выше работа, которую он закрывает.</p>
-            <div class="w5-ladder">
-              <div class="w5-rung"><div class="w5-rung-l"><span>Микро-работа</span><b>Выехать сегодня законно</b></div><div class="w5-rung-bar" style="width: 18%"><span>10–35 тыс ₸</span><small>H4, H5</small></div></div>
-              <div class="w5-rung"><div class="w5-rung-l"><span>Core Job</span><b>Машины всегда в работе</b></div><div class="w5-rung-bar" style="width: 52%"><span>70 тыс – 1,4 млн ₸</span><small>H1, H2</small></div></div>
-              <div class="w5-rung"><div class="w5-rung-l"><span>Big Job</span><b>Сохранить стоимость актива</b></div><div class="w5-rung-bar" style="width: 100%"><span>от 52 млн ₸ на портфель</span><small>H3</small></div></div>
-            </div>
-            <p class="w5-p">Вывод для стратегии: расти выгоднее не скидкой на полис, а подъёмом по лестнице. От «оформить полис» к «держать парк в работе» и дальше к «сохранять стоимость залога».</p>
-          </div>
-          <div class="w5-block w5-extra">
-            <div class="w5-head" data-reveal><span class="w5-step">Шаг 5</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Чек ещё не ценность</h3></div>
-            <p class="w5-thesis">В страховании клиент ценен не на премию, а на <em>премию минус убытки</em>.<small>Такси проезжает в 3–4 раза больше частной машины и попадает в ДТП чаще. Сегмент с чеком ×2 может оказаться убыточным. Поэтому успех пилота H1 и H2 я меряю не продажами, а убыточностью сегмента через шесть месяцев: выплаты, делённые на собранную премию.</small></p>
-            <p class="w5-p">Проверил, выдержит ли экономика парка плохой сценарий. Парк 20 машин, премия 1,4 млн ₸ в год, расходы на ведение — 20% премии (допущение).</p>
+            <div class="w5-head" data-reveal><span class="w5-step">Шаг 4</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Устойчивость экономики парка</h3></div>
+<details class="w5-details mx-in"><summary>Показать расчёт и ограничения</summary><div style="margin-top: 14px">            <p class="w5-p"><span class="w5-tag">Сценарный расчёт</span>Парк из 20 машин, премия ₸1,4 млн в год, расходы на ведение — 20% премии.</p>
             <div class="w5-table-wrap">
-              <table class="w5-table">
-                <thead><tr><th scope="col">Убыточность</th><th scope="col">Сценарий</th><th scope="col">Вывод</th><th scope="col">Остаётся с парка в год</th></tr></thead>
+              <table class="w5-table w5-cmp mx-in">
+                <thead><tr><th scope="col">Убыточность</th><th scope="col">Расчёт</th><th scope="col">Сценарный остаток с парка за год</th><th scope="col">Вывод</th></tr></thead>
                 <tbody>
-                  <tr><td data-label="Убыточность">50%</td><td data-label="Сценарий">Как у частных водителей</td><td data-label="Вывод">Выгодно</td><td class="is-num" data-label="Остаётся">420 тыс ₸</td></tr>
-                  <tr><td data-label="Убыточность">70%</td><td data-label="Сценарий">Ожидаемый для такси</td><td data-label="Вывод">На грани</td><td class="is-num" data-label="Остаётся">140 тыс ₸</td></tr>
-                  <tr><td data-label="Убыточность">80%</td><td data-label="Сценарий">Порог</td><td data-label="Вывод">Ноль: точка безубыточности</td><td class="is-num w5-neg" data-label="Остаётся">0 тыс ₸</td></tr>
-                  <tr><td data-label="Убыточность">90%</td><td data-label="Сценарий">Плохой</td><td data-label="Вывод">Убыток: сегмент закрываю</td><td class="is-num w5-neg" data-label="Остаётся">−140 тыс ₸</td></tr>
+                  <tr><td data-label="Убыточность">50%</td><td data-label="Расчёт">₸1,4 млн × (1 − 50% − 20%)</td><td class="is-num" data-label="Сценарный остаток с парка за год">₸420 тыс</td><td data-label="Вывод">Выгодно</td></tr>
+                  <tr><td data-label="Убыточность">70%</td><td data-label="Расчёт">₸1,4 млн × (1 − 70% − 20%)</td><td class="is-num" data-label="Сценарный остаток с парка за год">₸140 тыс</td><td data-label="Вывод">На грани</td></tr>
+                  <tr><td data-label="Убыточность">80%</td><td data-label="Расчёт">₸1,4 млн × (1 − 80% − 20%)</td><td class="is-num w5-neg" data-label="Сценарный остаток с парка за год">₸0 тыс</td><td data-label="Вывод">Ноль: точка безубыточности этой модели</td></tr>
+                  <tr><td data-label="Убыточность">90%</td><td data-label="Расчёт">₸1,4 млн × (1 − 90% − 20%)</td><td class="is-num w5-neg" data-label="Сценарный остаток с парка за год">−₸140 тыс</td><td data-label="Вывод">Убыток</td></tr>
                 </tbody>
               </table>
             </div>
-            <p class="w5-p">Точка безубыточности — 80%. Если за шесть месяцев пилота убыточность такси и парков выше, сегмент закрываю, каким бы большим ни был чек.</p>
+            <p class="w5-p">80% — точка безубыточности именно этой модели. Для решения об андеррайтинге нужна другая формула: состоявшиеся убытки с учётом резервов, делённые на заработанную премию за тот же период. Два парка могут проверить спрос за месяц, но не позволяют надёжно оценить прибыльность сегмента. Один крупный убыток может определить финансовый результат этих двух парков за шесть месяцев.</p></div></details>
           </div>
           <div class="w5-block w5-extra">
-            <div class="w5-head" data-reveal><span class="w5-step">Шаг 6</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">С чего начать</h3></div>
-            <p class="w5-p">Очерёдность — не интуиция. Каждую гипотезу я оценил по пяти критериям от 1 до 5 и сложил баллы.</p>
+            <div class="w5-head" data-reveal><span class="w5-step">Шаг 5</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Очерёдность</h3></div>
+            <p class="w5-p"><span class="w5-tag">Гипотеза</span>Каждая гипотеза оценена по пяти критериям от 1 до 5.</p>
             <div class="w5-opp">
               <div class="w5-opp-row is-hot">
-                <div class="w5-opp-name"><span class="w5-id">H1</span>Водители такси и курьеры на личном авто<span class="w5-opp-sub">5 · 2 · 4 · 2 · 5</span></div>
-                <div class="w5-track" role="img" aria-label="Сумма 18 из 25"><i class="is-sat" style="width: 72%"></i></div>
-                <div class="w5-score">18</div>
-              </div>
-              <div class="w5-opp-row is-hot">
-                <div class="w5-opp-name"><span class="w5-id">H2</span>Таксопарки и малые автопарки доставки, 5–50 машин<span class="w5-opp-sub">4 · 4 · 4 · 2 · 4</span></div>
-                <div class="w5-track" role="img" aria-label="Сумма 18 из 25"><i class="is-sat" style="width: 72%"></i></div>
+                <div class="w5-opp-name"><span class="w5-id">H2</span>Малые парки, сдающие машины в аренду, 5–50 машин<small>4 · 4 · 4 · 2 · 4 · первый пилот</small></div>
+                <div class="w5-track" role="img" aria-label="H2: сумма 18 из 25"><i class="is-sat" style="width: 72%"></i></div>
                 <div class="w5-score">18</div>
               </div>
               <div class="w5-opp-row">
-                <div class="w5-opp-name"><span class="w5-id">H4</span>Покупатели машины в день сделки<span class="w5-opp-sub">4 · 1 · 3 · 4 · 4</span></div>
-                <div class="w5-track" role="img" aria-label="Сумма 16 из 25"><i class="is-sat" style="width: 64%"></i></div>
+                <div class="w5-opp-name"><span class="w5-id">H1</span>Независимые водители такси и курьеры на своей машине<small>5 · 2 · 4 · 2 · 5</small></div>
+                <div class="w5-track" role="img" aria-label="H1: сумма 18 из 25"><i class="is-sat" style="width: 72%"></i></div>
+                <div class="w5-score">18</div>
+              </div>
+              <div class="w5-opp-row">
+                <div class="w5-opp-name"><span class="w5-id">H4</span>Покупатели машины в точке продажи<small>4 · 1 · 3 · 4 · 4</small></div>
+                <div class="w5-track" role="img" aria-label="H4: сумма 16 из 25"><i class="is-sat" style="width: 64%"></i></div>
                 <div class="w5-score">16</div>
               </div>
               <div class="w5-opp-row">
-                <div class="w5-opp-name"><span class="w5-id">H3</span>Лизинговые компании и банки-залогодержатели<span class="w5-opp-sub">2 · 5 · 2 · 4 · 1</span></div>
-                <div class="w5-track" role="img" aria-label="Сумма 14 из 25"><i class="is-sat" style="width: 56%"></i></div>
+                <div class="w5-opp-name"><span class="w5-id">H3</span>Кредиторы и лизинговые компании<small>2 · 5 · 2 · 4 · 1</small></div>
+                <div class="w5-track" role="img" aria-label="H3: сумма 14 из 25"><i class="is-sat" style="width: 56%"></i></div>
                 <div class="w5-score">14</div>
               </div>
               <div class="w5-opp-row">
-                <div class="w5-opp-name"><span class="w5-id">H5</span>Транзитные перевозчики-нерезиденты<span class="w5-opp-sub">2 · 2 · 2 · 3 · 2</span></div>
-                <div class="w5-track" role="img" aria-label="Сумма 11 из 25"><i class="is-sat" style="width: 44%"></i></div>
+                <div class="w5-opp-name"><span class="w5-id">H5</span>Перевозчики-нерезиденты<small>2 · 2 · 2 · 3 · 2</small></div>
+                <div class="w5-track" role="img" aria-label="H5: сумма 11 из 25"><i class="is-sat" style="width: 44%"></i></div>
                 <div class="w5-score">11</div>
               </div>
             </div>
-            <p class="w5-legend"><span>цифры под названием — баллы по порядку: близость к продукту · чек · доступ к каналу · запас по убыточности · скорость проверки</span><span>число справа — сумма из 25</span></p>
+            <p class="w5-legend"><span>цифры под названием — баллы по порядку: близость к продукту · премия за счёт · доступ к каналу · запас по убыточности · скорость проверки</span><span>число справа — сумма из 25</span></p>
+            <p class="w5-p">У H2 и H1 поровну. Первым иду в H2: там в ближайший месяц есть наблюдаемое решение — парк либо переводит продление, либо нет. В H1 сначала нужно развести два мотива, поэтому это исследование, а не пилот.</p>
             <div class="w5-nnl">
-              <div class="w5-card"><span class="w5-when">Сейчас</span><h4 class="w5-card-t">H1 + H2: такси-водители и парки</h4><p class="w5-card-p">Один вход, два сегмента: водитель пользуется продуктом и приводит владельца парка. Онлайн-полис и трекинг убытка уже есть, не хватает рассрочки и реестра.</p></div>
-              <div class="w5-card"><span class="w5-when">Следом</span><h4 class="w5-card-t">H4: полис в день сделки</h4><p class="w5-card-p">Дешёвый канал привлечения. Нужен только партнёрский интерфейс, сам полис не меняется.</p></div>
-              <div class="w5-card"><span class="w5-when">Позже</span><h4 class="w5-card-t">H3 и H5: лизинг и транзит</h4><p class="w5-card-p">Самый высокий чек и самый необычный рынок, но длинная сделка, интеграции, языки и юридическая проверка.</p></div>
+              <div class="w5-card"><span class="w5-when">Сейчас</span><h4 class="w5-card-t">H2: пилот с двумя парками аренды</h4><p class="w5-card-p">Месяц ручного реестра и счёт переведённых продлений.</p></div>
+              <div class="w5-card"><span class="w5-when">Следом</span><h4 class="w5-card-t">H1: исследование водителей</h4><p class="w5-card-p">Два независимых теста: выбор способа оплаты и дни простоя после ДТП.</p></div>
+              <div class="w5-card"><span class="w5-when">Позже</span><h4 class="w5-card-t">H4, H3 и H5</h4><p class="w5-card-p">Замер в салоне, разговор с кредиторами и прохождение существующего полиса с диспетчером.</p></div>
             </div>
           </div>
           <div class="w5-block w5-extra">
-            <div class="w5-head" data-reveal><span class="w5-step">Шаг 7</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Границы решения и следующий шаг</h3></div>
-            <ul class="w5-list"><li>Размер сегментов дан порядком величины по открытым источникам. Доля, которую реально может взять продукт, не посчитана.</li><li>Чек посчитан от типовых тарифов и требует сверки с актуарием.</li><li>H5 упирается в регулирование. Если онлайн-продажа нерезидентам ограничена, гипотеза снимается до интервью.</li></ul>
-            <p class="w5-next"><b>Следующий шаг.</b> По пять интервью в H1 и H2 по шаблону курса и пилот с двумя парками. Решение о запуске принимаю по трём числам: доля водителей, для которых простой — главная боль; число парков, переведших продление; убыточность через шесть месяцев.</p>
+            <div class="w5-head" data-reveal><span class="w5-step">Шаг 6</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Что проверю дальше</h3></div>
+            <p class="w5-p"><span class="w5-tag">План</span>Ближайшие шаги по первому пилоту.</p>
+            <ol class="w5-steps"><li>Найти два парка аренды с продлением в ближайший месяц и договориться о ручном реестре.</li><li>Записать знаменатель до старта: сколько продлений наступит за месяц в каждом парке.</li><li>Параллельно назначить пять разговоров с водителями для H1.</li></ol>
+            <details class="w5-details mx-in">
+              <summary>Что известно о размере сегментов и почему это только ориентиры</summary>
+              <p class="w5-muted" style="margin-bottom: 12px"><span class="w5-tag">Факт</span>Числа взяты из открытых источников и проверены по оригиналам. Ни одно из них не равно размеру сегмента.</p>
+              <div class="w5-table-wrap">
+                <table class="w5-table w5-cmp mx-in">
+                  <thead><tr><th scope="col">Сегмент</th><th scope="col">Что известно</th><th scope="col">Почему это только ориентир</th></tr></thead>
+                  <tbody>
+                  <tr><td data-label="Сегмент">База</td><td data-label="Что известно">5 105,4 тыс. легковых автомобилей на учёте на 1 сентября 2026 года (<a class="w5-src" href="https://stat.gov.kz/ru/news/166-6-tys-edinits-avtotransportnykh-sredstv-postavleno-na-uchet-v-avguste/" target="_blank" rel="noopener noreferrer">Бюро национальной статистики, 15.09.2026</a>)</td><td data-label="Почему это только ориентир">Факт о парке, а не о числе страхователей: сюда входят и машины компаний</td></tr>
+                  <tr><td data-label="Сегмент">H1</td><td data-label="Что известно">Более 320 тыс. водителей легализовали доходы через платформу такси (<a class="w5-src" href="https://digitalbusiness.kz/2026-08-06/bolee-8-5-mln-polzovateley-i-podacha-za-3-minuti-rukovoditel-yandeks-taksi-o-matematike-tarifov-i-budushchem-rinka/" target="_blank" rel="noopener noreferrer">digitalbusiness.kz, 06.08.2026</a>)</td><td data-label="Почему это только ориентир">Не сказано, сколько из них ездят на своей машине</td></tr>
+                  <tr><td data-label="Сегмент">H2</td><td data-label="Что известно">Открытых данных о числе парков аренды не нашёл</td><td data-label="Почему это только ориентир">Оценю в интервью</td></tr>
+                  <tr><td data-label="Сегмент">H3</td><td data-label="Что известно">₸2,4 трлн новых автокредитов выдано за 2025 год (<a class="w5-src" href="https://bizmedia.kz/2026-03-19-avtokredity-v-kazahstane-vyrosli-pochti-na-30-za-god-dognav-ipoteku-po-obemam-vydachi/" target="_blank" rel="noopener noreferrer">bizmedia.kz по данным АФК, 19.03.2026</a>)</td><td data-label="Почему это только ориентир">Это объём выдач в тенге; числа машин и доли с КАСКО нет</td></tr>
+                  <tr><td data-label="Сегмент">H4</td><td data-label="Что известно">166 547 транспортных средств поставлено на учёт в августе 2026 года, 87,5% из них легковые (<a class="w5-src" href="https://stat.gov.kz/ru/news/166-6-tys-edinits-avtotransportnykh-sredstv-postavleno-na-uchet-v-avguste/" target="_blank" rel="noopener noreferrer">Бюро национальной статистики, 15.09.2026</a>)</td><td data-label="Почему это только ориентир">Учтены машины всех возрастов и разных типов; это не число покупок в салонах</td></tr>
+                  <tr><td data-label="Сегмент">H5</td><td data-label="Что известно">Почти 200 тыс. транспортных средств за семь месяцев через один пункт пропуска (<a class="w5-src" href="https://24.kz/ru/news/economyc/800121-propusknoj-potentsial-nur-zholy-namereny-uvelichit-do-30" target="_blank" rel="noopener noreferrer">24.kz, 18.10.2026</a>)</td><td data-label="Почему это только ориентир">Пересечения повторяются; тип машин и резидентство перевозчика не выделены</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
           </div>
         </div>
       </div>
