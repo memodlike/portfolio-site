@@ -2791,6 +2791,13 @@
         .w5 .w5-dl dt { font-family: var(--font-mono); font-size: 10.5px; line-height: 21px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
         .w5 .w5-dl dd { font-size: 14px; line-height: 21px; color: var(--ink); margin: 0; }
         .w5 .w5-dl dd.is-want { font-weight: 600; }
+        .w5 .w5-dl dt.is-sub { margin-top: 2px; }
+        .w5 .w5-dl dd.is-sub { font-size: 13px; line-height: 20px; color: var(--muted); margin-top: 2px; }
+        .w5 .w5-src { color: var(--forest); text-decoration: underline; text-underline-offset: 2px; }
+        .w5 .w5-f.is-size { grid-column: 1 / -1; }
+        .w5 .w5-f.is-size p { font-size: 13px; line-height: 20px; color: var(--muted); }
+        .w5 .w5-opp-sub { display: block; font-family: var(--font-mono); font-size: 11px; line-height: 16px; font-weight: 400; color: var(--muted); margin-top: 2px; }
+        .w5 .w5-neg { color: var(--accent-warm-text); }
         .w5 .w5-meter { height: 4px; border-radius: 2px; background: var(--mist); overflow: hidden; margin-top: auto; }
         .w5 .w5-meter i { display: block; height: 100%; background: var(--forest); border-radius: 2px; }
         .w5 .w5-freq { font-size: 11.5px; line-height: 16px; color: var(--muted); }
@@ -2996,7 +3003,7 @@
           </div>
           <div class="cohort-premise-box" data-reveal><strong>Как читать числа:</strong> Оценки важности, удовлетворённости и среднего чека — мои рабочие гипотезы для приоритизации, а не данные компании. Полевые интервью — следующий шаг, поэтому каждая оценка записана так, чтобы её можно было опровергнуть.</div>
           <div class="w5-block" data-reveal>
-            <ol class="w5-route" aria-label="Маршрут по решению"><li>Продукт</li><li>Работы B2C</li><li>Работы B2B</li><li class="is-extra">Граф работ</li><li class="is-extra">Где разрыв</li><li class="is-extra">Решения</li><li class="is-extra">Проверка</li></ol>
+            <ol class="w5-route" aria-label="Маршрут по решению"><li>Продукт</li><li>Работы B2C</li><li>Работы B2B</li><li class="is-extra">Граф работ</li><li class="is-extra">Где разрыв</li><li class="is-extra">Цена разрыва</li><li class="is-extra">Решения</li><li class="is-extra">Проверка</li></ol>
             <p class="w5-route-note"><i style="background: var(--forest)"></i>основное задание &nbsp; <i style="background: var(--accent-warm)"></i>сверх задания</p>
           </div>
           <div class="w5-block">
@@ -3006,7 +3013,7 @@
           </div>
           <div class="w5-block">
             <div class="w5-head" data-reveal><span class="w5-step">Шаг 2</span><span class="w5-kind">Основное задание</span><h3 class="w5-h">Шесть работ частного клиента (B2C)</h3></div>
-            <p class="w5-muted">Зелёной рамкой выделены работы с важностью 9 и выше. Важность — по шкале задания: 1 почти неважно, 10 критически важно.</p>
+            <p class="w5-muted">Зелёной рамкой выделены работы с важностью 9 и выше. Важность — по шкале задания: 1 почти неважно, 10 критически важно. Серым под каждой работой: что её запускает и чем её закрывают сегодня — это и есть настоящий конкурент.</p>
             <div class="w5-jobs">
               <article class="w5-job">
                 <div class="w5-job-top">
@@ -3017,6 +3024,8 @@
                   <dt>Когда</dt><dd>Срок ОГПО истекает завтра или я только что купил машину, а ехать в офис некогда.</dd>
                   <dt>Хочу</dt><dd class="is-want">Оформить полис с телефона за несколько минут.</dd>
                   <dt>Чтобы</dt><dd>Законно выехать уже сегодня и не получить штраф.</dd>
+                  <dt class="is-sub">Триггер</dt><dd class="is-sub">SMS о скором окончании полиса или покупка машины.</dd>
+                  <dt class="is-sub">Сейчас</dt><dd class="is-sub">Агент у ЦОНа или приложение банка.</dd>
                 </dl>
                 <div class="w5-freq">Как часто: раз в год</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 80%"></i></div>
@@ -3030,6 +3039,8 @@
                   <dt>Когда</dt><dd>Выбираю страховую, а цена ОГПО у всех почти одинаковая.</dd>
                   <dt>Хочу</dt><dd class="is-want">Понять, кто платит быстро и без споров.</dd>
                   <dt>Чтобы</dt><dd>После ДТП не остаться один на один с ремонтом.</dd>
+                  <dt class="is-sub">Триггер</dt><dd class="is-sub">Рассказ знакомого о споре с выплатой.</dd>
+                  <dt class="is-sub">Сейчас</dt><dd class="is-sub">Советы знакомых и отзывы в интернете.</dd>
                 </dl>
                 <div class="w5-freq">Как часто: раз в год</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 70%"></i></div>
@@ -3043,6 +3054,8 @@
                   <dt>Когда</dt><dd>Только что случилось ДТП: я на дороге, в стрессе, второй участник торопит.</dd>
                   <dt>Хочу</dt><dd class="is-want">Получить пошаговую подсказку: что снять, что подписать, куда сообщить.</dd>
                   <dt>Чтобы</dt><dd>Не потерять право на выплату из-за одной ошибки.</dd>
+                  <dt class="is-sub">Триггер</dt><dd class="is-sub">Удар и первые минуты после остановки.</dd>
+                  <dt class="is-sub">Сейчас</dt><dd class="is-sub">Звонок знакомому или агенту, поиск в интернете.</dd>
                 </dl>
                 <div class="w5-freq">Как часто: редко и внезапно</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 100%"></i></div>
@@ -3056,6 +3069,8 @@
                   <dt>Когда</dt><dd>Заявление подано, машина стоит, прошла неделя тишины.</dd>
                   <dt>Хочу</dt><dd class="is-want">Видеть этап, каких документов не хватает и когда ждать деньги.</dd>
                   <dt>Чтобы</dt><dd>Спланировать ремонт и бюджет, а не обзванивать колл-центр.</dd>
+                  <dt class="is-sub">Триггер</dt><dd class="is-sub">Сервис назвал сумму ремонта, а решения по выплате нет.</dd>
+                  <dt class="is-sub">Сейчас</dt><dd class="is-sub">Звонки в колл-центр, сообщения агенту.</dd>
                 </dl>
                 <div class="w5-freq">Как часто: после каждого убытка</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 90%"></i></div>
@@ -3069,6 +3084,8 @@
                   <dt>Когда</dt><dd>Машина новая или в кредите, и ремонт из своего кармана я не потяну.</dd>
                   <dt>Хочу</dt><dd class="is-want">Застраховать крупный ущерб по КАСКО с понятными исключениями.</dd>
                   <dt>Чтобы</dt><dd>Одна авария не съела семейный бюджет на год.</dd>
+                  <dt class="is-sub">Триггер</dt><dd class="is-sub">Покупка новой машины или требование банка по кредиту.</dd>
+                  <dt class="is-sub">Сейчас</dt><dd class="is-sub">Полис, который предложил банк или салон.</dd>
                 </dl>
                 <div class="w5-freq">Как часто: раз в год</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 80%"></i></div>
@@ -3082,6 +3099,8 @@
                   <dt>Когда</dt><dd>Полис заканчивается через две недели, я занят и не помню дату.</dd>
                   <dt>Хочу</dt><dd class="is-want">Продлить в один тап, без повторного ввода данных.</dd>
                   <dt>Чтобы</dt><dd>Защита не прервалась и об этом не пришлось думать.</dd>
+                  <dt class="is-sub">Триггер</dt><dd class="is-sub">Напоминание за две недели до окончания.</dd>
+                  <dt class="is-sub">Сейчас</dt><dd class="is-sub">Тот же агент, что и год назад.</dd>
                 </dl>
                 <div class="w5-freq">Как часто: раз в год</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 60%"></i></div>
@@ -3101,6 +3120,8 @@
                   <dt>Когда</dt><dd>У машин парка разные даты окончания полисов, а учёт ведётся в Excel.</dd>
                   <dt>Хочу</dt><dd class="is-want">Единый реестр полисов с автопродлением и одним счётом.</dd>
                   <dt>Чтобы</dt><dd>Ни одна машина не встала из-за штрафа или просроченного полиса.</dd>
+                  <dt class="is-sub">Триггер</dt><dd class="is-sub">Штраф или машина, снятая с линии из-за просроченного полиса.</dd>
+                  <dt class="is-sub">Сейчас</dt><dd class="is-sub">Таблица Excel и знакомый агент.</dd>
                 </dl>
                 <div class="w5-freq">Как часто: каждый месяц</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 90%"></i></div>
@@ -3114,6 +3135,8 @@
                   <dt>Когда</dt><dd>Машина после ДТП стоит, и каждый день простоя — недополученная выручка.</dd>
                   <dt>Хочу</dt><dd class="is-want">Быстрое урегулирование и прогноз даты выплаты по каждому делу.</dd>
                   <dt>Чтобы</dt><dd>Сократить простой и заранее подменить машину на линии.</dd>
+                  <dt class="is-sub">Триггер</dt><dd class="is-sub">Звонок водителя о ДТП.</dd>
+                  <dt class="is-sub">Сейчас</dt><dd class="is-sub">Менеджер страховой в мессенджере, звонки.</dd>
                 </dl>
                 <div class="w5-freq">Как часто: несколько раз в год</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 90%"></i></div>
@@ -3127,6 +3150,8 @@
                   <dt>Когда</dt><dd>Закрываю месяц или квартал, и нужны счета, акты и полисы по каждой машине.</dd>
                   <dt>Хочу</dt><dd class="is-want">Получить закрывающие документы в кабинете или через ЭДО.</dd>
                   <dt>Чтобы</dt><dd>Закрыть период без ручной сверки и запросов менеджеру.</dd>
+                  <dt class="is-sub">Триггер</dt><dd class="is-sub">Закрытие месяца или запрос аудитора.</dd>
+                  <dt class="is-sub">Сейчас</dt><dd class="is-sub">Письма менеджеру и сканы.</dd>
                 </dl>
                 <div class="w5-freq">Как часто: каждый месяц</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 60%"></i></div>
@@ -3140,10 +3165,24 @@
                   <dt>Когда</dt><dd>Клиент подписывает договор купли-продажи или кредита и ждёт ключи.</dd>
                   <dt>Хочу</dt><dd class="is-want">Выпустить полис за пару минут в своём интерфейсе или по API.</dd>
                   <dt>Чтобы</dt><dd>Закрыть сделку в один визит и заработать комиссию.</dd>
+                  <dt class="is-sub">Триггер</dt><dd class="is-sub">Клиент готов подписать договор.</dd>
+                  <dt class="is-sub">Сейчас</dt><dd class="is-sub">Агент по телефону или отдельный портал страховой.</dd>
                 </dl>
                 <div class="w5-freq">Как часто: каждый день</div>
                 <div class="w5-meter" aria-hidden="true"><i style="width: 80%"></i></div>
               </article>
+            </div>
+            <p class="w5-p">В бизнесе одну работу выполняют три разных человека. Продавать нужно тому, кто решает, а удобно должно быть тому, кто пользуется.</p>
+            <div class="w5-table-wrap">
+              <table class="w5-table w5-roles">
+                <thead><tr><th scope="col">Работа</th><th scope="col">Кто решает</th><th scope="col">Кто пользуется</th><th scope="col">Кто платит</th></tr></thead>
+                <tbody>
+                  <tr><td data-label="Работа">B1 · Ни одной машины без полиса</td><td data-label="Кто решает">Решает: Владелец или директор</td><td data-label="Кто пользуется">Пользуется: Руководитель парка</td><td class="is-num" data-label="Кто платит">Платит: Бухгалтерия компании</td></tr>
+                  <tr><td data-label="Работа">B2 · Вернуть машину в работу</td><td data-label="Кто решает">Решает: Руководитель парка</td><td data-label="Кто пользуется">Пользуется: Водитель и механик</td><td class="is-num" data-label="Кто платит">Платит: Компания: каждый день простоя</td></tr>
+                  <tr><td data-label="Работа">B3 · Закрыть период без переписки</td><td data-label="Кто решает">Решает: Главный бухгалтер</td><td data-label="Кто пользуется">Пользуется: Бухгалтер</td><td class="is-num" data-label="Кто платит">Платит: Компания</td></tr>
+                  <tr><td data-label="Работа">B4 · Не сорвать сделку из-за полиса</td><td data-label="Кто решает">Решает: Руководитель салона или банка</td><td data-label="Кто пользуется">Пользуется: Менеджер по продажам</td><td class="is-num" data-label="Кто платит">Платит: Конечный клиент; партнёр получает комиссию</td></tr>
+                </tbody>
+              </table>
             </div>
           </div>
           <div class="w5-block w5-extra">
@@ -3219,7 +3258,18 @@
             <p class="w5-p">Четыре верхние строки — работы после ДТП и работы автопарка. Оформление и продление внизу: там клиенту уже удобно, и новые функции почти ничего не добавят.</p>
           </div>
           <div class="w5-block w5-extra">
-            <div class="w5-head" data-reveal><span class="w5-step">Шаг 6</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Что это меняет в продукте</h3></div>
+            <div class="w5-head" data-reveal><span class="w5-step">Шаг 6</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Сколько стоит главный разрыв</h3></div>
+            <p class="w5-p">Индекс показывает, где разрыв, но не сколько он стоит. Я посчитал цену самой недообслуженной пары работ — C3 и C4 — на простой модели.</p>
+            <div class="w5-base">
+              <div><span>Время операторов</span><b>≈ 102 часа в месяц</b></div>
+              <div><span>Премия под вопросом</span><b>≈ 2,2 млн ₸ в месяц</b></div>
+              <div><span>Диапазон</span><b>1,1–3,3 млн ₸ в месяц</b></div>
+            </div>
+            <p class="w5-muted"><b>Как считал.</b> Время: 625 дел в месяц × 65% клиентов с повторным вопросом × 3 обращения × 5 минут. Премия: 625 дел × снижение доли продлений на 10 п.п. после плохого опыта × чек 35 тыс ₸. Диапазон — то же при 5 и 15 п.п. Все входные числа — допущения модели, а не данные компании.</p>
+            <p class="w5-p"><b>Что это меняет.</b> Главные деньги не в звонках, а в продлениях: даже при осторожных 5 п.п. потерянная премия кратно дороже часов операторов. Поэтому успех решения 2 я меряю продлением после убытка, а число обращений оставляю вспомогательной метрикой.</p>
+          </div>
+          <div class="w5-block w5-extra">
+            <div class="w5-head" data-reveal><span class="w5-step">Шаг 7</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Что это меняет в продукте</h3></div>
             <div class="w5-cards3">
               <div class="w5-card"><span class="w5-card-n">Решение 1</span><h4 class="w5-card-t">Сценарий «Случилось ДТП» — на первый экран</h4><p class="w5-card-p">Работа C3 важна на 10, а продукт сегодня встречает клиента витриной полисов. Один тап открывает чек-лист, камеру и заявление.</p><div class="w5-card-m"><b>Метрика</b>Доля заявлений с полным пакетом документов с первого раза</div></div>
               <div class="w5-card"><span class="w5-card-n">Решение 2</span><h4 class="w5-card-t">Статус выплаты — отдельный продукт, а не строка в кабинете</h4><p class="w5-card-p">Работы C4 и B2 — второй и третий разрыв. Этап, недостающие документы и прогноз даты закрывают их одной механикой.</p><div class="w5-card-m"><b>Метрика</b>Повторные обращения на одно дело; продление после убытка</div></div>
@@ -3227,7 +3277,7 @@
             </div>
           </div>
           <div class="w5-block w5-extra">
-            <div class="w5-head" data-reveal><span class="w5-step">Шаг 7</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Как я это проверю</h3></div>
+            <div class="w5-head" data-reveal><span class="w5-step">Шаг 8</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Как я это проверю</h3></div>
             <p class="w5-p">Всё выше — гипотезы. Чтобы они не остались мнением, я прогнал шаблон интервью курса на самой спорной работе и записал, где могу ошибаться.</p>
             <details class="w5-details">
               <summary>Пробный прогон шаблона интервью: работа C4 «Знать, что с моей выплатой»</summary>
@@ -3316,6 +3366,7 @@
               <div><span>Его критерий успеха</span><b>Оформить быстро, без офиса и переплаты</b></div>
               <div><span>Средний чек</span><b>≈ 35 тыс ₸ в год</b></div>
             </div>
+            <p class="w5-muted">Размер базы: ≈ 5,1 млн легковых автомобилей на учёте (на 1 сентября 2026). Источник: <a class="w5-src" href="https://stat.gov.kz/ru/news/166-6-tys-edinits-avtotransportnykh-sredstv-postavleno-na-uchet-v-avguste/" target="_blank" rel="noopener noreferrer">Бюро национальной статистики</a>.</p>
           </div>
           <div class="w5-block">
             <div class="w5-head" data-reveal><span class="w5-step">Шаг 2</span><span class="w5-kind">Основное задание</span><h3 class="w5-h">Пять гипотез о сегментах</h3></div>
@@ -3327,6 +3378,7 @@
                   <div class="w5-f"><span>Кто</span><p>Самозанятые водители агрегаторов такси и доставки. Одна машина, и она — единственный источник дохода.</p></div>
                   <div class="w5-f"><span>Контекст</span><p>10–12 часов за рулём, пробег в 3–4 раза выше частного. Доход приходит каждый день, крупной суммы на руках нет.</p></div>
                   <div class="w5-f is-job"><span>Работа</span><p><b>Когда</b> полис заканчивается, а без него нельзя выходить на линию, <b>хочу</b> оформить его сразу и платить частями, <b>чтобы</b> не потерять ни одного рабочего дня.</p></div>
+                  <div class="w5-f is-size"><span>Размер сегмента</span><p>Порядок — сотни тысяч: более 320 тыс. водителей работают через крупнейший агрегатор. Источник: <a class="w5-src" href="https://digitalbusiness.kz/2026-08-06/bolee-8-5-mln-polzovateley-i-podacha-za-3-minuti-rukovoditel-yandeks-taksi-o-matematike-tarifov-i-budushchem-rinka/" target="_blank" rel="noopener noreferrer">digitalbusiness.kz, август 2026</a>.</p></div>
                 </div>
                 <div class="w5-vs">
                   <div class="is-now"><span>Текущий клиент</span><p>Оформить быстро раз в год</p></div>
@@ -3349,6 +3401,7 @@
                   <div class="w5-f"><span>Кто</span><p>Владелец или управляющий парком. Решает и платит он, а пользуется полисом водитель.</p></div>
                   <div class="w5-f"><span>Контекст</span><p>Машины сданы водителям в аренду. Полисы куплены в разное время у разных агентов, учёт — в Excel и WhatsApp.</p></div>
                   <div class="w5-f is-job"><span>Работа</span><p><b>Когда</b> у двадцати машин разные даты полисов, <b>хочу</b> видеть весь парк в одном реестре и продлевать одним счётом, <b>чтобы</b> ни одна машина не простаивала.</p></div>
+                  <div class="w5-f is-size"><span>Размер сегмента</span><p>Открытых данных о числе парков нет; оценю в интервью через долю водителей на арендованных машинах.</p></div>
                 </div>
                 <div class="w5-vs">
                   <div class="is-now"><span>Текущий клиент</span><p>«Моя машина застрахована»</p></div>
@@ -3371,6 +3424,7 @@
                   <div class="w5-f"><span>Кто</span><p>Риск-менеджер или руководитель автолизинга. Полис покупает заёмщик, а нужен он кредитору.</p></div>
                   <div class="w5-f"><span>Контекст</span><p>Сотни машин в залоге на 3–5 лет. Заёмщик страхует машину в первый год и забывает продлить.</p></div>
                   <div class="w5-f is-job"><span>Работа</span><p><b>Когда</b> машина в залоге на несколько лет, <b>хочу</b> быть уверенным, что покрытие не прерывается ни на день, <b>чтобы</b> залог сохранял стоимость весь срок договора.</p></div>
+                  <div class="w5-f is-size"><span>Размер сегмента</span><p>Числа машин в лизинге в открытых источниках нет; косвенно — 2,4 трлн ₸ автокредитов выдано за 2025 год. Источник: <a class="w5-src" href="https://bizmedia.kz/2026-03-19-avtokredity-v-kazahstane-vyrosli-pochti-na-30-za-god-dognav-ipoteku-po-obemam-vydachi/" target="_blank" rel="noopener noreferrer">bizmedia.kz по данным АФК</a>.</p></div>
                 </div>
                 <div class="w5-vs">
                   <div class="is-now"><span>Текущий клиент</span><p>Скорость и цена</p></div>
@@ -3393,6 +3447,7 @@
                   <div class="w5-f"><span>Кто</span><p>Человек, который прямо сейчас покупает машину. Канал — менеджер автосалона или площадка объявлений.</p></div>
                   <div class="w5-f"><span>Контекст</span><p>Машина переоформлена, хочется уехать на ней домой. О страховке вспоминают последней, у кассы.</p></div>
                   <div class="w5-f is-job"><span>Работа</span><p><b>Когда</b> я только что переоформил машину, <b>хочу</b> получить полис тут же, вместе с документами, <b>чтобы</b> уехать домой законно.</p></div>
+                  <div class="w5-f is-size"><span>Размер сегмента</span><p>Порядок — до 2 млн в год: около 170 тыс. постановок на учёт в месяц. Источник: <a class="w5-src" href="https://stat.gov.kz/ru/news/169-1-tys-edinits-avtotransportnykh-sredstv-postavleno-na-uchet-v-iyule/" target="_blank" rel="noopener noreferrer">Бюро национальной статистики, июль 2026</a>.</p></div>
                 </div>
                 <div class="w5-vs">
                   <div class="is-now"><span>Текущий клиент</span><p>Выбрать страховую и оформить</p></div>
@@ -3415,6 +3470,7 @@
                   <div class="w5-f"><span>Кто</span><p>Водители и диспетчеры фур с иностранными номерами, которые въезжают в Казахстан.</p></div>
                   <div class="w5-f"><span>Контекст</span><p>Граница, очередь, нет местной карты и номера. Нужен полис на дни, а не на год, и на своём языке.</p></div>
                   <div class="w5-f is-job"><span>Работа</span><p><b>Когда</b> фура подъезжает к границе, <b>хочу</b> заранее купить краткосрочный полис с телефона на своём языке, <b>чтобы</b> пройти контроль без остановки и наличных.</p></div>
+                  <div class="w5-f is-size"><span>Размер сегмента</span><p>Порядок — сотни тысяч пересечений в год: более 2 тыс. грузовиков в сутки только через один пункт пропуска. Источник: <a class="w5-src" href="https://24.kz/ru/news/economyc/800121-propusknoj-potentsial-nur-zholy-namereny-uvelichit-do-30" target="_blank" rel="noopener noreferrer">24.kz</a>.</p></div>
                 </div>
                 <div class="w5-vs">
                   <div class="is-now"><span>Текущий клиент</span><p>Годовой полис, оплата местной картой, русский или казахский язык</p></div>
@@ -3462,9 +3518,51 @@
           <div class="w5-block w5-extra">
             <div class="w5-head" data-reveal><span class="w5-step">Шаг 5</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Чек ещё не ценность</h3></div>
             <p class="w5-thesis">В страховании клиент ценен не на премию, а на <em>премию минус убытки</em>.<small>Такси проезжает в 3–4 раза больше частной машины и попадает в ДТП чаще. Сегмент с чеком ×2 может оказаться убыточным. Поэтому успех пилота H1 и H2 я меряю не продажами, а убыточностью сегмента через шесть месяцев: выплаты, делённые на собранную премию.</small></p>
+            <p class="w5-p">Проверил, выдержит ли экономика парка плохой сценарий. Парк 20 машин, премия 1,4 млн ₸ в год, расходы на ведение — 20% премии (допущение).</p>
+            <div class="w5-table-wrap">
+              <table class="w5-table">
+                <thead><tr><th scope="col">Убыточность</th><th scope="col">Сценарий</th><th scope="col">Вывод</th><th scope="col">Остаётся с парка в год</th></tr></thead>
+                <tbody>
+                  <tr><td data-label="Убыточность">50%</td><td data-label="Сценарий">Как у частных водителей</td><td data-label="Вывод">Выгодно</td><td class="is-num" data-label="Остаётся">420 тыс ₸</td></tr>
+                  <tr><td data-label="Убыточность">70%</td><td data-label="Сценарий">Ожидаемый для такси</td><td data-label="Вывод">На грани</td><td class="is-num" data-label="Остаётся">140 тыс ₸</td></tr>
+                  <tr><td data-label="Убыточность">80%</td><td data-label="Сценарий">Порог</td><td data-label="Вывод">Ноль: точка безубыточности</td><td class="is-num w5-neg" data-label="Остаётся">0 тыс ₸</td></tr>
+                  <tr><td data-label="Убыточность">90%</td><td data-label="Сценарий">Плохой</td><td data-label="Вывод">Убыток: сегмент закрываю</td><td class="is-num w5-neg" data-label="Остаётся">−140 тыс ₸</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="w5-p">Точка безубыточности — 80%. Если за шесть месяцев пилота убыточность такси и парков выше, сегмент закрываю, каким бы большим ни был чек.</p>
           </div>
           <div class="w5-block w5-extra">
             <div class="w5-head" data-reveal><span class="w5-step">Шаг 6</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">С чего начать</h3></div>
+            <p class="w5-p">Очерёдность — не интуиция. Каждую гипотезу я оценил по пяти критериям от 1 до 5 и сложил баллы.</p>
+            <div class="w5-opp">
+              <div class="w5-opp-row is-hot">
+                <div class="w5-opp-name"><span class="w5-id">H1</span>Водители такси и курьеры на личном авто<span class="w5-opp-sub">5 · 2 · 4 · 2 · 5</span></div>
+                <div class="w5-track" role="img" aria-label="Сумма 18 из 25"><i class="is-sat" style="width: 72%"></i></div>
+                <div class="w5-score">18</div>
+              </div>
+              <div class="w5-opp-row is-hot">
+                <div class="w5-opp-name"><span class="w5-id">H2</span>Таксопарки и малые автопарки доставки, 5–50 машин<span class="w5-opp-sub">4 · 4 · 4 · 2 · 4</span></div>
+                <div class="w5-track" role="img" aria-label="Сумма 18 из 25"><i class="is-sat" style="width: 72%"></i></div>
+                <div class="w5-score">18</div>
+              </div>
+              <div class="w5-opp-row">
+                <div class="w5-opp-name"><span class="w5-id">H4</span>Покупатели машины в день сделки<span class="w5-opp-sub">4 · 1 · 3 · 4 · 4</span></div>
+                <div class="w5-track" role="img" aria-label="Сумма 16 из 25"><i class="is-sat" style="width: 64%"></i></div>
+                <div class="w5-score">16</div>
+              </div>
+              <div class="w5-opp-row">
+                <div class="w5-opp-name"><span class="w5-id">H3</span>Лизинговые компании и банки-залогодержатели<span class="w5-opp-sub">2 · 5 · 2 · 4 · 1</span></div>
+                <div class="w5-track" role="img" aria-label="Сумма 14 из 25"><i class="is-sat" style="width: 56%"></i></div>
+                <div class="w5-score">14</div>
+              </div>
+              <div class="w5-opp-row">
+                <div class="w5-opp-name"><span class="w5-id">H5</span>Транзитные перевозчики-нерезиденты<span class="w5-opp-sub">2 · 2 · 2 · 3 · 2</span></div>
+                <div class="w5-track" role="img" aria-label="Сумма 11 из 25"><i class="is-sat" style="width: 44%"></i></div>
+                <div class="w5-score">11</div>
+              </div>
+            </div>
+            <p class="w5-legend"><span>цифры под названием — баллы по порядку: близость к продукту · чек · доступ к каналу · запас по убыточности · скорость проверки</span><span>число справа — сумма из 25</span></p>
             <div class="w5-nnl">
               <div class="w5-card"><span class="w5-when">Сейчас</span><h4 class="w5-card-t">H1 + H2: такси-водители и парки</h4><p class="w5-card-p">Один вход, два сегмента: водитель пользуется продуктом и приводит владельца парка. Онлайн-полис и трекинг убытка уже есть, не хватает рассрочки и реестра.</p></div>
               <div class="w5-card"><span class="w5-when">Следом</span><h4 class="w5-card-t">H4: полис в день сделки</h4><p class="w5-card-p">Дешёвый канал привлечения. Нужен только партнёрский интерфейс, сам полис не меняется.</p></div>
@@ -3473,7 +3571,7 @@
           </div>
           <div class="w5-block w5-extra">
             <div class="w5-head" data-reveal><span class="w5-step">Шаг 7</span><span class="w5-kind">Сверх задания</span><h3 class="w5-h">Границы решения и следующий шаг</h3></div>
-            <ul class="w5-list"><li>Размер сегментов не посчитан: до интервью я сравниваю их по чеку и доступности канала, а не по объёму рынка.</li><li>Чек посчитан от типовых тарифов и требует сверки с актуарием.</li><li>H5 упирается в регулирование. Если онлайн-продажа нерезидентам ограничена, гипотеза снимается до интервью.</li></ul>
+            <ul class="w5-list"><li>Размер сегментов дан порядком величины по открытым источникам. Доля, которую реально может взять продукт, не посчитана.</li><li>Чек посчитан от типовых тарифов и требует сверки с актуарием.</li><li>H5 упирается в регулирование. Если онлайн-продажа нерезидентам ограничена, гипотеза снимается до интервью.</li></ul>
             <p class="w5-next"><b>Следующий шаг.</b> По пять интервью в H1 и H2 по шаблону курса и пилот с двумя парками. Решение о запуске принимаю по трём числам: доля водителей, для которых простой — главная боль; число парков, переведших продление; убыточность через шесть месяцев.</p>
           </div>
         </div>
